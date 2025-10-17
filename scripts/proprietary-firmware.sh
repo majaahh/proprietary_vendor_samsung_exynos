@@ -19,7 +19,6 @@ propfile="../proprietary-firmware/$BOARD/firmware.${MODEL}_${CSC}_${OMC}"
 
 {
     echo "# Firmware for model ${MODEL} - from Samsung package version ${LATEST_SHORTVERSION}"
-    echo ""
     sha1sum * | awk '{print $2 "|" $1}'
     echo ""
 } > "$propfile"
