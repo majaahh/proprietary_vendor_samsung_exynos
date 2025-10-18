@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-set -e
 propfile="../../proprietary-files/$BOARD/proprietary.${MODEL}_${CSC}_${OMC}"
 AUDIO_BLOBS=""
 FIRMWARE_BLOBS=""
