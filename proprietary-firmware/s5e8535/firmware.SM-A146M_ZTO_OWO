@@ -1,0 +1,17 @@
+# Firmware for model SM-A146M - from Samsung package version A146MUBS9DYH1
+dtp.bin_SM-A146M|30389e0a1ad425b05df59da651dc1913d1c3a4b7
+fld.bin_SM-A146M|dc1c775aaf6f439e119d3f85f92f7f7b61d309f4
+harx.bin_SM-A146M|ede7ddaaa6c6601107659bc4a847771c8f1f91d0
+keystorage.bin_SM-A146M|29014d1f00a010a53101a34baddd99e65de7546d
+ldfw.img_SM-A146M|626c381a977501121448802b072dc2ef68c6b8bd
+modem.bin_SM-A146M|c842f3f59b7e0852b2d7c9ac21bc05710e4cb58c
+modem_debug.bin_SM-A146M|5b7df34ae4e7d47ce5cdb03b87422483df3e4c60
+sboot.bin_SM-A146M|b3ecf293b5f47d96852196e48e98aabc4e6aec25
+ssp.img_SM-A146M|90d29bcb1f48e1fb9c059f11f91a3b9abfe281dc
+tzar.img_SM-A146M|3a447c7eff4c5ca0e3930f855b49fc9373f71dfa
+tzsw.img_SM-A146M|266995a112db608b3cbc3ad0b9675f8581fdedcf
+uh.bin_SM-A146M|6b5a708dab7b45fb880daf636972bf773c1beba3
+up_param.bin_SM-A146M|9342ab5885764c5ed064dc6166ddfac29a9ca381
+
+# Files containing Samsung package version for supported models
+version_SM-A146M|d7b7132d694b67ac7c050a60f1b751a385c965f8
