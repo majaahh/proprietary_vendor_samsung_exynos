@@ -1,16 +1,15 @@
-# Firmware for model SM-E346B - from Samsung package version E346BXXU8EYI8
-
-fld.bin_SM-E346B|1e48e6c27e3d527df8748f10993cec2fa572c061
-harx.bin_SM-E346B|f90dbe3ade4fa09259880c525a13efdbbb557f1d
-keystorage.bin_SM-E346B|7c5573505b6f7db63d283cda34252e9d4b033798
-ldfw.img_SM-E346B|6bae24fecbc53326c8285e42ee92f6bbd12d950e
-modem.bin_SM-E346B|b3acb72d6b75d291121dc696d54f14f72377da4b
-modem_debug.bin_SM-E346B|65f55f87a0ba1c482af70e64b3a05a084d451c79
-sboot.bin_SM-E346B|aa1f971c70607e108caba57975af277c5a83447f
-tzar.img_SM-E346B|a20e1b8d4a74e8bef88312902c46262023bfea12
-tzsw.img_SM-E346B|d31d60c7ecbe9e8e8725e76f13a78f506695b744
-uh.bin_SM-E346B|830a9cd7521086ec07bfaf219a78462ba314e673
-up_param.bin_SM-E346B|6db4397a26e179b48538cc85bbdd248ae401f47c
+# Firmware for model SM-E346B - from Samsung package version E346BXXS8DYH1
+fld.bin_SM-E346B|3f690478663916c1e3eb5869ba0551fc7d57b3bc
+harx.bin_SM-E346B|931fca9311bd6d0ac2b9c59b81cde2fd6d8fb77d
+keystorage.bin_SM-E346B|2c86df5697529fdbba8864ab1f3ec02353de0e1e
+ldfw.img_SM-E346B|f122e42fe262805a2ce8bea5de6ff30da3f0ef83
+modem.bin_SM-E346B|309f47e807a2e14cf3cbd34f89236dc10a482acb
+modem_debug.bin_SM-E346B|4448f230699d3cbf66ef9dfb227583fad27524ce
+sboot.bin_SM-E346B|a8401546cc7c32d5fd62b7972f1af1403eff36a3
+tzar.img_SM-E346B|9b0164c5710f7c97fe134f07f5141c2337df3e02
+tzsw.img_SM-E346B|538b68fd1512432a9353b3c139aaeaf65a921c9c
+uh.bin_SM-E346B|48ef0b7c6b6f9622dede6604ea652983dbf0f306
+up_param.bin_SM-E346B|90a274e4b9119fff04f5d5048507e417cc709c7e
 
 # Files containing Samsung package version for supported models
-version_SM-E346B|73c82333b31e019c622b5c4a9d1d13909ded1b00
+version_SM-E346B|c862a72225501214c365ae5df6a6f7df75861bec
