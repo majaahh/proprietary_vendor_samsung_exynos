@@ -1,16 +1,15 @@
-# Firmware for model SM-A536B - from Samsung package version A536BXXSHFYI1
-
-fld.bin_SM-A536B|603faeb08332a4f6fa37ab1e963299fbd5d9c2c3
-harx.bin_SM-A536B|7f1ae99aba2c05b4ca374f59f219b87eb075310d
-keystorage.bin_SM-A536B|58b7ac5db2725ef1a6b7e400b14dde557331f814
-ldfw.img_SM-A536B|7677bc9a0218aec609dde29ba5e2c69a8eb352cb
-modem.bin_SM-A536B|276a25e82f0b5e0a89525499a7d0174fc802237d
-modem_debug.bin_SM-A536B|1f88634534377479431013cebea0f74ee360fc91
-sboot.bin_SM-A536B|af9ed36d93ee9b65cd6df594635fb0ab69fc58cc
-tzar.img_SM-A536B|8cfd9e4e700638efc82cc6d78bb0dc3a24dce54d
-tzsw.img_SM-A536B|a4920ffc67c240ea55c9227ba3459eca9b15bb2d
-uh.bin_SM-A536B|5d3ed81ce01d5b3d44fb3d2a75d60778f251b6cb
-up_param.bin_SM-A536B|d6423749eca5ec695986f0936c2d5008b794cb2a
+# Firmware for model SM-A536B - from Samsung package version A536BXXUHGYI9
+fld.bin_SM-A536B|2c1992bede9033c9748a7159422db338770536ad
+harx.bin_SM-A536B|9e3a5a066fcdf0de9ce948d1f2038fa6d765c903
+keystorage.bin_SM-A536B|610d6277748fad957e214e0971e3bb265cfbd3cd
+ldfw.img_SM-A536B|b86aa17f2b5e0b7511945cf57d2c26e25a616574
+modem.bin_SM-A536B|4657dadd68be969651040bde60f270376baeb790
+modem_debug.bin_SM-A536B|727d463ef30b0f125d22bf6bf1c10d551c3fffed
+sboot.bin_SM-A536B|34c1cd8ed07bdbc8be59ae5109978867ad70ddf5
+tzar.img_SM-A536B|1da677033a5e604cc6d9829b3942ed5cbc82152f
+tzsw.img_SM-A536B|719d520bc588f07e0ea2c7ccca19bd1a7203cb3f
+uh.bin_SM-A536B|3b448e2bf2174afe43048e66e5d3de5a86300add
+up_param.bin_SM-A536B|bea42e7978ef23c91bfadc4b742166744c171a1d
 
 # Files containing Samsung package version for supported models
-version_SM-A536B|738daae7fa39a96f62481537b7084402e665214b
+version_SM-A536B|f9fd4c546a49136a7861f2783f4303c3576da48f
