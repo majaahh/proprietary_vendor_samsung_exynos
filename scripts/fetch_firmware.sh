@@ -1,8 +1,5 @@
-TABLET="SM-P620 SM-P625 SM-X520 SM-X620"
 ARGS="-i ${IMEI}"
-if echo "$TABLET" | grep -w ${MODEL}; then
-    ARGS="-s ${SERIAL}"
-fi
+[[ -n "${SERIAL}" ]] && ARGS="-s ${SERIAL}"
 
 # Prepare samloader
 python3 -m venv py_env
