@@ -1,0 +1,15 @@
+# Firmware for model SM-G986B - from Samsung package version G986BXXSNHYB1
+harx.bin_SM-G986B|5f518a1f6aed4f193f7d8ec8844b79dadea21cc4
+keystorage.bin_SM-G986B|1aac2028458284f8034f9581a6444be8753def38
+ldfw.img_SM-G986B|444d1a9574b322a25efb870233561f3e8fcd0343
+modem.bin_SM-G986B|7a9d30949113fdfe5dd88972f6edb596bd426659
+modem_debug.bin_SM-G986B|efc95dfa58028860a9e2d63e7f89c58301e0eb2e
+sboot.bin_SM-G986B|7035228283182e186c67604acb4f50c524332809
+ssp.img_SM-G986B|63e5976b898dd99d3dce4d9981c5658f5a9dde2e
+tzar.img_SM-G986B|8cb3c0c67d2c20f45dc552d59556613d83d0e557
+tzsw.img_SM-G986B|0e7475231dcb9de999f8ace91c74b80139d72f72
+uh.bin_SM-G986B|2d1fe6f92897d893321f4f6c6f69de904eeb7756
+up_param.bin_SM-G986B|ec0ed802e0e99aa37a8fe5aecc0d17a54c3ae87c
+
+# Files containing Samsung package version for supported models
+version_SM-G986B|1a53edca2e73aa15261130554f340a67a5660340
