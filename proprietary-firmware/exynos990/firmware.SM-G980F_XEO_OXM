@@ -1,0 +1,15 @@
+# Firmware for model SM-G980F - from Samsung package version G980FXXSNHYB1
+harx.bin_SM-G980F|128a819b6ef826b4ebecdca352ef5e28a243839f
+keystorage.bin_SM-G980F|0fa28eb8083d4ce648b11a1816814747e5a95ff7
+ldfw.img_SM-G980F|f8b1700078d03c1a04a1c004d4581cf61cdb4271
+modem.bin_SM-G980F|2a83c456a55cd5859fd7a8e522461fbe891ff294
+modem_debug.bin_SM-G980F|dfe2921db2d23f28c8faa496a45c094879c9bc0d
+sboot.bin_SM-G980F|59ea267f01320dfea781668ecf229585e010a7d5
+ssp.img_SM-G980F|63e5976b898dd99d3dce4d9981c5658f5a9dde2e
+tzar.img_SM-G980F|56bda817a8f2a63967827e0e223963032ea16b00
+tzsw.img_SM-G980F|e4a75e45e46239b422f3ef562cdcd7b10c13dda0
+uh.bin_SM-G980F|0015a9498b79e09ab1f5459164aac17f4b8e42c8
+up_param.bin_SM-G980F|e88ed506827a565b0c8badfd9bfc9e84a6837369
+
+# Files containing Samsung package version for supported models
+version_SM-G980F|0857d5dc8bfc4e740258b09c4ed388e9c3b6dc95
