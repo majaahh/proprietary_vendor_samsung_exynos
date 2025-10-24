@@ -1,0 +1,15 @@
+# Firmware for model SM-A336M - from Samsung package version A336MUBUEGYI8
+fld.bin_SM-A336M|59bf8115336e3136a985f0e784c834376c2d3d37
+harx.bin_SM-A336M|b8b748113c9ff4879ca54b97178ab7ccde16f132
+keystorage.bin_SM-A336M|d5aa82d146e48c83557440524d06c70d14bc0271
+ldfw.img_SM-A336M|3fa27bf980d79633f72281e2e8150cfb8f8e88e2
+modem.bin_SM-A336M|3a01283592d4ceb6509b6dbdfbf66b0822b3ca94
+modem_debug.bin_SM-A336M|2c0edc0e73e032b57ef04fda2d53e8ed2b71f520
+sboot.bin_SM-A336M|ed5e8f846710f9f69e30b315b74ad738a48666c0
+tzar.img_SM-A336M|c84f8a0d720570096cb230cf3dbdcc6c8c3a7300
+tzsw.img_SM-A336M|b6643526f49d2859484d708bb83fe48ac53da92b
+uh.bin_SM-A336M|70c3663e385b78e6180900f1c9e2482c8849be20
+up_param.bin_SM-A336M|e4f7676ddc0d011829d0f757602fc565ffb1d59c
+
+# Files containing Samsung package version for supported models
+version_SM-A336M|d42365ed4f7b7c0000eafbe1de07df81d61522ee
