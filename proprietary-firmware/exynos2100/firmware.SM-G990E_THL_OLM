@@ -1,0 +1,17 @@
+# Firmware for model SM-G990E - from Samsung package version G990EXXUIHYJ2
+dpm.img_SM-G990E|3d8cf1c57e54a8bc327cb5a7f265917b940306c4
+harx.bin_SM-G990E|38bda58fbfb2736b4e0b40c51ef97958b8a5e7fa
+keystorage.bin_SM-G990E|e5f13f1eac7c2724c8e995fcccbf69c3c395b24e
+ldfw.img_SM-G990E|e56f1c0b4f45041e193cae819d29981617867e20
+modem.bin_SM-G990E|b1d430b5500ebae483a8d51d21ff7a0d132e09c8
+modem_debug.bin_SM-G990E|3c9407d07d1a84d1228475dc908bb0170faf1c3f
+sboot.bin_SM-G990E|b487ce25b6c624794431a0b0c6a536d32b5127e4
+ssp.img_SM-G990E|d41d84d986f94984a4e4a665abb6fc54152cd64b
+tzar.img_SM-G990E|4e6f9dfa8c04474e7149402d1daa3031a107b43b
+tzsw.img_SM-G990E|a217e5d5ad85a5ecf2b96fd7c57e8a56de73962d
+uh.bin_SM-G990E|2804bd324e6c7dd5df156b7c85fca813a3adc504
+up_param.bin_SM-G990E|aee6270d26a66684aec4ceff4ca5f1e1ca1f7e2a
+vddcal_fw.bin_SM-G990E|589df97c209983fa87403e277b81a072eedccd79
+
+# Files containing Samsung package version for supported models
+version_SM-G990E|be40048d57eb505b50058224f7236b66beff0953
