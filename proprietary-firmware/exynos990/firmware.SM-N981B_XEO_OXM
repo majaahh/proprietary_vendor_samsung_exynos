@@ -1,0 +1,15 @@
+# Firmware for model SM-N981B - from Samsung package version N981BXXSIHYH3
+harx.bin_SM-N981B|ae59a7497c27e933ec043eae0865737eb7b66070
+keystorage.bin_SM-N981B|7b9984921baf5411a8df14764c77ffca6fd7eb1f
+ldfw.img_SM-N981B|ad364e1f6aa007add563be01b185405cdbeeca80
+modem.bin_SM-N981B|1dcb68acd7a71dd7d6a44046382a21a49ec31be8
+modem_debug.bin_SM-N981B|3583c3ffc2bcc1952930e4b21b5c2a7b255606bf
+sboot.bin_SM-N981B|3ebf954d826ac3bd2ad72568a132f1054ff57d80
+ssp.img_SM-N981B|63e5976b898dd99d3dce4d9981c5658f5a9dde2e
+tzar.img_SM-N981B|d5bd02b57af7c41b2f06aa5a5f8107f509be4deb
+tzsw.img_SM-N981B|7d500e6e97e6227e8ef0fa292399d37585c37fdf
+uh.bin_SM-N981B|77e3c4d5ed98191d6d4c23d8e8115fcf163febec
+up_param.bin_SM-N981B|12e9193afddd2a6440f0852cdb57943f15f04ba5
+
+# Files containing Samsung package version for supported models
+version_SM-N981B|7ca42350c77699cf6875c7f9e710a2445e5ff171
