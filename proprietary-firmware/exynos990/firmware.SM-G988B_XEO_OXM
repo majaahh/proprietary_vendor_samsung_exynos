@@ -1,0 +1,15 @@
+# Firmware for model SM-G988B - from Samsung package version G988BXXSNHYB1
+harx.bin_SM-G988B|d514d2afe9e4e29552baac0f7c42a61e0031c474
+keystorage.bin_SM-G988B|bbada7fb239ac802c8fcb85c614098d2e89ffa98
+ldfw.img_SM-G988B|f694a338cc61add1393395af382130aec9c1e53d
+modem.bin_SM-G988B|c7b60aeb990a80f061cfa9e5b2057aed29cee049
+modem_debug.bin_SM-G988B|f4b235412020b0e5c7cae5726a211285a6ea0985
+sboot.bin_SM-G988B|7ab5c0421e9ca1f0271fe4e99f6c4f1a437b47cf
+ssp.img_SM-G988B|63e5976b898dd99d3dce4d9981c5658f5a9dde2e
+tzar.img_SM-G988B|1921eeb88af2f814f76410ed588843750896e39b
+tzsw.img_SM-G988B|692f040aa697588b6b9e5f40f2596e521eb26ecc
+uh.bin_SM-G988B|95d1d61d9d0775b7a30f78e2af056c27adb36b9f
+up_param.bin_SM-G988B|3697f8a257893e0024d36ad8f560e62b154ce62d
+
+# Files containing Samsung package version for supported models
+version_SM-G988B|ccfd1f8c4ba7b801086d6cf15ad6f28560fd152a
