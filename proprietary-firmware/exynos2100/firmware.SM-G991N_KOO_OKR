@@ -1,0 +1,17 @@
+# Firmware for model SM-G991N - from Samsung package version G991NKSSAHYH5
+dpm.img_SM-G991N|bb6472b9c398f452b9520764d3495be70071d000
+harx.bin_SM-G991N|acd6d3199b62b80624540077f6a693f13e133a96
+keystorage.bin_SM-G991N|d6e53bb6e5698792f9de8ac406158d06b7410a3a
+ldfw.img_SM-G991N|bb8af56a3eb80b18bfabba98060b2662df76fe3d
+modem.bin_SM-G991N|bc8eaf1fce47dab6603420a34b17a38189e759fc
+modem_debug.bin_SM-G991N|7c7cb59986169e218330b09e22ee694dacf95b8c
+sboot.bin_SM-G991N|9108f6a5ca2f4a1880b36718c884da57ce46edf4
+ssp.img_SM-G991N|d41d84d986f94984a4e4a665abb6fc54152cd64b
+tzar.img_SM-G991N|d3ca6d0783ddcb79d99ec8e929af80057aaa4e75
+tzsw.img_SM-G991N|a6ef9fe15955af92ab714e4f1465c3a8d1f1fcff
+uh.bin_SM-G991N|83a6c01cf7625e73529862d20ea7571ab1eb9cde
+up_param.bin_SM-G991N|e65d9aac50318286dd073d0c022a8a6f3d26601a
+vddcal_fw.bin_SM-G991N|94d3c1b0bc99effe5fc1123f0762a3d29e39e32d
+
+# Files containing Samsung package version for supported models
+version_SM-G991N|03bb958f8167827e322e2370a640b931ab0248a9
