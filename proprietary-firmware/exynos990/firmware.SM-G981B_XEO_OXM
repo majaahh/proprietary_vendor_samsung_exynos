@@ -1,0 +1,15 @@
+# Firmware for model SM-G981B - from Samsung package version G981BXXSNHYB1
+harx.bin_SM-G981B|350b468eff12860c2880afcef1c0df205bafa559
+keystorage.bin_SM-G981B|7439749cac1433e61e1c4db9e3c16612dcb1d98b
+ldfw.img_SM-G981B|a06afd35b0634f7241d1d60dc72364cb2241bfc0
+modem.bin_SM-G981B|f254cd43585626767a4600159f2384d540d91792
+modem_debug.bin_SM-G981B|a67b5762484c852bb45c005dedad86a948212602
+sboot.bin_SM-G981B|4749528089c7fe5699a5a472eadd195b3f65b261
+ssp.img_SM-G981B|63e5976b898dd99d3dce4d9981c5658f5a9dde2e
+tzar.img_SM-G981B|2ea397932ec92d8bd58d7cc04a34a7a641b03390
+tzsw.img_SM-G981B|ef78f081bbcae4c6d0f9498986aae86619a345a5
+uh.bin_SM-G981B|047d2f3f7b29a184be6e066c2857144d1708aa5a
+up_param.bin_SM-G981B|0a8446cd51e2e1aced43d8c4f3476fd87c259963
+
+# Files containing Samsung package version for supported models
+version_SM-G981B|d1a0a1c4c6a2fb0bcda5914b7bd06c8293f2978f
