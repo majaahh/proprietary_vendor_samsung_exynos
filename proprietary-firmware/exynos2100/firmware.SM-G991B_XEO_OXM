@@ -1,0 +1,17 @@
+# Firmware for model SM-G991B - from Samsung package version G991BXXSGHYH1
+dpm.img_SM-G991B|d23b5fc44c2aac5117bf6cd06971b67287d455e7
+harx.bin_SM-G991B|deaf0ccda6da07fb561293fb2247e156f01b0311
+keystorage.bin_SM-G991B|839704113d35e48aa92d45add759c6d7f40f6e37
+ldfw.img_SM-G991B|dc31a2a6a10bc770f5f7d2c88eefcf2749fd527c
+modem.bin_SM-G991B|775b3e7906e7b926eef1a680f0dd766d6f6caed2
+modem_debug.bin_SM-G991B|549e12d9a8ae23ab8039b3baf716b055025509b0
+sboot.bin_SM-G991B|1f57ebe18c138bcb36ac3d77e3b84dc146a2d457
+ssp.img_SM-G991B|d41d84d986f94984a4e4a665abb6fc54152cd64b
+tzar.img_SM-G991B|6ad19a2ee2b98b136f78749401250de7139ac684
+tzsw.img_SM-G991B|7d5497d5dd0a51215a50c5f2f1801a8247791aaf
+uh.bin_SM-G991B|1dccf4df551a9c521d5ef5928c4cfecbd83498a6
+up_param.bin_SM-G991B|da7d931a272bbebf2e5f352b2daeeca4f8a7178e
+vddcal_fw.bin_SM-G991B|0415866446a60e351a231b00e7854fcffc9a46fc
+
+# Files containing Samsung package version for supported models
+version_SM-G991B|35cf48465e6fd05e074d944387c569dd119a52a7
