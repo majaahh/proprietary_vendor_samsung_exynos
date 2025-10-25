@@ -1,0 +1,17 @@
+# Firmware for model SM-G998B - from Samsung package version G998BXXSGHYH1
+dpm.img_SM-G998B|fcbc078185b72bf7c3a13edfa787388fafb3d782
+harx.bin_SM-G998B|fbcd4313e3ef5e21bf3f4c8855a67f9051f124d2
+keystorage.bin_SM-G998B|1c1bfac086100663dcb3fed56f3aed7f6b896d7b
+ldfw.img_SM-G998B|066dc7bcb878f5cbc0896cccd25641113e563d62
+modem.bin_SM-G998B|e2efb2d8b5f07f2649e7b9ec26bcc9edf76b253f
+modem_debug.bin_SM-G998B|ed0ad9cf8951063f0c6017070444eca92ba901ea
+sboot.bin_SM-G998B|63db612a73fb04ab84384792173e92399863ac90
+ssp.img_SM-G998B|d41d84d986f94984a4e4a665abb6fc54152cd64b
+tzar.img_SM-G998B|fb8f3c7550f0f792d9ac437a6375f829f9fd6f64
+tzsw.img_SM-G998B|d0638d500d3a5e28294058794ee019d1dd2d5260
+uh.bin_SM-G998B|f61bb8a934511cc61ec88da6dcc0896080628093
+up_param.bin_SM-G998B|cf5a14c94f798fbc9e8140547bcb08a4681e7d4d
+vddcal_fw.bin_SM-G998B|fbe0ca24c663699585581f6f656c762da8e73b17
+
+# Files containing Samsung package version for supported models
+version_SM-G998B|4209beddcaf6bfe441b152235b43fe4a49fec6be
