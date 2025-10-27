@@ -1,16 +1,15 @@
-# Firmware for model SM-M336BU - from Samsung package version M336BUXXSDFYH1
-
-fld.bin_SM-M336BU|aa7e9568572bd4577da9351e448f4089c31fea1a
-harx.bin_SM-M336BU|2e95b8660bad8a81105912b9b0d8ebbbac4e7197
-keystorage.bin_SM-M336BU|c2f21ab3e17a449b4a4c1fcedd05ad284538d535
-ldfw.img_SM-M336BU|58330015acdef969cad1ec16582aecfd5993310e
-modem.bin_SM-M336BU|d5e9081330bd4cd9871e1743c0388bd3aa103987
-modem_debug.bin_SM-M336BU|7ba81dc0610adde4b75a3864547ab12d219b6f6a
-sboot.bin_SM-M336BU|d32238cf934b051f7e8a119d3840e477c8716d34
-tzar.img_SM-M336BU|ae85843462a9e9c536a8e2abe417b1a860a6bd46
-tzsw.img_SM-M336BU|5e4331f5617d061845700959e075adae7ad1c005
-uh.bin_SM-M336BU|d8b5f7f1d0e52912eade97af3f9799daef71dcec
-up_param.bin_SM-M336BU|fe10fda3a824f0124ed58fb9600486db576e5b3d
+# Firmware for model SM-M336BU - from Samsung package version M336BUXXUDGYI6
+fld.bin_SM-M336BU|d4b8e6c15636cfab0d29c27e49e111899b71636a
+harx.bin_SM-M336BU|fc26b32be6cf49ac7ad3b35dc039064aebe06b62
+keystorage.bin_SM-M336BU|ea7a08e37f1a86ee9f72368dc10222cae6b8d0ef
+ldfw.img_SM-M336BU|b42487c99901922642c37a0ec3444bd0357eb6d7
+modem.bin_SM-M336BU|48055540bb219431a050583278f5b21c1fad4f66
+modem_debug.bin_SM-M336BU|d9474d13c043b654b3b65fd9187b4e6a6c8128b2
+sboot.bin_SM-M336BU|db2ee954419839c6c98505746d4a9a20171a9dbb
+tzar.img_SM-M336BU|2c75af3a71573ca21752fae78f89f06785d12de8
+tzsw.img_SM-M336BU|c5ae7bbebba9dca7d26c2f180672b1fc8b22193f
+uh.bin_SM-M336BU|e26f74f2664573135fbd149fb281b4ac550f2e96
+up_param.bin_SM-M336BU|ff45533d2a229a2131aa6dde7dd2c9a3d11a88c5
 
 # Files containing Samsung package version for supported models
-version_SM-M336BU|d9d978246b467d6726b35aee26b36abe8656a896
+version_SM-M336BU|0fa077a8946df947eb4f9f797969b6a489d76bef
