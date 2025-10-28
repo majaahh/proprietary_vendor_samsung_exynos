@@ -265,7 +265,7 @@ jobs:
           - model: "SM-G780F"
             csc: "XEO"
             omc: "OXM"
-            imei: "357298581375184"
+            imei: "353773290757173"
           - model: "SM-G990E"
             csc: "THL"
             omc: "OLM"
