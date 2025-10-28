@@ -1,14 +1,13 @@
-# Firmware for model SM-P620 - from Samsung package version P620XXS7BYH1
-
-fld.bin_SM-P620|c3107aa7a854217c5b8b649e6519ef75d4b11ea7
-harx.bin_SM-P620|518219015e7d7fd4cdaa64d1029440bf6d6cec13
-keystorage.bin_SM-P620|008f9100d95b2ad3ca3182232043a657d46968ea
-ldfw.img_SM-P620|74790b259356c2de36720fe89d2b0c7964e1ad38
-sboot.bin_SM-P620|1a7333a2a3210d72b79262a1b21fe64c20302c91
-tzar.img_SM-P620|334896097bb9fd4c12145190e1c2acf721263fe7
-tzsw.img_SM-P620|1b1fd47706deea977c0aefbe626a99f3df8ce419
-uh.bin_SM-P620|907268c3e6d785d8418a5bd6e37c4c0c68ef082f
-up_param.bin_SM-P620|54f226ac9c51dd7a6c23d903f008b3a011fb84d0
+# Firmware for model SM-P620 - from Samsung package version P620XXU7CYJ5
+fld.bin_SM-P620|63b052dacdcb9edb567dce20071007f6aa2e21ed
+harx.bin_SM-P620|ab4a4a374c627b81cdb56c064e0634ad876618ff
+keystorage.bin_SM-P620|02129d9fac495913e9b55f6f6726b61b58ad9d64
+ldfw.img_SM-P620|bcce651a8b92c19e1b7a393071c9f1cc7f57bf72
+sboot.bin_SM-P620|e45b7753b4e73e4ee7aadb6605654340c8b89f4a
+tzar.img_SM-P620|f46803ef0bc061664b47746acbb7fdca45de2bc4
+tzsw.img_SM-P620|37c39d1fec086b49c4a500572452ecb3410afca0
+uh.bin_SM-P620|bdc126fffd0f7940584a61edd0816eed3bfdce44
+up_param.bin_SM-P620|ba72e0ed5352d7970ef1811deecf8dd843b2e68f
 
 # Files containing Samsung package version for supported models
-version_SM-P620|44c25afbdf703df7699a555668e2d67a0d69538e
+version_SM-P620|a13f0eff5edb4b260a6f4d754ce0810147f14c1b
