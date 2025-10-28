@@ -1,0 +1,15 @@
+# Firmware for model SM-G780F - from Samsung package version G780FXXSOFYJ1
+harx.bin_SM-G780F|088c4acc23ca090c5c31fe74d11bd3d344034448
+keystorage.bin_SM-G780F|aba974918425a52f0fc4256dab4ac48aa9c3efe6
+ldfw.img_SM-G780F|cb240ac21f3c22f1eda1f0494555c2d658376f6f
+modem.bin_SM-G780F|d3912c4a7784c2d6852392ac348db034e03ddfb5
+modem_debug.bin_SM-G780F|6d70b8f9894cdf9afec0e4da2ecba973aaae5934
+sboot.bin_SM-G780F|6a6688babdf2a8b4e69c247d1945f63a7ee8f008
+ssp.img_SM-G780F|63e5976b898dd99d3dce4d9981c5658f5a9dde2e
+tzar.img_SM-G780F|2ce22b57981c421112058e1656a92a733b6a8837
+tzsw.img_SM-G780F|8a27c478e8612abc3af7eb73417f70fcb816cd77
+uh.bin_SM-G780F|bfd64a08fc1aad08a216886a1cc22655ae59c7ec
+up_param.bin_SM-G780F|36afb29da414f8784d9d5a782cd4c5f2ebb4d1a7
+
+# Files containing Samsung package version for supported models
+version_SM-G780F|fac93f25f1b575efcc9d1bd8020b3e247f870e30
