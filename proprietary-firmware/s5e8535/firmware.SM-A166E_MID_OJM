@@ -1,17 +1,17 @@
-# Firmware for model SM-A166E - from Samsung package version A166EXXU4CYI8
-dtp.bin_SM-A166E|9386df0a8835d1c1d4715fbec385fd7f5faff7df
-fld.bin_SM-A166E|309a48f97b6f8109d0589c5fbd547f7ad1cab167
-harx.bin_SM-A166E|f965521f9ddc989fd1445c80837d17abfb5ecbbf
-keystorage.bin_SM-A166E|1d5c2a49e5c639c1fbb0832564383d3f2d652ea5
-ldfw.img_SM-A166E|3cf22a0ecc27920fa7c87753e17ba38da6162022
-modem.bin_SM-A166E|3581f3c9f7feecd2a49fcaf2d1b190c69eb3ec84
+# Firmware for model SM-A166E - from Samsung package version A166EXXS4CYJ1
+dtp.bin_SM-A166E|1cee3ce9cf3945ae0ac60da0787c6483a691fefe
+fld.bin_SM-A166E|73babe85fb6462625c07b2c98c1ff0470e891b81
+harx.bin_SM-A166E|116639aabce03a42842ba23af7aa074a158c18d1
+keystorage.bin_SM-A166E|ba8534bb377461064568f037e0e3726a7351d70c
+ldfw.img_SM-A166E|e901b15198971cd5bc22a5845785d446365a8535
+modem.bin_SM-A166E|0711da53bd3142280873bba121f51b84f7843eaa
 modem_debug.bin_SM-A166E|9848e6ea9ccb3e07bc20ad5bbc7f71a099a39e59
-sboot.bin_SM-A166E|566c5c73f369b51ed1bf0096aec2f6439612a390
+sboot.bin_SM-A166E|33f30200ac770f4f1b26dc381cf53b10f4982388
 ssp.img_SM-A166E|90d29bcb1f48e1fb9c059f11f91a3b9abfe281dc
-tzar.img_SM-A166E|e61505d4f25892a37a5969c3aec11040ec86f030
-tzsw.img_SM-A166E|f5c21eb4989b52ec950b984a73e06a80d523860e
-uh.bin_SM-A166E|15b987c622a6acbc35e8c74cdfa0f4dac35244b3
-up_param.bin_SM-A166E|2deae440fc97ce1e7244640844a94b94de40693f
+tzar.img_SM-A166E|04d5f307ca98ed50a8bdd4fd63ef97937aa2a79f
+tzsw.img_SM-A166E|d10e03e954ce0a5023204645cb974ec9719936c0
+uh.bin_SM-A166E|49753263ea80053cb5e34a36d30b02077820f607
+up_param.bin_SM-A166E|2cd56e6c57acd4ebe2b7a187e2319eb4d0166207
 
 # Files containing Samsung package version for supported models
-version_SM-A166E|a8fed88c4c61e01d7afa4cd5bdfdd4bb1c3d9305
+version_SM-A166E|2a205a3b299925fc862ff0ad9b9324cbd2e69361
