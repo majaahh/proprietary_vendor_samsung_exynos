@@ -1,10 +1,3 @@
-/vendor/firmware/AP_AUDIO_SLSI\.bin u:object_r:vendor_fw_file:s0
-/vendor/firmware/APDV_AUDIO_SLSI\.bin u:object_r:vendor_fw_file:s0
-/vendor/firmware/calliope_sram\.bin u:object_r:vendor_fw_file:s0
-/vendor/firmware/mfc_fw\.bin u:object_r:vendor_fw_file:s0
-/vendor/firmware/NPU\.bin u:object_r:vendor_npu_firmware_file:s0
-/vendor/firmware/os\.checked\.bin u:object_r:vendor_fw_file:s0
-/vendor/firmware/vts\.bin u:object_r:vendor_fw_file:s0
 /vendor/tee u:object_r:tee_file:s0
 /vendor/tee/00000000-0000-0000-0000-000000010081 u:object_r:tee_file:s0
 /vendor/tee/00000000-0000-0000-0000-000000020081 u:object_r:tee_file:s0
@@ -39,14 +32,6 @@
 /vendor/tee/tui/resolution_common/ID00000100 u:object_r:tee_file:s0
 
 # Custom Path
-/vendor/firmware/SM-A166B u:object_r:vendor_fw_file:s0
-/vendor/firmware/SM-A166B/AP_AUDIO_SLSI\.bin u:object_r:vendor_fw_file:s0
-/vendor/firmware/SM-A166B/APDV_AUDIO_SLSI\.bin u:object_r:vendor_fw_file:s0
-/vendor/firmware/SM-A166B/calliope_sram\.bin u:object_r:vendor_fw_file:s0
-/vendor/firmware/SM-A166B/mfc_fw\.bin u:object_r:vendor_fw_file:s0
-/vendor/firmware/SM-A166B/NPU\.bin u:object_r:vendor_npu_firmware_file:s0
-/vendor/firmware/SM-A166B/os\.checked\.bin u:object_r:vendor_fw_file:s0
-/vendor/firmware/SM-A166B/vts\.bin u:object_r:vendor_fw_file:s0
 /vendor/tee/SM-A166B u:object_r:tee_file:s0
 /vendor/tee/SM-A166B/00000000-0000-0000-0000-000000010081 u:object_r:tee_file:s0
 /vendor/tee/SM-A166B/00000000-0000-0000-0000-000000020081 u:object_r:tee_file:s0
