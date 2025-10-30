@@ -1,4 +1,3 @@
-vendor/firmware/calliope_sram.bin 0 0 644 capabilities=0x0
 vendor/tee 0 2000 755 capabilities=0x0
 vendor/tee/00000000-0000-0000-0000-000000010081 0 0 644 capabilities=0x0
 vendor/tee/00000000-0000-0000-0000-000000020081 0 0 644 capabilities=0x0
@@ -44,7 +43,6 @@ vendor/tee/tui/resolution_common/ID00000100 0 0 644 capabilities=0x0
 
 # Custom Path
 vendor/firmware/SM-A5660 0 0 644 capabilities=0x0
-vendor/firmware/SM-A5660/calliope_sram.bin 0 0 644 capabilities=0x0
 vendor/tee/SM-A5660 0 2000 755 capabilities=0x0
 vendor/tee/SM-A5660/00000000-0000-0000-0000-000000010081 0 0 644 capabilities=0x0
 vendor/tee/SM-A5660/00000000-0000-0000-0000-000000020081 0 0 644 capabilities=0x0
