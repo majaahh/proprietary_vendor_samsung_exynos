@@ -1,10 +1,3 @@
-/vendor/firmware/AP_AUDIO_SLSI\.bin u:object_r:vendor_fw_file:s0
-/vendor/firmware/APDV_AUDIO_SLSI\.bin u:object_r:vendor_fw_file:s0
-/vendor/firmware/calliope_sram\.bin u:object_r:vendor_fw_file:s0
-/vendor/firmware/mfc_fw\.bin u:object_r:vendor_fw_file:s0
-/vendor/firmware/NPU\.bin u:object_r:vendor_npu_firmware_file:s0
-/vendor/firmware/os\.checked\.bin u:object_r:vendor_fw_file:s0
-/vendor/firmware/vts\.bin u:object_r:vendor_fw_file:s0
 /vendor/tee u:object_r:tee_file:s0
 /vendor/tee/00000000-0000-0000-0000-000000534b4d u:object_r:tee_file:s0
 /vendor/tee/00000000-0000-0000-0000-0000534b504d u:object_r:tee_file:s0
@@ -29,14 +22,6 @@
 /vendor/tee/driver/00000000-0000-0000-0000-564c544b4456 u:object_r:tee_file:s0
 
 # Custom Path
-/vendor/firmware/SM-A146B u:object_r:vendor_fw_file:s0
-/vendor/firmware/SM-A146B/AP_AUDIO_SLSI\.bin u:object_r:vendor_fw_file:s0
-/vendor/firmware/SM-A146B/APDV_AUDIO_SLSI\.bin u:object_r:vendor_fw_file:s0
-/vendor/firmware/SM-A146B/calliope_sram\.bin u:object_r:vendor_fw_file:s0
-/vendor/firmware/SM-A146B/mfc_fw\.bin u:object_r:vendor_fw_file:s0
-/vendor/firmware/SM-A146B/NPU\.bin u:object_r:vendor_npu_firmware_file:s0
-/vendor/firmware/SM-A146B/os\.checked\.bin u:object_r:vendor_fw_file:s0
-/vendor/firmware/SM-A146B/vts\.bin u:object_r:vendor_fw_file:s0
 /vendor/tee/SM-A146B u:object_r:tee_file:s0
 /vendor/tee/SM-A146B/00000000-0000-0000-0000-000000534b4d u:object_r:tee_file:s0
 /vendor/tee/SM-A146B/00000000-0000-0000-0000-0000534b504d u:object_r:tee_file:s0

@@ -1,18 +1,17 @@
-# Firmware for model SM-A146B - from Samsung package version A146BXXS9DYH1
-
-dtp.bin_SM-A146B|6d90b7c1d36962702ace5fe0b506d56a321f0516
-fld.bin_SM-A146B|a0fffd8a9cc83354a69b3bb9dae67b657e97c501
-harx.bin_SM-A146B|0ae85aa572db623666f81296804cfd428756007d
-keystorage.bin_SM-A146B|a17127a38b610d93b60f04483900d8c1d7299409
-ldfw.img_SM-A146B|f1f34092c2021dbfcdbcaee64a5ffdcd3a2bb63f
-modem.bin_SM-A146B|85aebbbed55fbf2d17a8943c58533c16be4892b3
-modem_debug.bin_SM-A146B|cf8a691135d5a1840dca64cbd9a65cc7c371826c
-sboot.bin_SM-A146B|39250f11a93f68d27fda7ebb9f6bf60b15479d87
+# Firmware for model SM-A146B - from Samsung package version A146BXXUADYJ2
+dtp.bin_SM-A146B|f913c34fb7db352181a5d3b15cc3a4ffbb39fe33
+fld.bin_SM-A146B|50d7f016051bbfdeb8ac904a7167e35992bf0496
+harx.bin_SM-A146B|826ae45303278693000b2e920de7a77673152679
+keystorage.bin_SM-A146B|011bd783b444f768eab1f75de8240f7b6ba35ca4
+ldfw.img_SM-A146B|63f8148fc6b33aa45ada1918cb932c91ba828c08
+modem.bin_SM-A146B|d96ae1d07b9b37336945d20679f332e8e8bd897b
+modem_debug.bin_SM-A146B|218a723abc7d1108cf38a4f42dc8d737c54cc1a8
+sboot.bin_SM-A146B|bf5634f3bd1ea49d8a023aeb38ac9514a65eb2a8
 ssp.img_SM-A146B|90d29bcb1f48e1fb9c059f11f91a3b9abfe281dc
-tzar.img_SM-A146B|b2ee7e1ae5b0f140c482efda7a50284760988153
-tzsw.img_SM-A146B|bd2fb341add0928c8417b940b7fc770040d31432
-uh.bin_SM-A146B|84550621d8880412454243c85c0fe64da15073cc
-up_param.bin_SM-A146B|483e421e1a2775defdd2b700631cf399cc5a6c08
+tzar.img_SM-A146B|cc29fb995fe54a1bc63e20202c72826b085f69b9
+tzsw.img_SM-A146B|1f69d773606f1c80b7a3b8a35e8fec070edc682e
+uh.bin_SM-A146B|2fbb7d069c20424eea8c3aecfdfd1d6e455cadca
+up_param.bin_SM-A146B|21f35176f5c8d8e4cdc343ebe5aa935b57f09b05
 
 # Files containing Samsung package version for supported models
-version_SM-A146B|4bc6d01f867e5298e3c99a9a50fbab629ef0b298
+version_SM-A146B|78250937d3cbab02ca15723ed5f08ea35268f325
