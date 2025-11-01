@@ -473,14 +473,6 @@ jobs:
         with:
           swap-size-gb: 20
 
-      - name: Extract kernel images
-        if: env.update == 1
-        env:
-          AP_TAR: ${{ env.ap_tar }}
-          LATEST_SHORTVERSION: ${{ env.latest_shortversion }}
-        run: |
-          ./scripts/kernel.sh
-
       - name: Extract PIT file
         if: env.update == 1
         run: |
@@ -495,14 +487,22 @@ jobs:
         run: |
           ./scripts/vbmeta.sh
 
-      - name: Extract vendor partition
+      - name: Extract partitions
         if: env.update == 1
         env:
           MODEL: ${{ matrix.model }}
           AP_TAR: ${{ env.ap_tar }}
           LATEST_SHORTVERSION: ${{ env.latest_shortversion }}
         run: |
-          ./scripts/vendor.sh
+          ./scripts/partitions.sh
+
+      - name: Extract kernel images
+        if: env.update == 1
+        env:
+          AP_TAR: ${{ env.ap_tar }}
+          LATEST_SHORTVERSION: ${{ env.latest_shortversion }}
+        run: |
+          ./scripts/kernel.sh
 
       - name: Get some blobs
         if: env.update == 1
@@ -554,6 +554,13 @@ jobs:
           OMC: ${{ matrix.omc }}
         run: |
           ./scripts/fs_config.sh
+
+      - name: AOSP Dump
+        if: env.update == 1
+        env:
+          LATEST_SHORTVERSION: ${{ env.latest_shortversion }}
+        run: |
+          ./scripts/dump.sh
 
       - name: Generate versions.txt
         if: env.update == 1
@@ -607,6 +614,8 @@ jobs:
             ${{ env.latest_shortversion }}_kernel.tar
             ${{ env.pit_file }}
             ${{ env.latest_shortversion }}_patched_vbmeta.tar
+            ${{ env.latest_shortversion }}_dump-AOSP.zip
+            ${{ env.latest_shortversion }}_product.zip
             ${{ env.latest_shortversion }}_vendor.zip
             ${{ env.latest_shortversion }}_vendor-extracted.zip
             ${{ env.latest_shortversion }}_firmware_tee.zip

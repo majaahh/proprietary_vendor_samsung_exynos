@@ -37,3 +37,5 @@ cp -rfa vendor/tee_old/* vendor/tee/${MODEL}
     echo "vendor/firmware/${MODEL} 0 0 644 capabilities=0x0"
     generate_entries "vendor/tee/${MODEL}"
 } >> "fs_config/$BOARD/fs.${MODEL}_${CSC}_${OMC}"
+
+rm -rf vendor/tee_old
