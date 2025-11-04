@@ -1,18 +1,17 @@
-# Firmware for model SM-A356B - from Samsung package version A356BXXU6CYI8
-
-dtp.bin_SM-A356B|bfd37107ca8ecff9a333cf6513b7addb5d24f672
-fld.bin_SM-A356B|7441bf3ce39a5707d2a2d44ee046407e77ff6223
-harx.bin_SM-A356B|c972b99d517111247f36a344cb128b87711f3fa1
-keystorage.bin_SM-A356B|44ce3de37009c47f8df964be5208a04756ad7138
-ldfw.img_SM-A356B|a9ab487fd1a36065130a710c3adddcd048dfad96
+# Firmware for model SM-A356B - from Samsung package version A356BXXS6CYJ1
+dtp.bin_SM-A356B|b03cad8c7fc8fb090c89f0b3be20c96a423e5339
+fld.bin_SM-A356B|4abc7e19af091417e5d0d769bdf8b02a056adf5f
+harx.bin_SM-A356B|772887e28d622382174f58cd688cb4efc5a64fd1
+keystorage.bin_SM-A356B|e1b10da943da1e32f94ec6588e33c88912a9b07d
+ldfw.img_SM-A356B|77a1631cc70e8330fdc1f3ce70d8476e3ba8ec30
 modem.bin_SM-A356B|9d7740e7615ce54be3dff4ac2aa5f89529508495
 modem_debug.bin_SM-A356B|f565d57bfd199e93e54f3ea921fcd08519202b22
-sboot.bin_SM-A356B|feaaeba98cb415e4c4faada9e3eb9db51a0a3ab8
+sboot.bin_SM-A356B|566db6db7b2fbaf27c7a837d609f67ef42f21d4b
 ssp.img_SM-A356B|90d29bcb1f48e1fb9c059f11f91a3b9abfe281dc
-tzar.img_SM-A356B|823ed0edaafe1d9f3b6644b19d8c948e9380093a
-tzsw.img_SM-A356B|94fe475ac86dc4c47a836d188b46571f408aac3b
-uh.bin_SM-A356B|3bd3c7da8c0637c1de99bb00a8e86d6ec86c1efc
-up_param.bin_SM-A356B|095444915961529d82e084b902d53379b5cb8ffa
+tzar.img_SM-A356B|54a96d36efcc48dbd98fc11ef0e9a6cc6ef84f65
+tzsw.img_SM-A356B|27e0a1207ae877d87051a232e5134c1e64197f4c
+uh.bin_SM-A356B|515d6024513f05e6f2b5bcea651d72ec436983ee
+up_param.bin_SM-A356B|8fd04840dae3cab218621f5904f65790694771c1
 
 # Files containing Samsung package version for supported models
-version_SM-A356B|8310cdd2fa383f24b5d8cabb1d656a92537bbd4d
+version_SM-A356B|78effc18826480ad880b0ab4407cce049fed5ace
