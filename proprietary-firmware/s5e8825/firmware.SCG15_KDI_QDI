@@ -1,0 +1,15 @@
+# Firmware for model SCG15 - from Samsung package version SCG15KDU1DYF1
+fld.bin_SCG15|d49840cddf5e6d65a7bfae6b1959179e882d14cc
+harx.bin_SCG15|aae33ff32670ba9ccd5ff12151638e964772cb0a
+keystorage.bin_SCG15|d094b6c2bfbe2c915678f604b615f95d0ed8b149
+ldfw.img_SCG15|9230a2f40631122321fd702bb87463e217be2035
+modem.bin_SCG15|52aa1f71b1afcd2e5bbf052702a2d95d77f86219
+modem_debug.bin_SCG15|dc541becb9864609053a7c1d1a9f7a5fd76639e6
+sboot.bin_SCG15|4f6571a16ea091feb6fcccbfb678670267d9e8f8
+tzar.img_SCG15|3572531259c63e75c0c7a27d3bd3bf838b5b5c17
+tzsw.img_SCG15|3fc078f38eab0d871030ec34b7e26ef92a24ec31
+uh.bin_SCG15|c1f2250406bf68c3a7e24c4b212dcfc5194b97ca
+up_param.bin_SCG15|574d0d8afc05515dae73209115c7115cb48a3325
+
+# Files containing Samsung package version for supported models
+version_SCG15|e83a10792def69aa296c8f69b10af60b1f800b93
