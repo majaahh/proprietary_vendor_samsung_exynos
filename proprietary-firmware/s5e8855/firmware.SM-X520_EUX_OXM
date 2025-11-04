@@ -1,17 +1,16 @@
-# Firmware for model SM-X520 - from Samsung package version X520XXU4BYI7
-
-dtp.bin_SM-X520|c0d21396ab3ea168d2d668ee049554d021c008fa
-fld.bin_SM-X520|78a68bf6c9b44c855c029ee24c53808ed7ef637f
-harx.bin_SM-X520|3de40133ad11bd398f9abc4f93f145ea29b707ad
-keystorage.bin_SM-X520|2618d01297a7732a5e0a321694f86e17e481905f
-ldfw.img_SM-X520|7b6f5db57720d0f4c75e3b98f66008f0db2c8c0d
-sboot.bin_SM-X520|6ed37290176412ffd344026f9372b43133649b1e
-sld.bin_SM-X520|3a468912fdd0123651b9243f5c95716135e64db8
-svm.bin_SM-X520|22a9ecc3ad47504ca7cf3b89303e8fd59f5dbb52
-tzar.img_SM-X520|26f539841f000bff0d051ca6a4a0531777511ea1
-tzsw.img_SM-X520|c674133fb384ed8495da65472ac90feb8abf2d6b
-uh.bin_SM-X520|d95130153de9ddfd7c44132fcf903c81f63130a6
-up_param.bin_SM-X520|e4a4d041b3488f4d3fb14b70480cefb53f0f4bc8
+# Firmware for model SM-X520 - from Samsung package version X520XXU4BYJ2
+dtp.bin_SM-X520|50f755901dd69c6650b1f3497bf16582ea7e83b1
+fld.bin_SM-X520|418e578c0957c60da84b4524d0f45fd7e3708e46
+harx.bin_SM-X520|02b762b782890c52d7a91d3fb48c1ea0553e6edc
+keystorage.bin_SM-X520|a980abaddade0a072af45fe4f02effbb947a1c0f
+ldfw.img_SM-X520|15650ea70576817f88984aad6f138a3184af3514
+sboot.bin_SM-X520|dabd0fcf7ad211c61064fe3d78e2f7182ad3b806
+sld.bin_SM-X520|f67779a2b239633cf6f6e401812691ea83c0ccb5
+svm.bin_SM-X520|4ca951384bca27f04cb6141b7f642157992cfbe5
+tzar.img_SM-X520|30c8940bcaddde1f2ab029886c71c782ef6793f2
+tzsw.img_SM-X520|0af10f754716a5b64bbceb2da9118cc382cc0559
+uh.bin_SM-X520|0a5b8e61c22f7899cad2871c81abeadccde894d8
+up_param.bin_SM-X520|37c92cd0f9dee5d1fd6e725e0f4cce3c4c0e8f4f
 
 # Files containing Samsung package version for supported models
-version_SM-X520|bf2196d8a38715ef8894ec15c8cf5fd5fae56e70
+version_SM-X520|e299bef396ef4b1a083458a3b2118e17a2e6b8f6
