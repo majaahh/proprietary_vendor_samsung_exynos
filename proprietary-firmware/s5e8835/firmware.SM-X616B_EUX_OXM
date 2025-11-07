@@ -1,17 +1,16 @@
-# Firmware for model SM-X616B - from Samsung package version X616BXXS8CYG1
-
-dtp.bin_SM-X616B|2b72ba34351fb0eb45b75f958c9f9a44b4606961
-fld.bin_SM-X616B|979bdf91a7ebd8c26ae6069f6997fd380d4af264
-harx.bin_SM-X616B|7147de8bad825e00949ca62a17df35ac3aef2343
-keystorage.bin_SM-X616B|81a56cd050275bb47363fb80ae13c12ac94150c2
-ldfw.img_SM-X616B|6d8436ab076c1f895725a66e4c7ea0952268b0f1
-modem.bin_SM-X616B|7bf26335e2ff3b75818dbb8fd3f6ce1e2b2dca3c
-modem_debug.bin_SM-X616B|4a89ce5f8b147860790aac1408a402bdc861bc2d
-sboot.bin_SM-X616B|374efe3ee0f4a37dc052305e23a57a02d6b740e8
-tzar.img_SM-X616B|fbd9d9ab800460e04f20695432a0705ea6285179
-tzsw.img_SM-X616B|6064f6722d6efb63994290a8e7f0243c00b1cf4a
-uh.bin_SM-X616B|e742884d1455c725468c28edc929734de812066c
-up_param.bin_SM-X616B|449457498523f454186d3a31483fc3be07e09b57
+# Firmware for model SM-X616B - from Samsung package version X616BXXU8DYJ4
+dtp.bin_SM-X616B|f2932e376a574cc05f40a5d53d7c7d6480aa5a00
+fld.bin_SM-X616B|3ad06f371672000dedfeedb2ea07151d110417d4
+harx.bin_SM-X616B|48c37519de30ba244419e8326fc7cf1aede8f68e
+keystorage.bin_SM-X616B|0253b0f99e9ec82578d0d624b46a16bcec713d0e
+ldfw.img_SM-X616B|2623ee6541a1a556967aad62c54b51c2a3b8ee7a
+modem.bin_SM-X616B|3bff3705a7c77ee3fae22dd0209f5cf92833c3b3
+modem_debug.bin_SM-X616B|e1bf9050c32317b7b2d7a91341b6d4dec0ff72fb
+sboot.bin_SM-X616B|8feb1216fba222761b16b14f6e195ebd6ca7b1ef
+tzar.img_SM-X616B|d0baeebb9ae29e7f7c3183f3b655f39347ae534f
+tzsw.img_SM-X616B|c2a251666050802138f08716255d73558ac27598
+uh.bin_SM-X616B|05c9f46f73744f7dff38649656627c6414dd71d6
+up_param.bin_SM-X616B|822aaebba4bbb7c4edd8bb4494c7a5ddbc1dd004
 
 # Files containing Samsung package version for supported models
-version_SM-X616B|71343ac46eb1cf86767118c686bd2875422e3241
+version_SM-X616B|8a5b6d1514296b90b449ab5c60125cee970f3869
