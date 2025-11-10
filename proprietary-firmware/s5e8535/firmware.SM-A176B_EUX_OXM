@@ -1,18 +1,17 @@
-# Firmware for model SM-A176B - from Samsung package version A176BXXU2BYID
-
-dtp.bin_SM-A176B|bed0069dfccee94d3dc1b3748d4c6780cc075e61
-fld.bin_SM-A176B|8f2d5cef5fd6f5efc5be63be7d17b0d9e69aa130
-harx.bin_SM-A176B|344874c0fdaa3c71203cafd54fbe8f6d9787d149
-keystorage.bin_SM-A176B|b8e324eeb57add21846cbf024d2fce12bb94b47f
-ldfw.img_SM-A176B|0f5dd9f7a1c7e56011551e64c7d0065ef762acae
-modem.bin_SM-A176B|901d2e75d134043089c6bed9d1b6533f8a194a92
-modem_debug.bin_SM-A176B|3e6f89ff30b311a5e47fbb0992e62f01e8b5b78a
-sboot.bin_SM-A176B|5680d4a7d776980f5af4567671c1e2cb319b87ef
+# Firmware for model SM-A176B - from Samsung package version A176BXXS3BYJ1
+dtp.bin_SM-A176B|cc2b0193e62763e524e3f4dbbedd8738443cbc06
+fld.bin_SM-A176B|bcba9f7da6d5b067148b96780f5873a5b2b671b8
+harx.bin_SM-A176B|8fe21fa579770567abc3df4c4f905eb6c3b45751
+keystorage.bin_SM-A176B|54171f7dca38c4db256935af4d8d2d231c7b281e
+ldfw.img_SM-A176B|57eebb803d0c58b2e06fefa0b959d5a0e21527d2
+modem.bin_SM-A176B|53908db90a1255f9f3fe81fad0a3b263c87623d2
+modem_debug.bin_SM-A176B|55df6a15f40d80826a3f7b1fc6e404a500002414
+sboot.bin_SM-A176B|0eb8d9372afdcc8358811efb32f8e9bb5ed56976
 ssp.img_SM-A176B|90d29bcb1f48e1fb9c059f11f91a3b9abfe281dc
-tzar.img_SM-A176B|96665d817aa4757cf7ab38e9ba7bba84bbaff213
-tzsw.img_SM-A176B|ae8fa6388be2400ece56e4cf00df64a7d6fb64c5
-uh.bin_SM-A176B|6831dcfd72422446f6c377247d94b8a41134ab9b
-up_param.bin_SM-A176B|24a65d42d6c4bba73b48f6411d3969f2be8dcaa1
+tzar.img_SM-A176B|9e919842d84d9595e00d499f7be2bb63eb058844
+tzsw.img_SM-A176B|89bfc7788f890c6adc0052e3fd0dea238e526d53
+uh.bin_SM-A176B|6a6d256e775eb4a3cf52b46ba51db787ce747f0d
+up_param.bin_SM-A176B|96ebc9d5ab3767c3aa3eca07b6d001c171f5935e
 
 # Files containing Samsung package version for supported models
-version_SM-A176B|fefb10c38b2fcc4fa3e0a828179d24e66dc91894
+version_SM-A176B|8247473a9f3b34eca2195d4436bf3bf3627480bf
