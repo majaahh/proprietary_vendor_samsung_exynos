@@ -1,0 +1,17 @@
+# Firmware for model SM-M146B - from Samsung package version M146BXXS9DYG2
+dtp.bin_SM-M146B|cd9c320840b76d0fb1bdad80a48864f1bb5d3bb2
+fld.bin_SM-M146B|91d310ed3e83fa76d238658204648e2fd2e1d9a1
+harx.bin_SM-M146B|6822ebf1bd185d4de93b99e75739a2a89dd4d1f6
+keystorage.bin_SM-M146B|590c7670df266d8b0eaa02649a876fdbd2252f1d
+ldfw.img_SM-M146B|05b8864f1d81700232ade6eccf868d8c1506c5bb
+modem.bin_SM-M146B|4b80b73a45f3227dd6a5f59172396a41970954ee
+modem_debug.bin_SM-M146B|15d7744318204a5b1bfd754e8ec2646032619874
+sboot.bin_SM-M146B|24c5840a537aa428be1e13f35e8c564113c80511
+ssp.img_SM-M146B|90d29bcb1f48e1fb9c059f11f91a3b9abfe281dc
+tzar.img_SM-M146B|4a7876c974fe1e69c489b60ce5060b064a1ad892
+tzsw.img_SM-M146B|b41c64a9f2a50af3291c10f61b0ae5083a133149
+uh.bin_SM-M146B|6a92bbc2055e355355febc823200b44a8ab6ec45
+up_param.bin_SM-M146B|51ad21e485a9771eb823496908230eccecef6998
+
+# Files containing Samsung package version for supported models
+version_SM-M146B|af42e47e9895fb8720318a68e1357abcd1308b7f
