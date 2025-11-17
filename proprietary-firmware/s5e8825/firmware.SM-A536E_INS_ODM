@@ -1,15 +1,15 @@
-# Firmware for model SM-A536E - from Samsung package version A536EXXSHGYJ3
-fld.bin_SM-A536E|0c54431fc19197db588707f724372e989d3cba0f
-harx.bin_SM-A536E|d0a0535aa41f6681a5d0ff51a7b58d31532a5a91
-keystorage.bin_SM-A536E|03fa84d3dba9d0ddf570152f1ac72a7a83b48cc5
-ldfw.img_SM-A536E|d0b5368a0335c39516c96d5a127e04d6b820edea
-modem.bin_SM-A536E|f9ccc4c47be90edcdd8b0d0fb6c3429e23cf615a
+# Firmware for model SM-A536E - from Samsung package version A536EXXSIGYK3
+fld.bin_SM-A536E|36778efcf4265b87096c9ff63cdb66fcf8489bd9
+harx.bin_SM-A536E|05cff89845fb173240b4aa13cfab150bb28697cc
+keystorage.bin_SM-A536E|5cda07ee7514260d9d82c26afe3f22824c8d8769
+ldfw.img_SM-A536E|85eb8d91b6e6005535c367a12d1a3ec866700b8d
+modem.bin_SM-A536E|d59256ced41fb1dd496e9c97553ce847590adc02
 modem_debug.bin_SM-A536E|30d03d0d98a2add6da32d496f05805ac16f0b84c
-sboot.bin_SM-A536E|2034aab9aa1ab5cfb27c3864663efec9a69ba2ee
-tzar.img_SM-A536E|bae245713e674f2426dcea9047b5af86851525d3
-tzsw.img_SM-A536E|99604a78c135aead3585df7bc05fb27fd6dff102
-uh.bin_SM-A536E|7c048303f02971b3109ff20501e2d4f52dbce406
-up_param.bin_SM-A536E|1093727499a80e7237905fb69dcb7711176de410
+sboot.bin_SM-A536E|fdae7135c36e4fda870c53b0f8896017fa9c8ecb
+tzar.img_SM-A536E|6aca9258fda83163f82eae50a32044018e8b2b12
+tzsw.img_SM-A536E|9bba81547661124ff80a2fbfe434301f737ec70f
+uh.bin_SM-A536E|6cdfde3ed1885f735a039130216f8642e7444fc1
+up_param.bin_SM-A536E|e382a446040905e30289dac552a2b47836df32f5
 
 # Files containing Samsung package version for supported models
-version_SM-A536E|284d1b4cf1855d35f7a4e71ac07617e0ce317e6a
+version_SM-A536E|958e3091461fcce578a32d9dd26e0c19abe76daf
