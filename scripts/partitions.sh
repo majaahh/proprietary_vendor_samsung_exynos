@@ -17,9 +17,9 @@ for i in "product" "vendor"; do
     (
     cd ${i}_mount
     sudo find -xdev -type d -print0 | while IFS= read -r -d '' dir; do
-        sudo mkdir -p "../${i}/${dir#$SRC/}"
+        sudo mkdir -pv "../${i}/${dir#$SRC/}"
     done
-    sudo find -xdev -type f -print0 | sudo rsync -aHAX --no-inc-recursive --from0 --files-from=- . ../${i}/
+    sudo find -xdev -type f -print0 | sudo rsync -aHAXvv --progress --no-inc-recursive --from0 --files-from=- . ../${i}/
     )
 
     # https://github.com/salvogiangri/UN1CA/blob/fifteen/scripts/extract_fw.sh#L135-L136
