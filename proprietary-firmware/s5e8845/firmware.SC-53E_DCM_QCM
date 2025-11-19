@@ -1,18 +1,17 @@
-# Firmware for model SC-53E - from Samsung package version SC53EOMS1BYI2
-
-dtp.bin_SC-53E|7dbb5762df4c7e61853528791e974cf9ec8f71cf
-fld.bin_SC-53E|1d84808d2fcb6ccbcb01ce98c845840de1609c0b
-harx.bin_SC-53E|02032bf3f7d4d0242bf7e70fcc1cbea7eb73c354
-keystorage.bin_SC-53E|dcc30aff590a605f7bb55992e67ca2380758f3c7
-ldfw.img_SC-53E|eb66e0d4dea06b255ac3c7e9e475dd2bd086f124
-modem.bin_SC-53E|b9e5fc956145ae0085beea1d9a394882cfb8f5dc
-modem_debug.bin_SC-53E|6e73a743f02a419c4d9442a10c70dc56756308ae
-sboot.bin_SC-53E|3e0a0118d3deaccc199f5efb05e0527cb83b293f
-sld.bin_SC-53E|9ab4e3d62f339d75ad61eb3b088dafa56675f69f
-tzar.img_SC-53E|4a569c2fd9730fa4f637e8f23390774c61d92eda
-tzsw.img_SC-53E|e8d02db94c7141c53537245dc8ff502722f5fb92
-uh.bin_SC-53E|4a08a1f5055ea11aac4c420a5c9ea9435eff49af
-up_param.bin_SC-53E|da3f8af53e877080bf97cc908088cd21280b672a
+# Firmware for model SC-53E - from Samsung package version SC53EOMU1CYJ4
+dtp.bin_SC-53E|5813002fbeb030753b0cff4ff018a6d4816eec10
+fld.bin_SC-53E|fb14b78d090255735f6fbf8f72f47e9f56775cfa
+harx.bin_SC-53E|ecd988102f24db2b1ef2cee4d97e54a45d714a5f
+keystorage.bin_SC-53E|263c4c871860800c456652498fc342036ce6f34c
+ldfw.img_SC-53E|a1ea55c82593e05b29738372833b6333ee4921ed
+modem.bin_SC-53E|b18d0e057b1da0000efe75b1811408a095852972
+modem_debug.bin_SC-53E|9f8f7ab85fe1a03d768f7ac85d816e1e44bc461c
+sboot.bin_SC-53E|0d673a47d655033c175a84db0a1c7b638356141f
+sld.bin_SC-53E|12f4effb6197001d167e885535b4df4adfdcf1ec
+tzar.img_SC-53E|c5cd03b382b6ef2bb14b99cf003dc361d2dfa709
+tzsw.img_SC-53E|fd1d9bca36740fd6f3533d014c9a4a5b34ffddd7
+uh.bin_SC-53E|0fc65d0ddd5acb9dc523828bb2efa959930692ed
+up_param.bin_SC-53E|05358c1a26ebda0a4c9226b71d810859d50bc5e7
 
 # Files containing Samsung package version for supported models
-version_SC-53E|6e70b81a206acda47ec199a69ae4f9f464a4f30d
+version_SC-53E|39f5680f6c9b20fc6e2a72e4d9b79a8c146738dd
