@@ -19,6 +19,8 @@ for i in "product" "vendor"; do
 
     TMPFILE=$(mktemp)
 
+    sudo find . -type d -name oat -exec rm -rf {} +
+
     sudo find -xdev -print0 > "$TMPFILE"
 
     sudo awk -v RS='\0' '/\/$/ {print}' "$TMPFILE" \
