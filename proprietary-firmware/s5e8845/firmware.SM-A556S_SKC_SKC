@@ -1,17 +1,17 @@
-# Firmware for model SM-A556S - from Samsung package version A556SKSS6CYJ3
-dtp.bin_SM-A556S|90de821390a72130e82099a1a669aed61cdc9fa7
-fld.bin_SM-A556S|53875134a6c404f171c8ecac14d6befc249e7f72
-harx.bin_SM-A556S|676c97615214546a109722717fefb225e3598593
-keystorage.bin_SM-A556S|35b644eeceb102a411e9d7fee2df33a67e616c26
-ldfw.img_SM-A556S|14139abaa1e0f70bf80e561599b90b8bf30298d5
+# Firmware for model SM-A556S - from Samsung package version A556SKSS6CYK3
+dtp.bin_SM-A556S|01aac3e5682ae93f28abf0f1aec1e65c67d12899
+fld.bin_SM-A556S|cf21842cb99d0b320ea62e261d354858768fe026
+harx.bin_SM-A556S|04c5acfb54a1f07e5da9752a027489c026bf175a
+keystorage.bin_SM-A556S|0978ce63bf197f9bc7e8482e68412f3c1c9adb8d
+ldfw.img_SM-A556S|21c4fbd2bb24eb69faa08970e0a2eb639983a2e4
 modem.bin_SM-A556S|7b93b27353538f27eddd066e1dd98f8dde6032aa
 modem_debug.bin_SM-A556S|9e7050ea044107186c79164e0031bb69701e3d87
-sboot.bin_SM-A556S|8c929c64fd6f8463cd7662eeb1d31132ee747cf2
-sld.bin_SM-A556S|a247e0d4235ae70a9c07b07ce4e053ae144f1013
-tzar.img_SM-A556S|329fde11ccbe9e8cf86db39e543ab76eac090df2
-tzsw.img_SM-A556S|36b5e58c3b9c81d35e4d4bff42beb9c09468553f
-uh.bin_SM-A556S|7446cecb9da7c33b4fa1fbb94821582e8afc9eb7
-up_param.bin_SM-A556S|7f2f7c014cdfdc94d8196442fb3a38eec3b25608
+sboot.bin_SM-A556S|de04996adbe2f50f1995b8809ccf89181a673419
+sld.bin_SM-A556S|d1f5de7e6237fb24a0aedf6dff485f228f6c8fbb
+tzar.img_SM-A556S|e23beee149f39c20252222d1c1bd24854bc21b98
+tzsw.img_SM-A556S|69a675af7a49b83b25fc7d0de9020edbaf318363
+uh.bin_SM-A556S|97c5a988d3b85e04e239b5cc845cd8446c55fcdf
+up_param.bin_SM-A556S|29e4204c9556344ed0aa3d74f7fd6039bc637ee5
 
 # Files containing Samsung package version for supported models
-version_SM-A556S|850f388ecfaa8fadf0e7e75df810c282ae4b6494
+version_SM-A556S|bb2d4b0a0916ad4bf6a0486c6c5c928a03a24eab
