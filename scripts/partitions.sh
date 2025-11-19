@@ -15,11 +15,20 @@ for i in "product" "vendor"; do
     sudo mount ${i}.img ${i}_mount
 
     (
-    cd ${i}_mount
-    sudo find -xdev -type d -print0 | while IFS= read -r -d '' dir; do
-        sudo mkdir -pv "../${i}/${dir#$SRC/}"
-    done
-    sudo find -xdev -type f -print0 | sudo rsync -aHAXvv --progress --no-inc-recursive --from0 --files-from=- . ../${i}/
+    cd "${i}_mount"
+
+    TMPFILE=$(mktemp)
+
+    sudo find -xdev -print0 > "$TMPFILE"
+
+    sudo awk -v RS='\0' '/\/$/ {print}' "$TMPFILE" \
+        | while IFS= read -r dir; do
+            sudo mkdir -pv "../${i}/${dir}"
+        done
+
+    sudo rsync -aHAXv --progress --from0 --files-from="$TMPFILE" . "../${i}/"
+
+    rm -f "$TMPFILE"
     )
 
     # https://github.com/salvogiangri/UN1CA/blob/fifteen/scripts/extract_fw.sh#L135-L136
