@@ -1,10 +1,3 @@
-vendor/firmware/AP_AUDIO_SLSI.bin 0 0 644 capabilities=0x0
-vendor/firmware/APDV_AUDIO_SLSI.bin 0 0 644 capabilities=0x0
-vendor/firmware/calliope_sram.bin 0 0 644 capabilities=0x0
-vendor/firmware/mfc_fw.bin 0 0 644 capabilities=0x0
-vendor/firmware/NPU.bin 0 0 644 capabilities=0x0
-vendor/firmware/os.checked.bin 0 0 644 capabilities=0x0
-vendor/firmware/vts.bin 0 0 644 capabilities=0x0
 vendor/tee 0 2000 755 capabilities=0x0
 vendor/tee/00000000-0000-0000-0000-000000010081 0 0 644 capabilities=0x0
 vendor/tee/00000000-0000-0000-0000-000000020081 0 0 644 capabilities=0x0
@@ -48,13 +41,6 @@ vendor/tee/tui/resolution_common/ID00000100 0 0 644 capabilities=0x0
 
 # Custom Path
 vendor/firmware/SM-A266M 0 0 644 capabilities=0x0
-vendor/firmware/SM-A266M/AP_AUDIO_SLSI.bin 0 0 644 capabilities=0x0
-vendor/firmware/SM-A266M/APDV_AUDIO_SLSI.bin 0 0 644 capabilities=0x0
-vendor/firmware/SM-A266M/calliope_sram.bin 0 0 644 capabilities=0x0
-vendor/firmware/SM-A266M/mfc_fw.bin 0 0 644 capabilities=0x0
-vendor/firmware/SM-A266M/NPU.bin 0 0 644 capabilities=0x0
-vendor/firmware/SM-A266M/os.checked.bin 0 0 644 capabilities=0x0
-vendor/firmware/SM-A266M/vts.bin 0 0 644 capabilities=0x0
 vendor/tee/SM-A266M 0 2000 755 capabilities=0x0
 vendor/tee/SM-A266M/00000000-0000-0000-0000-000000010081 0 0 644 capabilities=0x0
 vendor/tee/SM-A266M/00000000-0000-0000-0000-000000020081 0 0 644 capabilities=0x0
