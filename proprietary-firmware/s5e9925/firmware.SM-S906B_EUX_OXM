@@ -1,16 +1,16 @@
-# Firmware for model SM-S906B - from Samsung package version S906BXXUJGYJ3
-fld.bin_SM-S906B|342790ee717cbeb461ba3ce54f0987c8e8e1abfb
-harx.bin_SM-S906B|47df4b65520010b833543e5afacc86e21468dddb
-keystorage.bin_SM-S906B|f8d2cb5aadec35661372052a1a08f9e9b36436ed
-ldfw.img_SM-S906B|7e06a57a234fcad560dc3ac306d7c21f15353c80
-modem.bin_SM-S906B|701f013663d745837da5fbf8a9b10eb1802c4840
-modem_debug.bin_SM-S906B|560282bd10a58408caabb8a20a9cd99be25c0116
-sboot.bin_SM-S906B|07d72d0edb769e8fac3f05157a2c838a81158c42
+# Firmware for model SM-S906B - from Samsung package version S906BXXSKGYK5
+fld.bin_SM-S906B|ab141b4759bf6eff7d547a057d3451959aabce6d
+harx.bin_SM-S906B|165b43c47e7e0071e425d3cbe450c36ebed69bc1
+keystorage.bin_SM-S906B|ca4cbd0514b4ce2c161d36290d7b0bb7b272c586
+ldfw.img_SM-S906B|5e5abd009b267864eee06af48fea128955e18c5f
+modem.bin_SM-S906B|8b68023796990b4fe730d737b3a08a46f5a12e49
+modem_debug.bin_SM-S906B|463553bf17fe698be9142f2b49df7ca33e7dda29
+sboot.bin_SM-S906B|e900c7f34e5ce001ae73cd099c6a66df12099eed
 ssp.img_SM-S906B|4dc4bb758a9ff5d7278d808c95812ea960197479
-tzar.img_SM-S906B|a85fa6c5007048fd5baa823cddbc86246b64b509
-tzsw.img_SM-S906B|12278661e806b339006c3219bc7e0922525150aa
-uh.bin_SM-S906B|d0811778727bd1366c67346c7d5698d349c1644c
-up_param.bin_SM-S906B|3fe21226e8bdbb86916a48a189a2b1bb2eefa2e6
+tzar.img_SM-S906B|44e9d34a8af183cb8d17f1f8948b827f6705b23f
+tzsw.img_SM-S906B|26e1fad519775553500953f17e6e778e6b469213
+uh.bin_SM-S906B|0bfcfbad4a4d5679cd410dc3e7a4f9fd70c63d51
+up_param.bin_SM-S906B|49678ff89b0693e358f42954cced73e7a9c99e1a
 
 # Files containing Samsung package version for supported models
-version_SM-S906B|5ae04cb544b0c2a428d4831c48f3c04d28ba0f4f
+version_SM-S906B|d9b64b405ee6a1c7b59f360ae5f6bb2ae1867fab
