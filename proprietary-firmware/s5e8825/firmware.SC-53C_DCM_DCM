@@ -1,16 +1,15 @@
-# Firmware for model SC-53C - from Samsung package version SC53COMU1DYF2
-
-fld.bin_SC-53C|f09871971e5f17747fbbe8359dc2f1070ab6a237
-harx.bin_SC-53C|8599ab8dcf609a2442cfbeab4aefa24d646f5962
-keystorage.bin_SC-53C|d21a6b3877d0c2ec1a59e8b25f0c856e88c1171c
-ldfw.img_SC-53C|d7f7342cbb7b09ffaa3a45080118ee809f6ef9fe
-modem.bin_SC-53C|1394961de30d4332012f75a70c6e27d02dd7283a
+# Firmware for model SC-53C - from Samsung package version SC53COMU1EYJ3
+fld.bin_SC-53C|cd8d07fc8a94f1016181b4ff01ccbaccb76b93eb
+harx.bin_SC-53C|a84177f0a69c7bee0b77d145b8de2b5ad110548a
+keystorage.bin_SC-53C|4d55c0099fade6a0da008f537281eecf5c9e4a62
+ldfw.img_SC-53C|f80704ee101dbf7b77528d9f9f2e4d5cf91b4fd5
+modem.bin_SC-53C|e2b3de042859a2cf729fa8da954627402c2b3291
 modem_debug.bin_SC-53C|b16bb334f9ae8cd6334e2653aa447aed69fdcd9f
-sboot.bin_SC-53C|fe98ac7f931a35a217c72a60e040cadcf1c96a06
-tzar.img_SC-53C|05be35e6ae6589f24245cbe7ffb9b42aad170ef3
-tzsw.img_SC-53C|aefccd20f832a31031269194aec00b70e1e45665
-uh.bin_SC-53C|93de45cb1f34fed539e27fd3cd2256e9b2cc8eed
-up_param.bin_SC-53C|f7ebc7889cc7c8391bdcec7b1770fd20ce7a86ba
+sboot.bin_SC-53C|a571fade4a96c10b6298b1e18575716ff9d9e61f
+tzar.img_SC-53C|900d242fa4e010af30c259b46e9d13100e6d1659
+tzsw.img_SC-53C|c562095e5328ac77a17fcb6ab803be977c956c7b
+uh.bin_SC-53C|c10bafa0d8dc925a98d955ed1205f1cea14e77a8
+up_param.bin_SC-53C|a6b9de149026fcc8c91282156568586805ac1270
 
 # Files containing Samsung package version for supported models
-version_SC-53C|db93f19869cac1a8fdc21b12eadf778d59738c97
+version_SC-53C|75c815f479016f3d5f3d720676a7d1e8dfec5423
