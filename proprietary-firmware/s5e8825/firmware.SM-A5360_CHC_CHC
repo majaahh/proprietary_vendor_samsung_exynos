@@ -1,15 +1,15 @@
-# Firmware for model SM-A5360 - from Samsung package version A5360ZCSHGYJ3
-fld.bin_SM-A5360|9b59f7ece1c7b2c9d91cff2b6c0b2e682fbf061e
-harx.bin_SM-A5360|25229678c195e3a7ed63a5d4ca43b2c5f2efe983
-keystorage.bin_SM-A5360|3bb3e42ca2f3421919e6a2acd878a7aeb100e85e
-ldfw.img_SM-A5360|20bc098fa89db31e639f59a49fed065bcc13fcf3
-modem.bin_SM-A5360|db413aefb1186cf974eb4d1326f4959a1af787f6
-modem_debug.bin_SM-A5360|3fd3d4ee38036b1854e184eba7d83fa1791ce72f
-sboot.bin_SM-A5360|c33b58a219b30957f49aec4feea925126d1aa530
-tzar.img_SM-A5360|4d5f24fafa1a58eb5a130a1cd25a5224ac999a40
-tzsw.img_SM-A5360|9bd52c128b2e7f118f0a38b0b5994343f6398c44
-uh.bin_SM-A5360|c6c313bea12a1fb78c782174ab83a2438c517b69
-up_param.bin_SM-A5360|ec44afe07f1c21bd11891d4d37a86d7a8422d4d1
+# Firmware for model SM-A5360 - from Samsung package version A5360ZCSIGYK3
+fld.bin_SM-A5360|12c2cd29564f116aa5e5a5e4f2728d94bb899d46
+harx.bin_SM-A5360|e5a0079a1d35f662df39d579f227eb5cd7fa06f4
+keystorage.bin_SM-A5360|dcf51ca0b8bf57bef0024de142a6e1b2ffb218c5
+ldfw.img_SM-A5360|34d8e35cb37acc41c55d7b7579ded6efa6e3f225
+modem.bin_SM-A5360|1d4c3ef24086fb51295bfbaea11ad97fa4692d22
+modem_debug.bin_SM-A5360|c4c54e86a16a24cbef5651bedccfb01914dc2096
+sboot.bin_SM-A5360|eb8413c1d1a50f634897e0668786a98c07323b51
+tzar.img_SM-A5360|d9fb5c894e886d5adf9946b89cb334563abd405c
+tzsw.img_SM-A5360|12f31f4f219a17ce336535fadbe85d23fa56dd0e
+uh.bin_SM-A5360|79748553b429b40ee7a49505dc0f6fe1715733b5
+up_param.bin_SM-A5360|db363e156950b01297aeeb1b621968d42e71cdad
 
 # Files containing Samsung package version for supported models
-version_SM-A5360|746eb72f19ba3165e6e8e8d3f2f8efeb44bd47e7
+version_SM-A5360|ab2416742abce189958e9d3d7d4e0cc82d579f07
