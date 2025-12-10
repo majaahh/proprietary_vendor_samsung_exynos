@@ -1,18 +1,17 @@
-# Firmware for model SM-A556E - from Samsung package version A556EXXSABYI3
-
-dtp.bin_SM-A556E|5c176586237f23842eb44b63e14747b682a4f78c
-fld.bin_SM-A556E|10be2c6517ee7cb09ad9ad28ecab9a8c83a25792
-harx.bin_SM-A556E|d13966c21f4d5edc0c3b3c6294adb36af2d7e91c
-keystorage.bin_SM-A556E|d225cd80f647923072d795e68f0c527a9448bdd8
-ldfw.img_SM-A556E|51a146602f33302a55973053999ebc8a34f005f2
-modem.bin_SM-A556E|294f13ff36ee4603d91a62ccbbba71afb1844b44
-modem_debug.bin_SM-A556E|f437e57e30091c06723964d281d462ddc5c78e2f
-sboot.bin_SM-A556E|f7d2c405734c1ec2955c7cc418eff3718d4af55a
-sld.bin_SM-A556E|183fa7d55c9e0cf860c7779a21e8c867464b987e
-tzar.img_SM-A556E|b5ee378c0a3d44a059b55c29a8ab50802a6ee714
-tzsw.img_SM-A556E|fa139bc6f0405a313fa5a5446b825d1ceb1ceee6
-uh.bin_SM-A556E|bde48bea8b281dfba03639f1cc76ab3b87b52c0a
-up_param.bin_SM-A556E|1f6d538a3f49a56de8f7856b643997cbe1923624
+# Firmware for model SM-A556E - from Samsung package version A556EXXUACYIA
+dtp.bin_SM-A556E|a483af8914d84f11e7150337482782c3fe8fbc27
+fld.bin_SM-A556E|c8f9a3e9e975f1f0e113954a06b435b0ab050eb4
+harx.bin_SM-A556E|09afd5a234cbf058e8a781686057f8e876142621
+keystorage.bin_SM-A556E|f05169f6d63d2c0df98649b0153c137f37f077f8
+ldfw.img_SM-A556E|081fb230869e0099991b560b8663419db768d509
+modem.bin_SM-A556E|8c63b4c97fe1bd20de64cc0887b2f5af31e5e40d
+modem_debug.bin_SM-A556E|ebe2a412ca442dccddcd5a97a8c1634805c01b1e
+sboot.bin_SM-A556E|58117444899a4de4387397b5eca67b4b1ee424d4
+sld.bin_SM-A556E|debd8823b778b4cf3de4a09b146ccee6bbc0b10b
+tzar.img_SM-A556E|193e10f891678ade54dae41d33a4d19542c1fd72
+tzsw.img_SM-A556E|2287c3eecc55ecb1eb6cbd2b77b6618ddca0d426
+uh.bin_SM-A556E|fb451cb3bd4ee300ca0a0c9265ab721908f374e2
+up_param.bin_SM-A556E|d9ef923398fa19c2c503b136b00371c385ac8d9c
 
 # Files containing Samsung package version for supported models
-version_SM-A556E|85670193f0f17e31849232d92998592dca4ecec1
+version_SM-A556E|ac4b25d97a7032ca8e59a554289689718855500e
