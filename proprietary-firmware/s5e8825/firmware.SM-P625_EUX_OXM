@@ -1,15 +1,15 @@
-# Firmware for model SM-P625 - from Samsung package version P625XXU6CYJ5
-fld.bin_SM-P625|895b5e8711525d7e4a194f22c1bf956258183489
-harx.bin_SM-P625|6ef1d259578f431bc924f155010ae3b4235c3839
-keystorage.bin_SM-P625|9f43bbe961934f0181837904930b1b8f5bfdee36
-ldfw.img_SM-P625|b0884af826dcac3f9ed6256cf84466aacabe1607
-modem.bin_SM-P625|a354be152974ae72908f420c4b769479f1f4ac19
-modem_debug.bin_SM-P625|752cbb00a03467edcc9afa66405df30448c0890f
-sboot.bin_SM-P625|e6bb3096e06c8c89377e269aabf745d257bfaa13
-tzar.img_SM-P625|46286d64454a9eaa785a6ba33096d4cf636f431d
-tzsw.img_SM-P625|44bd12efd9f538e627c580af7318abc64520d6ad
-uh.bin_SM-P625|fe4998b553f795fa7f2dd81350bef7fd0d3b7a9d
-up_param.bin_SM-P625|dbd8a1ae8825006063b35407f8715b7a2e89a547
+# Firmware for model SM-P625 - from Samsung package version P625XXS7CYK1
+fld.bin_SM-P625|9cd00fc306aa01eb21793149ed35590b36f58bc0
+harx.bin_SM-P625|11ffdbfd1b9bbe6c1db7631fc7ca5d8dad737db1
+keystorage.bin_SM-P625|226878ad87c905b8da6a0154b1067a87bd2a3a73
+ldfw.img_SM-P625|c24bc1ba02a7558d3e338c0d0a6c518ddfe2545e
+modem.bin_SM-P625|771f6ed6686795c11d8d149e0ab5cfa474f53491
+modem_debug.bin_SM-P625|42ca8db5bccc4911e11d0c7c8507f9c3c9af4f44
+sboot.bin_SM-P625|9ebb27cd3022c42e609589d7954e4cecbde0d6df
+tzar.img_SM-P625|8c1e8219ca323be105f3fd1edb60fe3ea4d25f3d
+tzsw.img_SM-P625|54104a28d6ae8269f5985f598ffa9ee736765c1b
+uh.bin_SM-P625|ab6e6846a7c14a4812a1bc38f00ce34ead98aa09
+up_param.bin_SM-P625|60f6b7e515828f978ae13f1c1d550b74fd05d915
 
 # Files containing Samsung package version for supported models
-version_SM-P625|030e60bc3e56b7e4aab5956737de2c69dcae9f97
+version_SM-P625|34680cadf374d8d7152bbb9180a14390e2591b7c
