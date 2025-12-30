@@ -1,15 +1,15 @@
-# Firmware for model SM-A266M - from Samsung package version A266MUBS5BYK3
-fld.bin_SM-A266M|a571ae665e32dd55e4139701c4a658d9edadb7f9
-harx.bin_SM-A266M|a6f50a8e541c85ccd7c2211d60cf4d52f543992f
-keystorage.bin_SM-A266M|0c473edba05fada87865a0974c1997edcdb1f7d5
-ldfw.img_SM-A266M|aebddacc6f5b3947e9900a9dc1211ce0e3298f58
-modem.bin_SM-A266M|20e10796150ada4c017db6c54dc9c1889f955386
+# Firmware for model SM-A266M - from Samsung package version A266MUBS6BYL1
+fld.bin_SM-A266M|e5a24a80985b4be10ff7b0b4d247cf1766d89073
+harx.bin_SM-A266M|ab73ae3f4a3895e5dc2cea85e2c6d136bb0f5da8
+keystorage.bin_SM-A266M|fe9bd771c8df7d8193c74318ae601cc3ea9dd697
+ldfw.img_SM-A266M|8af567dd9cd4d1321bbfa133def1f001df796664
+modem.bin_SM-A266M|458453fbb5fa6cd98ca25e900b4beb2fbf05f12f
 modem_debug.bin_SM-A266M|caf49e28ef4b60f02a08747337aaa19ea98035f6
-sboot.bin_SM-A266M|014b195a07e4f4d706b52c4d994137503e70e817
-tzar.img_SM-A266M|0dc76293a0309c4b89ac2e91441c22bfb46b343f
-tzsw.img_SM-A266M|94916fb74aa00c12dcfa5feb938cf8d239f3be59
-uh.bin_SM-A266M|fa19eedbac2ffc9f13c010feb7024b745aa1c1e2
-up_param.bin_SM-A266M|aa85d298991d139dac0f5615305c8ac70fa68d8d
+sboot.bin_SM-A266M|7429be6864b254061fa050f69c10da587dc848bd
+tzar.img_SM-A266M|e91bc03fc0676da860bb6263185ef91a269fb1ca
+tzsw.img_SM-A266M|ac10c50ea3979d4819094ad2444df63cef80cbb3
+uh.bin_SM-A266M|ecc25a9a25b7cb797c83d8a2af7d97cada470b2c
+up_param.bin_SM-A266M|b21360d4e9b67423c3b6c584b966660b2ccbc5f7
 
 # Files containing Samsung package version for supported models
-version_SM-A266M|29f818a8c24a5ea6040933c3f103f11b212cbdeb
+version_SM-A266M|adcb699f30674cd33f527106ef2bb0b4a16c1404
