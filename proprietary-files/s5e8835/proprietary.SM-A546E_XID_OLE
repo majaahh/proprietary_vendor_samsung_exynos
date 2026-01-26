@@ -1,14 +1,14 @@
-# Audio - Firmware - from SM-A546E - 
+# Audio - Firmware - from SM-A546E - A546EXXSGEYK8
 vendor/firmware/calliope_sram.bin
 vendor/firmware/vts.bin
 
-# Firmware - from SM-A546E - 
+# Firmware - from SM-A546E - A546EXXSGEYK8
 vendor/firmware/AIE.bin
 vendor/firmware/mfc_fw.bin
 vendor/firmware/os.checked.bin
 vendor/firmware/pablo_icpufw.bin
 
-# Security - TEEgris - Firmware - from SM-A546E - 
+# Security - TEEgris - Firmware - from SM-A546E - A546EXXSGEYK8
 vendor/tee/00000000-0000-0000-0000-000000010081
 vendor/tee/00000000-0000-0000-0000-000000020081
 vendor/tee/00000000-0000-0000-0000-000000534b4d
@@ -48,17 +48,17 @@ vendor/tee/tui/resolution_common/ID00000100
 
 # With sha1sum
 
-# Audio - Firmware - from SM-A546E - 
+# Audio - Firmware - from SM-A546E - A546EXXSGEYK8
 vendor/firmware/calliope_sram.bin|6223ca17c5a11e985ad81cc4af97fae009aebb6d
 vendor/firmware/vts.bin|ba789648b3dd3a89f9b9d19800b8245010d6180c
 
-# Firmware - from SM-A546E - 
+# Firmware - from SM-A546E - A546EXXSGEYK8
 vendor/firmware/AIE.bin|df1b928d3effed3b8bf4c9364544af860adaa64b
 vendor/firmware/mfc_fw.bin|1ad874e85f312ee9404a82fc6f9dc9b06a4296a4
 vendor/firmware/os.checked.bin|ed32ddc7f778949391af654c245087e70b73e865
 vendor/firmware/pablo_icpufw.bin|e89b626f183bb39cca40f71e7b84358cfd061707
 
-# Security - TEEgris - Firmware - from SM-A546E - 
+# Security - TEEgris - Firmware - from SM-A546E - A546EXXSGEYK8
 vendor/tee/00000000-0000-0000-0000-000000010081|48c0d40342e810525eae79cb75bc8a11a01d564a
 vendor/tee/00000000-0000-0000-0000-000000020081|90fc3410790d98ac9688e7d88303f2ecc71e8b0d
 vendor/tee/00000000-0000-0000-0000-000000534b4d|256cea7db2e321b7b1753277d57aa565a2d162e8
@@ -98,17 +98,17 @@ vendor/tee/tui/resolution_common/ID00000100|a091703ae478a3da9b16201f559d296a665d
 
 # With sha1sum and path to model
 
-# Audio - Firmware - from SM-A546E - 
+# Audio - Firmware - from SM-A546E - A546EXXSGEYK8
 vendor/firmware/SM-A546E/calliope_sram.bin|6223ca17c5a11e985ad81cc4af97fae009aebb6d
 vendor/firmware/SM-A546E/vts.bin|ba789648b3dd3a89f9b9d19800b8245010d6180c
 
-# Firmware - from SM-A546E - 
+# Firmware - from SM-A546E - A546EXXSGEYK8
 vendor/firmware/SM-A546E/AIE.bin|df1b928d3effed3b8bf4c9364544af860adaa64b
 vendor/firmware/SM-A546E/mfc_fw.bin|1ad874e85f312ee9404a82fc6f9dc9b06a4296a4
 vendor/firmware/SM-A546E/os.checked.bin|ed32ddc7f778949391af654c245087e70b73e865
 vendor/firmware/SM-A546E/pablo_icpufw.bin|e89b626f183bb39cca40f71e7b84358cfd061707
 
-# Security - TEEgris - Firmware - from SM-A546E - 
+# Security - TEEgris - Firmware - from SM-A546E - A546EXXSGEYK8
 vendor/tee/SM-A546E/00000000-0000-0000-0000-000000010081|48c0d40342e810525eae79cb75bc8a11a01d564a
 vendor/tee/SM-A546E/00000000-0000-0000-0000-000000020081|90fc3410790d98ac9688e7d88303f2ecc71e8b0d
 vendor/tee/SM-A546E/00000000-0000-0000-0000-000000534b4d|256cea7db2e321b7b1753277d57aa565a2d162e8
@@ -148,17 +148,17 @@ vendor/tee/SM-A546E/tui/resolution_common/ID00000100|a091703ae478a3da9b16201f559
 
 # With custom path
 
-# Audio - Firmware - from SM-A546E - 
+# Audio - Firmware - from SM-A546E - A546EXXSGEYK8
 vendor/firmware/calliope_sram.bin:vendor/firmware/SM-A546E/calliope_sram.bin
 vendor/firmware/vts.bin:vendor/firmware/SM-A546E/vts.bin
 
-# Firmware - from SM-A546E - 
+# Firmware - from SM-A546E - A546EXXSGEYK8
 vendor/firmware/AIE.bin:vendor/firmware/SM-A546E/AIE.bin
 vendor/firmware/mfc_fw.bin:vendor/firmware/SM-A546E/mfc_fw.bin
 vendor/firmware/os.checked.bin:vendor/firmware/SM-A546E/os.checked.bin
 vendor/firmware/pablo_icpufw.bin:vendor/firmware/SM-A546E/pablo_icpufw.bin
 
-# Security - TEEgris - Firmware - from SM-A546E - 
+# Security - TEEgris - Firmware - from SM-A546E - A546EXXSGEYK8
 vendor/tee/00000000-0000-0000-0000-000000010081:vendor/tee/00000000-0000-0000-0000-000000010081
 vendor/tee/00000000-0000-0000-0000-000000020081:vendor/tee/00000000-0000-0000-0000-000000020081
 vendor/tee/00000000-0000-0000-0000-000000534b4d:vendor/tee/00000000-0000-0000-0000-000000534b4d
