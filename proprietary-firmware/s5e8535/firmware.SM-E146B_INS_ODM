@@ -1,17 +1,17 @@
-# Firmware for model SM-E146B - from Samsung package version E146BXXU9DYJ2
-dtp.bin_SM-E146B|f8939b36db989b9f6410b93ab6343d2ac2954ae3
-fld.bin_SM-E146B|332df7806d4a647cf3936f3850e6bab69fb4448f
-harx.bin_SM-E146B|c552f4063b7f1dd6e0d36d2db53b57014b5f9fc0
-keystorage.bin_SM-E146B|54131c9bfc53aa40e2301a451d1bc3ce9720be20
-ldfw.img_SM-E146B|0d14ec31a905c787affceb42f9981596444d1235
-modem.bin_SM-E146B|c60e9954f43485b30a69c17d91a6561793b23f38
+# Firmware for model SM-E146B - from Samsung package version E146BXXUADYL1
+dtp.bin_SM-E146B|fdf54f57ddef30cdc705b95463016f0c7d95f3a4
+fld.bin_SM-E146B|edcf79f9d4d6d52400243e26c8b4f8234d35d61d
+harx.bin_SM-E146B|93e324b15d33556d0ca72330c642505b6220358f
+keystorage.bin_SM-E146B|6a301de154ee51630176eb88c65e0bbae17ed45d
+ldfw.img_SM-E146B|eeb9c59f63d892a0f101167888233d1eb32c2b78
+modem.bin_SM-E146B|21ea44e2e77272b94646e717ac10c03bcbb7e865
 modem_debug.bin_SM-E146B|1a29a9806708dba6c5e6d62d11403d21eac0d1ab
-sboot.bin_SM-E146B|4eee85609e3cc2e80bb0f2be6f645b595c2f2ca8
+sboot.bin_SM-E146B|1bed529f2d55bedce20e27cbedc8bae688a1d3a5
 ssp.img_SM-E146B|90d29bcb1f48e1fb9c059f11f91a3b9abfe281dc
-tzar.img_SM-E146B|2d73d0c3ed8952e72d6378f7803e669d23c35172
-tzsw.img_SM-E146B|5750fb53efb9772bafc5d4cc68055e240b9564ea
-uh.bin_SM-E146B|449f7b6915cf366a4758126f8107996a64836d58
-up_param.bin_SM-E146B|67c3733196aee50f2e6429d4f76786b06eb2a628
+tzar.img_SM-E146B|523eef30a76ae2bf49fa6c5d4cba739fc32ac3d8
+tzsw.img_SM-E146B|332849ea911af0a6f2c4926d22a5ff510f817318
+uh.bin_SM-E146B|a0950dbba641c4750ba7a09ad78890f1b0ed4094
+up_param.bin_SM-E146B|d4e7b211e44e01fb721e22870ec8abfece349ca3
 
 # Files containing Samsung package version for supported models
-version_SM-E146B|6f07988fb756adadda170128365dd5321c6cddb6
+version_SM-E146B|1f1bf71ba519a60a4b0a92c569ffc77759040d96
