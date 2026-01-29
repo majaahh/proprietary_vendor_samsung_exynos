@@ -1,17 +1,17 @@
-# Firmware for model SM-A5460 - from Samsung package version A5460ZCSGEYK7
-dtp.bin_SM-A5460|3a8b949587ee2a8e13895cf279c2662fcfe5257e
-fld.bin_SM-A5460|4ec70a648e34378e24e76e64d57a75a1aa2f9492
-harx.bin_SM-A5460|d4fcf6287d8bf4e1a03386a2f82f454f531e1d33
-keystorage.bin_SM-A5460|3f537e64173a849a1ba97eab140d483d35011df7
-ldfw.img_SM-A5460|97232abfc9202bc64e4dca8df251e9d63672ee6a
-modem.bin_SM-A5460|4cba4cafe93b12d973520afee65faaf1efd12f83
+# Firmware for model SM-A5460 - from Samsung package version A5460ZCSHEZA3
+dtp.bin_SM-A5460|ad02cfd0a93cf36f70c057c0fcb59b33da679c94
+fld.bin_SM-A5460|922afbe5d95bffc60044a9b194fef087af9f064c
+harx.bin_SM-A5460|76a45c60db386109dff510f9cb6098566d5d4b01
+keystorage.bin_SM-A5460|4a0d9a9cce315717b0f9f3e1d3a0c66831ee60b8
+ldfw.img_SM-A5460|ea17d49c830ef780792c492e350ff58dbfee2cf0
+modem.bin_SM-A5460|849a4d8ac71b612f28bc63e9c48144af5600ffa3
 modem_debug.bin_SM-A5460|d504221209917ca335d0fde6b69109ea014f1234
-sboot.bin_SM-A5460|d00ffb9c429349d26a4571e5249afe842f922b98
+sboot.bin_SM-A5460|a3b871bf42e80f3bdd6ce237e66aaf66f06a5aea
 ssp.img_SM-A5460|90d29bcb1f48e1fb9c059f11f91a3b9abfe281dc
-tzar.img_SM-A5460|e80d126abe1579fcc890dae46a7acbbacda9c1a6
-tzsw.img_SM-A5460|65fe15df638372837100e3763d55f8416fc49d1c
-uh.bin_SM-A5460|263b55cd40ac979ec6a6a77761e5130f71e99c8d
-up_param.bin_SM-A5460|eef3588f6f81eba11273a592a49629f0ea17f5d2
+tzar.img_SM-A5460|5fd7e7717ae41da9ba6c1f28af98b790dba97c51
+tzsw.img_SM-A5460|3b1a500913cc768095649fe244f336bcc52e476e
+uh.bin_SM-A5460|306fdf2eda1d30c37334d2e92695905cd5a96a88
+up_param.bin_SM-A5460|191c7d1f8562859d04c482845a39e16e1facaeef
 
 # Files containing Samsung package version for supported models
-version_SM-A5460|a307c430a31d131054143b00c345716e70ee3653
+version_SM-A5460|b53917a3739918576a85644cdc7eebed0d2a8eaa
