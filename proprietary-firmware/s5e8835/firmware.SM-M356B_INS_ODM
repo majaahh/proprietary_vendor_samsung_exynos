@@ -1,17 +1,17 @@
-# Firmware for model SM-M356B - from Samsung package version M356BXXS5CYJ2
-dtp.bin_SM-M356B|011f6aa994ce67750d181e8562a8b835b98d24aa
-fld.bin_SM-M356B|368cd38c3693c412c2bf21e3d641c8e92c3df194
-harx.bin_SM-M356B|c7d7865123b3e6c595608e79b58a20f590ee05fd
-keystorage.bin_SM-M356B|28a1e5928368a9c03a11e3dd840187861c78697f
-ldfw.img_SM-M356B|78a3f45194fae9b521a35a0ea0ecd19cc231f23a
-modem.bin_SM-M356B|14552e2befb59cf4680dcb1b6836078550535e55
+# Firmware for model SM-M356B - from Samsung package version M356BXXS6CZA4
+dtp.bin_SM-M356B|0b945e5e28abee24ffb35491071cc91a69f69956
+fld.bin_SM-M356B|c34c31e63492f731e8b978b130ae8b746c1b2ef1
+harx.bin_SM-M356B|d729256706733342926dea95951aa1311420cbe2
+keystorage.bin_SM-M356B|ddd6263f72dff0083563fd565fd7af6d1eb1259f
+ldfw.img_SM-M356B|d4ef1bffead21eb05199c5a1b8bec77724cd6398
+modem.bin_SM-M356B|1b74a94b391871aa8922ad85d08dc182305ae503
 modem_debug.bin_SM-M356B|74253d7ec5954d262908776d7d6e4f095a7eba4f
-sboot.bin_SM-M356B|aab7200c95dda436407d76eea566f321630e0718
+sboot.bin_SM-M356B|4679ca1c11aefb17bf67c0b4f87e48855264a8aa
 ssp.img_SM-M356B|90d29bcb1f48e1fb9c059f11f91a3b9abfe281dc
-tzar.img_SM-M356B|afc4fa3bff91df89b86a113e7e506d7cf8a9a544
-tzsw.img_SM-M356B|74ccbea73fcd8f04192872fe6bb098394aaad87f
-uh.bin_SM-M356B|cac86b7c83ce933f42b830e8fb3120520e2169c4
-up_param.bin_SM-M356B|0b08e14f762d15bb5279d4c3d0441f603f8d7d48
+tzar.img_SM-M356B|362cecb6d97059daa1b7f56f47ab6d123319155a
+tzsw.img_SM-M356B|545f10efe5a93174aeb191cbedad3ffb5c3c6cd8
+uh.bin_SM-M356B|e559280c0d14194507fa7a615e2bb00ecb173f76
+up_param.bin_SM-M356B|9fddfaf9c8a9c81578764736a6022bc442c93799
 
 # Files containing Samsung package version for supported models
-version_SM-M356B|6dbe4eb99846b29193e6a6b344eac5757bb2ff7d
+version_SM-M356B|8dfd1fbd1521452b3ac36701d8573cca537d3d08
