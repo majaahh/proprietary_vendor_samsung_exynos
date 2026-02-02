@@ -1,15 +1,15 @@
-# Firmware for model SM-A3360 - from Samsung package version A3360ZHSFGYL1
-fld.bin_SM-A3360|9d0990ba1074597f35e108e039368b77c0aefb72
-harx.bin_SM-A3360|6fd5a2e354860c2f0bfb55762c9c4c72f351795b
-keystorage.bin_SM-A3360|5e05171577773ad6c1700b7da3fe2ba58ab2147f
-ldfw.img_SM-A3360|6869100454709a12a2d9bffaff795bd30b0b2ffe
-modem.bin_SM-A3360|b4dcefdfe5e47381077bbb71a36bd3aaa521df4b
-modem_debug.bin_SM-A3360|7d81f8ae7910b59f239d4f6e885c12cdcc785fcc
-sboot.bin_SM-A3360|f9ce5d6dd4e5b76aefc0fc47b88b407f98a68233
-tzar.img_SM-A3360|085bd65162ee4e527474c9db9105be5cbcb91a45
-tzsw.img_SM-A3360|3748383ab1e65cd88d561ff3cfb8d5edced35106
-uh.bin_SM-A3360|8bac7701c116c12b6d4a246954c9cf24b4c15896
-up_param.bin_SM-A3360|e7be4294ac6349a6f67cf2b6b356b6a50bf07216
+# Firmware for model SM-A3360 - from Samsung package version A3360ZHSGGZA1
+fld.bin_SM-A3360|b5479068e24b37df9d22229de9bd42b2d341cd26
+harx.bin_SM-A3360|2df156e21d874ad2911d2c90ba92eff3bc8387ac
+keystorage.bin_SM-A3360|19bbc9bdd83ab5ea71024d03a824c2890f4bf9fc
+ldfw.img_SM-A3360|dc66cb2c6487193afa028b3ec432300927493bbd
+modem.bin_SM-A3360|e2e5f14650548e3ad5eaa9a62901124dc51a6578
+modem_debug.bin_SM-A3360|b6090ee205b3ad99a929e795fb4e901e08684b68
+sboot.bin_SM-A3360|fe757d5a6e5eacc6abb3a6b45dce5fa6fdc6e9b9
+tzar.img_SM-A3360|b99c8707afe7b415b255f323ed27bb7302558fec
+tzsw.img_SM-A3360|1efb97f3ad05131c753910b9fcb887a097ffb555
+uh.bin_SM-A3360|19762702684f0c8f013acde229dc4130cd5946f8
+up_param.bin_SM-A3360|9c1ce0141056d2a28f0260df357c3fcfd3a82c39
 
 # Files containing Samsung package version for supported models
-version_SM-A3360|a37fafd8f04331747522d2a1338dfae9964ced93
+version_SM-A3360|bd995843ae3bec530d2595a78acceeea41419e06
