@@ -1,16 +1,16 @@
-# Firmware for model SM-X620 - from Samsung package version X620XXS5BYL2
-dtp.bin_SM-X620|51123c06e2e7c509e5bd80e7404c77038c6348fb
-fld.bin_SM-X620|7e571385a15a7c4f95bc5d2c9e0c914eeaf6e33b
-harx.bin_SM-X620|2296aa784acc73c48272aab78d783c8d5607429e
-keystorage.bin_SM-X620|d1d4963192695fcfdb79e876fdbc1044a3f8a4f2
-ldfw.img_SM-X620|0acd680318c6d880bc1cb737b78cc84c4a6cab07
-sboot.bin_SM-X620|10996b64e2d49d3ec7b859d6cfc20f784af59b8f
-sld.bin_SM-X620|c420906be735addab4e3f5045530396996387265
-svm.bin_SM-X620|a925f45bcfe7e74a7173c01ad6dc7d006511e660
-tzar.img_SM-X620|3fffee89a1ad68ef61f16808983dd2c46788be78
-tzsw.img_SM-X620|15d502a35359cc2ae681dab7e9f0b1816b6b6cc1
-uh.bin_SM-X620|9b1a913ed3f30c77008cf1be466edf373aeed717
-up_param.bin_SM-X620|4a9e3d53988cff6b405f77b5e785e5770f375068
+# Firmware for model SM-X620 - from Samsung package version X620XXS6BZA3
+dtp.bin_SM-X620|467973996811cce9e2da11b9916ffa7969e9ed35
+fld.bin_SM-X620|7b64765451c19003d32e07521a18e864dfd375f6
+harx.bin_SM-X620|9828075f5d14cd666c5d1941cd6614ed9639c319
+keystorage.bin_SM-X620|ce5889dfe309f40c8a30cf3ca35abf79d551aac0
+ldfw.img_SM-X620|0b410d2677f9f0a33b67ce791d2e3f9ebe934f6f
+sboot.bin_SM-X620|e9df571513400836cf958fba3f22d2ef4b82edcc
+sld.bin_SM-X620|4d532ae7277168d9379b5ecf8eed2208d3d6c120
+svm.bin_SM-X620|e2547ff029c94fa821398bd2c2e7ecead9dec88c
+tzar.img_SM-X620|2a7107261c8a54cb09444cdb8e4fdc9f4ab68edd
+tzsw.img_SM-X620|c97959c5ba28f4cdecaa069fa6d4ea63d0e41a05
+uh.bin_SM-X620|6c36ebdec3530b0fe6eac2e635b508c6f8eb4348
+up_param.bin_SM-X620|140ee8cc0f06bf5f4c3678a96e2a3069c1247c8f
 
 # Files containing Samsung package version for supported models
-version_SM-X620|b8322d205eb61a2481e5c91a71bd629460e91c11
+version_SM-X620|4a18f939d7de1c31441b0909c3740a9325b43087
