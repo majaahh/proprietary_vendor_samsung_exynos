@@ -1,15 +1,15 @@
-# Firmware for model SM-A256E - from Samsung package version A256EXXS9DYL1
-fld.bin_SM-A256E|3b1c8cc300e33dfe42448d661fe6911114384a69
-harx.bin_SM-A256E|83f63eb95543912cb0b4ebf861f3748fa7a17e08
-keystorage.bin_SM-A256E|cb13ea76d3f230b2d36b71a10ba3fc931d1bcffb
-ldfw.img_SM-A256E|979de7a4d504428d7812b903f5e775eafad13b7f
-modem.bin_SM-A256E|b95f2fb587dc6c33520f94eac94f56f74821a6ab
-modem_debug.bin_SM-A256E|bef35cd764ea9251810c5d67dff739142c44e7f9
-sboot.bin_SM-A256E|b9eddd90cdf9477a6c45d1daa01245a9dd45aa7e
-tzar.img_SM-A256E|cdfc434a7e4c7a2e28a0f9a9f17bf30ef96112c1
-tzsw.img_SM-A256E|e2ba8d5535f80e2ea72750d62c7c99eeb00ed9b3
-uh.bin_SM-A256E|db76b421fa20291e8d32494d14ab4148bfaa1c69
-up_param.bin_SM-A256E|b19c3fb2600d83bd3553475d6e6d782856f79957
+# Firmware for model SM-A256E - from Samsung package version A256EXXSADZA2
+fld.bin_SM-A256E|0bb3d236f9fdf1b8973608b30083c7d3fc1af6af
+harx.bin_SM-A256E|ffbbbc207affc2feb3e9f940d8ec69f602ea4e27
+keystorage.bin_SM-A256E|51666e5be22fae6c48436e746c7237154a20cbfd
+ldfw.img_SM-A256E|066f3300fc5c684877c0e40b21fb66c674e2fc80
+modem.bin_SM-A256E|427b5d67a3339cb5371f7657c498dbe077a36f4e
+modem_debug.bin_SM-A256E|c7a6d097ab2f405ea780743ae2e3db4dcfc4ab43
+sboot.bin_SM-A256E|6d86c8b161dcbd63a2459ebc4082c3c534707c5e
+tzar.img_SM-A256E|5d13c182f97d6963a4c25ed01670721bce5374e7
+tzsw.img_SM-A256E|7e69b7a671b12a49a816e68e4129e58b12a7577e
+uh.bin_SM-A256E|f7dd558aeb023c894f5c773019ffba78fcd1b0f4
+up_param.bin_SM-A256E|928743db89b9f09d87ad02160b57b0c8c9c24053
 
 # Files containing Samsung package version for supported models
-version_SM-A256E|155e842feb9a0151823c81526d7b23e994b4da0a
+version_SM-A256E|f80b1655adc02c55c8badc6c68687e250591e2bb
