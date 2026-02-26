@@ -1,17 +1,17 @@
-# Firmware for model SC-53D - from Samsung package version SC53DOMS1CYH1
-dtp.bin_SC-53D|021ceb1c77e04150f752008889a3f5f25897706e
-fld.bin_SC-53D|493c4ee332d9c0b82a93529e25cd5b05c7039580
-harx.bin_SC-53D|71e084c39fff771b6d39ece6a06f632c67cb45df
-keystorage.bin_SC-53D|0e20abe83913d23a443ff6dbcd1720f0fdb7ba35
-ldfw.img_SC-53D|64062788e92f4732868265934bf9696b1f5f359e
-modem.bin_SC-53D|ae2375eeadf08d6e90fe31c882457fa0ccfc5e31
-modem_debug.bin_SC-53D|c7eda2dbbfb743d3f1dffd82b580cd797375f9bb
-sboot.bin_SC-53D|b3eeb645fbf22999dbccd9ee4dbfcf64984583da
+# Firmware for model SC-53D - from Samsung package version SC53DOMU1DYJ4
+dtp.bin_SC-53D|934f8da0f1f233977b374e9cb9f7b8bbdc7b7ec4
+fld.bin_SC-53D|c0a02bd4dfd56415668e8cbb8bac75aaf85477b8
+harx.bin_SC-53D|a2c27adf1a328ada7030a1bc7f1fc99e662ec559
+keystorage.bin_SC-53D|808d2ea40913c291936e9c9e33e8c345167630e8
+ldfw.img_SC-53D|2b39ea0c7e76c50da53dc8d0efc1493e435c6f10
+modem.bin_SC-53D|d081f50b2e38e2e5496bc308ac49737d5e5a88d6
+modem_debug.bin_SC-53D|786a60a6357e1ff306bd2cb2ad26ceda0f46b0f1
+sboot.bin_SC-53D|d9c6f5643d616c65b17d6f8d0a8c0e446c3ec15b
 ssp.img_SC-53D|90d29bcb1f48e1fb9c059f11f91a3b9abfe281dc
-tzar.img_SC-53D|4bb88fcf4f12dd6bae60a1ef88a58268dfad5d04
-tzsw.img_SC-53D|6439fe2b1625c8476fd28a5ad85e36436d0a58ee
-uh.bin_SC-53D|8ab9615a90e63e433f4ddf743bdc589df3fda3be
-up_param.bin_SC-53D|5e0897e064eca59fd340f7a167c1ddd906658fe9
+tzar.img_SC-53D|3c0d28a45d4dd96217a04580d78ed387e7cc14dc
+tzsw.img_SC-53D|00f9c1bf56303d3a13d27b6aca961bd8b4704d2a
+uh.bin_SC-53D|7368151ee353ef6c9a916805776e530c18657f52
+up_param.bin_SC-53D|44e406bc515ec4b591c5aefb65701bfb009259ec
 
 # Files containing Samsung package version for supported models
-version_SC-53D|43a46c9db21aab13e186eed09bbd65b218cae8b1
+version_SC-53D|5d99226588a39806aeb083978c656da03a94099c
