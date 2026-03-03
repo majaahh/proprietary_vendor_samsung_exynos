@@ -1,17 +1,17 @@
-# Firmware for model SM-A566B - from Samsung package version A566BXXS8BZA7
-dtp.bin_SM-A566B|9579239e875f23090f90de4d94c76b4c3eb2d69f
-fld.bin_SM-A566B|20dae8fde666219df943920676431a0275f7435d
-harx.bin_SM-A566B|3076b2804f9a2ce00a2852edb3bd03445851d6ea
-keystorage.bin_SM-A566B|c848b3a00613745a35c367edb03ac13e281de853
-ldfw.img_SM-A566B|a901a2105c3761eb24c900419e11aec2731453fb
-modem.bin_SM-A566B|e9a9bdaae1db1d065c880350ad6020e4e277292c
-sboot.bin_SM-A566B|91565a2da84af5d65cbb9ccba0a4c855cc40a654
-sld.bin_SM-A566B|6383d9d6d3a47d3e13f8f9e6542deb1a3b3a630b
-svm.bin_SM-A566B|f810bc996cbe34c1fd06d3d679126b5c634d063b
-tzar.img_SM-A566B|ede05b74640c87856acc0f67f66f9bcef95a3e6a
-tzsw.img_SM-A566B|6466a99dec1b8d6c563bbd2a36d67ac1c63f5e4a
-uh.bin_SM-A566B|1344dacdd591ea1db0c3f268c76c648c553df62d
-up_param.bin_SM-A566B|42fc057b9cd8d6f00dedca0982336f8e4eaaf2cf
+# Firmware for model SM-A566B - from Samsung package version A566BXXS9BZB6
+dtp.bin_SM-A566B|23026989bfdec45dad7fea0c201d506e9b254f61
+fld.bin_SM-A566B|d60960e2f056040afef0b47c2457c2cf653c03a8
+harx.bin_SM-A566B|5c4ab84bb30a42d3bdae008b098e783bee5ae71b
+keystorage.bin_SM-A566B|08250091305b6db73207e5b89d431220da565c5d
+ldfw.img_SM-A566B|c332d1032445a028bbf01e7310f201a7be7e6b3d
+modem.bin_SM-A566B|3847d2ce19d816307cfc3fab541d2a9e9bc90d45
+sboot.bin_SM-A566B|e53c595838f0d3c7aa5ace04b2f10ab1247949e9
+sld.bin_SM-A566B|dac176d298473f7bd8bdf6076ac85b5dc8f63853
+svm.bin_SM-A566B|f818ad9bc63bd1f5661f69188bda4f9780bed845
+tzar.img_SM-A566B|cc6f31a0fb7ffbbc9a708ace84134b19fee7091c
+tzsw.img_SM-A566B|02fc95453c1cf16ca451d90b4b2f75767fd79959
+uh.bin_SM-A566B|ce6bee2ea4456a5e52c657c63c044abdf18e948f
+up_param.bin_SM-A566B|cac2b289de44caece39397c06b71a453e3702827
 
 # Files containing Samsung package version for supported models
-version_SM-A566B|0415e4cda8257f179c92c3f78c2f1df8f4bd8fb8
+version_SM-A566B|911b43572bc3b6b3bc2a4b6f78b453843de8b7a7
