@@ -1,17 +1,17 @@
-# Firmware for model SM-M566B - from Samsung package version M566BXXS4BYK2
-dtp.bin_SM-M566B|90b1b142db8db0396a389466c8df57fc73bedb28
-fld.bin_SM-M566B|653aa8b433e9518791cfb6148dbdb4fc7080b083
-harx.bin_SM-M566B|e2bd87e787330ac588d0341df5dcdb5144dad114
-keystorage.bin_SM-M566B|7a7c4b8053ff257b3f8c866f7d7432851e9d64ad
-ldfw.img_SM-M566B|daf15231275ad53b6e7513b93bde08268f374350
-modem.bin_SM-M566B|0ba0a305deb80f659f0e1d0880b5bbe7487bef7d
+# Firmware for model SM-M566B - from Samsung package version M566BXXU5BZB4
+dtp.bin_SM-M566B|4a8de5337210848078d88b07f2b2cb7f4105a6ef
+fld.bin_SM-M566B|dcebdd30dde706b395882ed60d42b7eaadc1d145
+harx.bin_SM-M566B|c3f537854fdea457aaa95602d324719b1a2fe6f6
+keystorage.bin_SM-M566B|c9d3207f3969abc7da5169c6a0d132ba82dac0c8
+ldfw.img_SM-M566B|0216624dbef755732e1f3c17bff06e65fd182e24
+modem.bin_SM-M566B|f5d385d6feffe3998ae81a17409b1a94ddadeab7
 modem_debug.bin_SM-M566B|3e43e1b295513d4384cb3e236b3a5ea378a8a1f2
-sboot.bin_SM-M566B|8be5579f2ae634f06ccd7ccbbf95155b00ef5251
-sld.bin_SM-M566B|c79f75aff272cbfc38c0822db5e6cc89316cd87e
-tzar.img_SM-M566B|0c8c14a4236a31e6b4fe7419bb01d0e15e86ecf5
-tzsw.img_SM-M566B|c8dba8943079f71c533c228142b3667a91dfe431
-uh.bin_SM-M566B|0c7145f2dede59f599aa22e694831e915f9bc402
-up_param.bin_SM-M566B|129922a12211d2eef5972d8bde902f78ee3d9502
+sboot.bin_SM-M566B|737554861c743a9a9d91cae4c3577cf8eb86ecd3
+sld.bin_SM-M566B|3e80b98dfd6c948e81c0506ee4cb6d74c94b89dd
+tzar.img_SM-M566B|75e1301e1ece6566cb7f01f42a3f735bfb8d4c4c
+tzsw.img_SM-M566B|7df8ea4e2605f29d94f65382b5920777960263c0
+uh.bin_SM-M566B|0f6949ab81399e3d805b31427af4d851ac9212fb
+up_param.bin_SM-M566B|e1377aabdbd6968007374328374bf708aa2fba18
 
 # Files containing Samsung package version for supported models
-version_SM-M566B|68e9f61ea1a2a7461926c31e22fc2e3968bdd0f8
+version_SM-M566B|236ccdd77afe0853e49ccc545e11e0db7e4f4d95
