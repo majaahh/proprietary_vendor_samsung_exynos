@@ -1,15 +1,15 @@
-# Firmware for model SM-A256N - from Samsung package version A256NKSS8DZA1
-fld.bin_SM-A256N|1abd7d0741e53682a55a7471002a2635c28111be
-harx.bin_SM-A256N|decb9985bdfbcc45f5cdba28ef4ed385b15bc127
-keystorage.bin_SM-A256N|eee39cb533195e230c29f88b2ad4696a8872dcfb
-ldfw.img_SM-A256N|84775478486dd8441b5b207dc37567bcf64fc7f9
-modem.bin_SM-A256N|7fc07380543822e3a138096379cb6d87ea233c85
-modem_debug.bin_SM-A256N|7036615b91b978ffa48d16ff8abcbbdb5f1a18df
-sboot.bin_SM-A256N|2580528d179bb90250fea2a0f97af3bc7ee51c8d
-tzar.img_SM-A256N|1da333e814e0df6f41d21fc72e27d3612229dd7f
-tzsw.img_SM-A256N|34d1ff9403d3eaaae5533a93a028a7dfb8a3cc46
-uh.bin_SM-A256N|2442faab8eb9912f177a058feff5bed52715d1f4
-up_param.bin_SM-A256N|28c2e35ebf6eb7159d97aefb4685f2f786e07988
+# Firmware for model SM-A256N - from Samsung package version A256NKSS9DZB2
+fld.bin_SM-A256N|fc043a576717968009f0764a96e7b27e2ec41e07
+harx.bin_SM-A256N|af9d887b9a7016262051dbc07ad8bc41a2ef30d8
+keystorage.bin_SM-A256N|ac3ab8f04deaa9374e5470c8996e4e9d04358e16
+ldfw.img_SM-A256N|da873cb77c09f946622e0c722c7218db3a484dd8
+modem.bin_SM-A256N|5089ff7e873c3965775a4d456e22f44bbb1dd9fb
+modem_debug.bin_SM-A256N|fc437a52e926ea19eca0e61f7a957cbd2d0bfa94
+sboot.bin_SM-A256N|89e666ab54a1e0f7e6aaee09d779c50dca7c2667
+tzar.img_SM-A256N|c1eaa97e90f1824b3557eed6c3f272628906acd3
+tzsw.img_SM-A256N|87ba2ff1f73b2437e1f87565e871b08b7b728641
+uh.bin_SM-A256N|08753dbf3dd41d3284ec86697a17440bfc7dad5b
+up_param.bin_SM-A256N|53f187a4adf2e2eea97cc8a5606f5f56a71702a6
 
 # Files containing Samsung package version for supported models
-version_SM-A256N|78dbf4357d0c45443172275cd0e1759af06135a8
+version_SM-A256N|2a5570775773aea4e83e23ce5978fd54bd43a213
