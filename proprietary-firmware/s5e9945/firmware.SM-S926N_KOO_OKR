@@ -1,0 +1,18 @@
+# Firmware for model SM-S926N - from Samsung package version S926NKSSDCZB4
+dtp.bin_SM-S926N|8dafab544d1fb46dfe64a986b78a224acdf393b2
+fld.bin_SM-S926N|e10fcf785db0962222c2d15eec929b3b21426afd
+harx.bin_SM-S926N|dd856e0b8abe98d8f5396a6d27db6b2b80489e45
+keystorage.bin_SM-S926N|4be8da30105025583e3c9916c1985d16d6b9401b
+ldfw.img_SM-S926N|f9ed8ab4733d20a59987adb23eeb79558a8cfa26
+modem.bin_SM-S926N|1b469f4f078a5f9b69e791e6dc36c23b1d99b5a1
+modem_debug.bin_SM-S926N|a00a2df580c22ae1d7890bf2bb0856672cb758df
+sboot.bin_SM-S926N|6383d61b6eda38b6a32767c24e0cfc543a1559fd
+ssp.img_SM-S926N|03b9a804d25884af609faab4f719dd5c4ebc3aaa
+svm.bin_SM-S926N|199d19b6a75edac7022f2a2ed9df037112ba8e66
+tzar.img_SM-S926N|9a830f2d25d8240cdd3b1b8198d203060f692e5a
+tzsw.img_SM-S926N|45b9092dc9bdc5a2041d6278f93cc057ad3d6fdd
+uh.bin_SM-S926N|cd0bb749725c3dc67271639d61e1030b10258565
+up_param.bin_SM-S926N|19c884a4e5fca9eb9bf028fb922cf81a5d1db348
+
+# Files containing Samsung package version for supported models
+version_SM-S926N|758c4c681a2918b8681c684415ed70093f58ed9d
