@@ -1,0 +1,18 @@
+# Firmware for model SM-S731B - from Samsung package version S731BXXS5AZB6
+dtp.bin_SM-S731B|c35dbd7482a2d06ab3dfe673156f89f292e5da3d
+fld.bin_SM-S731B|96198af838d375efa90c2502557afce33803bae3
+harx.bin_SM-S731B|575715307a5956eca4efc07e0f4b6e3c055eed23
+keystorage.bin_SM-S731B|295113a4cbc670547d6bb6d4f55e7184b90facec
+ldfw.img_SM-S731B|84d20a43d13731f1e64f7fe1ecbf1ffff588f404
+modem.bin_SM-S731B|7622349c6fff524d379dd0cd4a22b3085d797f5c
+sboot.bin_SM-S731B|714a8757bd318ca7dcf7ec0c96fc8178e4e3e731
+sld.bin_SM-S731B|db6038e1b5627832ac24c1c82f1c74491646d72d
+ssp.img_SM-S731B|03b9a804d25884af609faab4f719dd5c4ebc3aaa
+svm.bin_SM-S731B|f7c63c97c401eda68581509e42b00eeda76d9ef5
+tzar.img_SM-S731B|a1d6a0ba6eb111b7cbba3cab3748c25712051861
+tzsw.img_SM-S731B|70e57d9c8966011c5aa6391b5743b29e6185faed
+uh.bin_SM-S731B|0ec744f089a756985bcd18a0fd17adc98167becc
+up_param.bin_SM-S731B|c4a06b21e78152c444d213b4eb0ceef1cdae4c36
+
+# Files containing Samsung package version for supported models
+version_SM-S731B|da8e772b56b3e17c1c73691daebf4ad2c6ffa583
