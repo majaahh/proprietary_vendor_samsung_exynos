@@ -1,0 +1,18 @@
+# Firmware for model SM-F761B - from Samsung package version F761BXXS8AZB6
+dtp.bin_SM-F761B|7d3d8d06a53c4f9779d2f5482fefc11e2eb8d386
+fld.bin_SM-F761B|5ba97bee87ab3c537f6bcbdc29c43217766e3b01
+harx.bin_SM-F761B|6851c8ecb981f27e186fb11c75abdf1610231feb
+keystorage.bin_SM-F761B|7ca37c38ec46e49aa7a5d3c4bd2b2ae8b6de1ad2
+ldfw.img_SM-F761B|6f76c1e4cc157cce8b402baae82f45c4553b0b04
+modem.bin_SM-F761B|a089d976ce382a13f1e11a324931d414987a5169
+sboot.bin_SM-F761B|0ccae61808d88f3c9d5d2691cde7fd352fd32ad7
+sld.bin_SM-F761B|caf3f675496038ccb9052a01478542d5fccc834e
+ssp.img_SM-F761B|03b9a804d25884af609faab4f719dd5c4ebc3aaa
+svm.bin_SM-F761B|4f006e60893ec57eb2ba660b11388fd1e59d0849
+tzar.img_SM-F761B|cd295fcf3434e4092775c038b18f6028c52f6606
+tzsw.img_SM-F761B|0ab107ca1615d6b43ff0e2aeb8a6778fab186347
+uh.bin_SM-F761B|7a8043e1b907a0ebc27a9e5f3de718c8c8ccc0c6
+up_param.bin_SM-F761B|a9768d5d0a8827e72a4dc44b637bbc92dd135a20
+
+# Files containing Samsung package version for supported models
+version_SM-F761B|ee7e5e2b3a353d8ef3364733c4663892d4f65ff9
