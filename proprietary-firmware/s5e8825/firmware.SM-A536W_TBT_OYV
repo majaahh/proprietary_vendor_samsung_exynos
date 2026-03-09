@@ -1,0 +1,15 @@
+# Firmware for model SM-A536W - from Samsung package version A536WVLSHGYK1
+fld.bin_SM-A536W|93dc47bfec51178bc475b376e90ae048868dcfa5
+harx.bin_SM-A536W|e77f141a7d0e45a7d76b9dc3290a3682b7a9043d
+keystorage.bin_SM-A536W|90726b0b669ffaadf1e356db3b6752da631a8c0a
+ldfw.img_SM-A536W|cb36d0f82d7905552d8f6f89abd89c280e7443e3
+modem.bin_SM-A536W|06c891e38b3a6b5f5cb734340540220fdb00305a
+modem_debug.bin_SM-A536W|2052b465e58754f8275c83357f6763c8705eb18c
+sboot.bin_SM-A536W|41a609c8ec8ab556b90c6b988c4bf80f786bc878
+tzar.img_SM-A536W|1eca028187daa736a9f4318744495a920e9918fc
+tzsw.img_SM-A536W|d49f08255c1988e06a73ea70ea904a5a02f96ff3
+uh.bin_SM-A536W|ebce08c7ded712b8f29a3f806fef94890ed254b8
+up_param.bin_SM-A536W|d97baec608ed5506c1299ab50005fc5b2e1f9188
+
+# Files containing Samsung package version for supported models
+version_SM-A536W|00b269a1ce7588ab5454ddb3a9b2cab45d834624
