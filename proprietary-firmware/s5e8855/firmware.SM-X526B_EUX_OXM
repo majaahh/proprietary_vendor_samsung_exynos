@@ -1,17 +1,17 @@
-# Firmware for model SM-X526B - from Samsung package version X526BXXS6BZA3
-dtp.bin_SM-X526B|f286e1df804c9bf9db1d17d19afb2946a4fcaad6
-fld.bin_SM-X526B|706d9b23c82c577dfb1f3d6ed73516c1bda62517
-harx.bin_SM-X526B|17370d7f36de696bb8eb64e79d07863570d09333
-keystorage.bin_SM-X526B|4f2808cd26759af285156b883092b555adaeb355
-ldfw.img_SM-X526B|745036cdf3351ed42ebe5c9260987970929186ec
-modem.bin_SM-X526B|06e58b2fe37e6f783dcee636da1ea34398188e70
-sboot.bin_SM-X526B|f0fc34381a312bed2a0287eb6ed089edad1dfce7
-sld.bin_SM-X526B|7ccb81eff51f55d57c92cf62b24bda78f1cbe8ac
-svm.bin_SM-X526B|e35f537ac67d534c2dd8427870bf6eb0e3c78de4
-tzar.img_SM-X526B|87ca4a1757ff4e1ed88a5e9a21fd31861c3a9d0d
-tzsw.img_SM-X526B|f6a256603ce10c0f23f9d4eb9661ccd2171b6b4a
-uh.bin_SM-X526B|63edebc09c96cb160428b3b0e1477b68a3218eb9
-up_param.bin_SM-X526B|c8eff33dce6f23c993a5d0e46c275dc7d1f70504
+# Firmware for model SM-X526B - from Samsung package version X526BXXS7BZB7
+dtp.bin_SM-X526B|13a8238b9a72b95e37d349a6da054e2fe470e03e
+fld.bin_SM-X526B|e1e44feca8a16e08d4b8406439b801ea4905c769
+harx.bin_SM-X526B|d0afc6a698ffdbb8a6e34137f9e40e977ee8c49b
+keystorage.bin_SM-X526B|0204870b5d101dc7707f5ead21ae73483b82ebba
+ldfw.img_SM-X526B|d6cfb757ea88e9a90c82d2115cffcbf24a5ffb79
+modem.bin_SM-X526B|9c8d594c04b30a24ff6fa048b94cf10a5cd17e83
+sboot.bin_SM-X526B|3086ddbe2d582433efbcac9e994a650adee809d6
+sld.bin_SM-X526B|4fdd59fbe4057d70d2361e87952c5ccc197cb52b
+svm.bin_SM-X526B|bd73bbd16799b61634954af2311977388be6774b
+tzar.img_SM-X526B|7d1f4c092fa2d2dca3ead298ccf724164e18583f
+tzsw.img_SM-X526B|e30cc691277f63c4747115cf2cd78a00149cad48
+uh.bin_SM-X526B|a4ec2b3ed5e2bba20e4589bd9878fec9deb6b712
+up_param.bin_SM-X526B|d1c86831919ec07e3fde8267adb6f40f2ae8cdfe
 
 # Files containing Samsung package version for supported models
-version_SM-X526B|7f6a6955712a5c85d7239aff0047b1c648240fdd
+version_SM-X526B|db181027fb7666b7efa0d86caff600f6772c3408
