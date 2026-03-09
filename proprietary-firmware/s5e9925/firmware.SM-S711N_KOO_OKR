@@ -1,0 +1,16 @@
+# Firmware for model SM-S711N - from Samsung package version S711NKSSDDZB2
+fld.bin_SM-S711N|b0c3a5bdba8dd41b9efe3209b179cc50bd81b4f0
+harx.bin_SM-S711N|ccc04e14ebaa7b8a5e1bcaba666f57dc3683a818
+keystorage.bin_SM-S711N|102dc52e3fa3b54879f9f1cf684701c384196450
+ldfw.img_SM-S711N|eb6eadcc88f24990801e4ec2f3142e10f6efbe15
+modem.bin_SM-S711N|0d943b176e2bf4de23575c897558b64e48c9c0b4
+modem_debug.bin_SM-S711N|57ea7fc39d38b49e9bd8728314f2a1d90a423a2d
+sboot.bin_SM-S711N|aadb7ed0af50105d513357566a8c9eed35dcb8ad
+ssp.img_SM-S711N|4dc4bb758a9ff5d7278d808c95812ea960197479
+tzar.img_SM-S711N|20288e15d0644559bff1ec5f4280437daf092c32
+tzsw.img_SM-S711N|5e98ed591bd6caf9edc6b1e81be8d882b3bbce2e
+uh.bin_SM-S711N|adacbfbffe6e2fa7da09b0a4bcceb7f6231bc50e
+up_param.bin_SM-S711N|31da58769104997e387be50e0fea182c8edb8515
+
+# Files containing Samsung package version for supported models
+version_SM-S711N|d93b8c3f044cb2af571b4da5d8931588076d29f6
