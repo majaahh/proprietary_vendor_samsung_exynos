@@ -1,0 +1,18 @@
+# Firmware for model SM-S947B - from Samsung package version 
+cip.bin_SM-S947B|1d18980f0470feeb4c111d50c6cfb2a25f0d0378
+dtp.bin_SM-S947B|1449dbeccc9d929e61d3641149033f0f6fb0e6bd
+fld.bin_SM-S947B|6d9ff53dc18248c03576ab8ecc68f2f37e125858
+harx.bin_SM-S947B|ec7ae5d50d83f34229808dbfe0110c4caea58b89
+keystorage.bin_SM-S947B|d1072f14d4515e870b5b7c2f3e790251a07d8fa6
+ldfw.img_SM-S947B|67d7506bed0d3cb516746dc207f99892cf79e139
+modem.bin_SM-S947B|0b3c7a1513153edc81c77620dfb941ead1049f1e
+sboot.bin_SM-S947B|69ce5348dd2f9d018ce83963059e65620c6a911b
+sld.bin_SM-S947B|704a50549261ce5f5ffac865120a761f12b642a4
+svm.bin_SM-S947B|e8ada8de8476168b42c9579aedfb487f2d380f49
+tzar.img_SM-S947B|6b3235c692bef57eddc1689d0f6312a2400777ba
+tzsw.img_SM-S947B|8ff5e66b150196da220b40340106166f7c252961
+uh.bin_SM-S947B|2236e7033b160e7cb8965202b10ef7fd3446e9b4
+up_param.bin_SM-S947B|55e43adbc4a6dde58515c260a6ea127673035fed
+
+# Files containing Samsung package version for supported models
+version_SM-S947B|adc83b19e793491b1c6ea0fd8b46cd9f32e592fc
