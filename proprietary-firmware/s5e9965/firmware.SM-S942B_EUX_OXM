@@ -1,0 +1,18 @@
+# Firmware for model SM-S942B - from Samsung package version S942BXXS1AZC7
+cip.bin_SM-S942B|6ffd94c8a295d2dfe2a7d89da67f6b413f0352ea
+dtp.bin_SM-S942B|a88b99aa04bf75b83d9e163cff23b59dd7d37f93
+fld.bin_SM-S942B|934b23862465afa245ae453ab47ce101f1c96aca
+harx.bin_SM-S942B|1bab27e3baec3f3d48e37fae2ee94148c68b00e9
+keystorage.bin_SM-S942B|9c37afe7f915df4b672104e3b9b60c9b3379bee5
+ldfw.img_SM-S942B|15a89832c3d3e5e99b6c0c5a225bb2604d4c5681
+modem.bin_SM-S942B|8f16a3941ac9d80f4eb216d97ea9b16e7523c6b2
+sboot.bin_SM-S942B|f7a2dd4516f24757bb78b15fcbe88366bc864117
+sld.bin_SM-S942B|01350bb69b59c63d49298f498c8633b676a421f4
+svm.bin_SM-S942B|e44f1d576ebded3568c91d200bf7ef45efcfb1ce
+tzar.img_SM-S942B|579c3aa12873592b3340ee366a809d7541378a55
+tzsw.img_SM-S942B|8951808b6e6dafeb8ff6399bd0ca65f90dfb6e8f
+uh.bin_SM-S942B|5728a0a6cd7501e137840c842865d3733a96d80e
+up_param.bin_SM-S942B|ee20273314c14ce470c667bd7e5afc8cdc219b89
+
+# Files containing Samsung package version for supported models
+version_SM-S942B|7a6ce9f8bf2ae42568c80c23b8f54f82c6941043
