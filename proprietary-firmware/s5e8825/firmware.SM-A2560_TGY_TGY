@@ -1,15 +1,15 @@
-# Firmware for model SM-A2560 - from Samsung package version A2560ZHS9DZA2
-fld.bin_SM-A2560|d219fa563a7a956b987711561c5093afe1afa0c2
-harx.bin_SM-A2560|b0f5305a51c203676dc5e0025e6a1b7ce78f91c9
-keystorage.bin_SM-A2560|66876e9a2a4aeb08a71298c3b5e413041427ab92
-ldfw.img_SM-A2560|c5a1ed82b6ffa0497b551fe8d999eee2dd869270
-modem.bin_SM-A2560|09ae03e8dd6d42335cf4e303d68377daf69deb0c
+# Firmware for model SM-A2560 - from Samsung package version A2560ZHSADZB2
+fld.bin_SM-A2560|22d2b39f046dff9689f81dcd573f8062be69b613
+harx.bin_SM-A2560|56b96d9c1d7ffd2eebb311546647f7c6295c7114
+keystorage.bin_SM-A2560|f738772e97f6392467b71427cc600479b4daa064
+ldfw.img_SM-A2560|3c1712f0f66336822e241734e23414adff0e0a14
+modem.bin_SM-A2560|7ce8ec2630992d1813bbfc68a632fe16a233818f
 modem_debug.bin_SM-A2560|22b38563e166bcc9ee30d639ca37fcbfab200e10
-sboot.bin_SM-A2560|6047bf5e4ebf9da9d088d62fde512e4fd1f2f775
-tzar.img_SM-A2560|7d0879d125ef1e4bb16f3712a175d83866da8207
-tzsw.img_SM-A2560|e41ff226e559f5a9f469e063cf16b9171d404024
-uh.bin_SM-A2560|fafd9db323e63103d601dc832f3fdcbb424aaa32
-up_param.bin_SM-A2560|61b4781c623f9a340c5d2d8f6764910094ccf836
+sboot.bin_SM-A2560|0ec6c78952c59f8aa875f2cfc760b67f65cd3dfe
+tzar.img_SM-A2560|eed216ef199a8c71d02c0f05595d36b3ab06629b
+tzsw.img_SM-A2560|e7340da9c8fb9457b2cb954238745f646ffc2a2f
+uh.bin_SM-A2560|c2a9df9001c6a6e4ca6b044bae720369fec69f6e
+up_param.bin_SM-A2560|f2d33824543b378e1f6af3b504103fcb0fe05368
 
 # Files containing Samsung package version for supported models
-version_SM-A2560|a2eca9d129e60ec1d10c7b07ddddb4e77f82d60c
+version_SM-A2560|7f26b37edb9d533cafd8adc98fe549642b690d9f
