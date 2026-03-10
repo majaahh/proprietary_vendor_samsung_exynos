@@ -27,8 +27,10 @@ for i in "product" "vendor"; do
     sudo umount ${i}_mount
     rm -rf ${i}_mount
 
-    zip -r9 ${LATEST_SHORTVERSION}_${i}.zip ${i}.img
-    zip -r9 ${LATEST_SHORTVERSION}_${i}-extracted.zip ${i}
+    if [[ "$MODEL" != "S94"* ]]; then
+        zip -r9 ${LATEST_SHORTVERSION}_${i}.zip ${i}.img
+        zip -r9 ${LATEST_SHORTVERSION}_${i}-extracted.zip ${i}
+    fi
 
     rm -f odm*.img product*.img vendor*img vendor_dlkm*.img system*.img || true
 done
