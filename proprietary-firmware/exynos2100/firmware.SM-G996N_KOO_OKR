@@ -1,17 +1,17 @@
-# Firmware for model SM-G996N - from Samsung package version G996NKSSCHZA5
-dpm.img_SM-G996N|187e7296d175e72e72f221e43c4f285c963de75c
-harx.bin_SM-G996N|094f2a0a9e05d43eb9e42704b1d99be15e13c908
-keystorage.bin_SM-G996N|d9a2b55927be96ec7a467ff7b263f4b771219896
-ldfw.img_SM-G996N|25936a9810a73c81fd3da430d1ba6bcbba82728e
+# Firmware for model SM-G996N - from Samsung package version G996NKSSCHZA9
+dpm.img_SM-G996N|b47c90ab58cc62140f74165987c7941c7513263b
+harx.bin_SM-G996N|10468962817499af95bdb5a746426427a1795120
+keystorage.bin_SM-G996N|ef63850e64e091a1a6837c5290272914442d4de7
+ldfw.img_SM-G996N|fc48b9f6f910d649f40584b954f50a7466432e29
 modem.bin_SM-G996N|874c7940794ac97f693a4b227549d2fd9de7e6cf
 modem_debug.bin_SM-G996N|1babd609db643124978c55126176d0d56ceb3256
-sboot.bin_SM-G996N|5d7740ca64555dcd5dfe5e974c7f49f699d5272c
+sboot.bin_SM-G996N|33e6cb322a4e73b2a2a51ad43ac60e37ae5145c8
 ssp.img_SM-G996N|d41d84d986f94984a4e4a665abb6fc54152cd64b
-tzar.img_SM-G996N|3212278a133faf5d2b1caf45bd44b0c075f50fc4
-tzsw.img_SM-G996N|fad6af55fd8ad27ae24b19344619da218e3ab40f
-uh.bin_SM-G996N|1cc6813cf324b4c1309e23630af3650dd9f9c6bf
-up_param.bin_SM-G996N|0f709d752b94d1235670f78c137db018a4837a7a
-vddcal_fw.bin_SM-G996N|d0b11e38b2b0b4a23dae5bcde9c169b3953f0d52
+tzar.img_SM-G996N|ca9a4bb5004e768640cb24ff7b084fabfb6140ea
+tzsw.img_SM-G996N|85f03d9749ab343acdba54612ed097a3c8290ee9
+uh.bin_SM-G996N|46fd121fc529b1cfc8b4a134aa19396cd397d63e
+up_param.bin_SM-G996N|7a8a1ea9e2f8b6e650cfc898bd9214e5f48052db
+vddcal_fw.bin_SM-G996N|aa41595b41da5471a49e21b83ed43c2cbf557f63
 
 # Files containing Samsung package version for supported models
-version_SM-G996N|92d325b3cc91a0191fb6563fc1a459f6d93da610
+version_SM-G996N|1bd322a94a0c52b6c5df0ae0d51315459c826df4
