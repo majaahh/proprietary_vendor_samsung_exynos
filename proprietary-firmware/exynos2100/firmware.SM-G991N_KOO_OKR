@@ -1,17 +1,17 @@
-# Firmware for model SM-G991N - from Samsung package version G991NKSSCHZA5
-dpm.img_SM-G991N|e75452158817752b010326ba57bdf29277eb7046
-harx.bin_SM-G991N|33bf9ccfc10367cf9f67b7f53cfe72801829513a
-keystorage.bin_SM-G991N|ff274e4738311c0a8eb7e53e73c6b602ad51786f
-ldfw.img_SM-G991N|80f50ea5699e340b4f8468670137eb4e2e585004
+# Firmware for model SM-G991N - from Samsung package version G991NKSSCHZA9
+dpm.img_SM-G991N|0247173159025a94a89686cdf8dd8c41fffb6744
+harx.bin_SM-G991N|fcc456f7015c68630113dcb96d4218bd0ea72833
+keystorage.bin_SM-G991N|d8113e146f2c9ee17a648607135b9c0aa6990949
+ldfw.img_SM-G991N|bc966417579765fb8f27f84fa454aaf8c59f28ba
 modem.bin_SM-G991N|cd00bc223f9e752e9710ea26e30c1c81f5bc5a05
 modem_debug.bin_SM-G991N|85ab5f74cb538305386082e5148c11e497c8e242
-sboot.bin_SM-G991N|4bbb43ce6b2f5d155371c43474434d84f6c33447
+sboot.bin_SM-G991N|43c014bbf288c5e6fa235bcb799a99234fb30f50
 ssp.img_SM-G991N|d41d84d986f94984a4e4a665abb6fc54152cd64b
-tzar.img_SM-G991N|38cda5f5f92d96edc9a02bc2886406bfa22878e7
-tzsw.img_SM-G991N|ca0392be8156b98c849c59231a78e2ef1c5a6ce9
-uh.bin_SM-G991N|6aa37d4abf5303692cb3120ed97a5a4b23b2a44f
-up_param.bin_SM-G991N|4e8c46b8e9ff171468618c6bca21376e873e1bf6
-vddcal_fw.bin_SM-G991N|5fb53f3b306bcd4e98b774fbafeb9c4f55f13464
+tzar.img_SM-G991N|5b3c521eeadbde1969c77697c926ffa6d36f00aa
+tzsw.img_SM-G991N|24fa8e750147e8c863cfb895b38e6eabfcbe3dff
+uh.bin_SM-G991N|5012b487cc43bd1009e8266f8d6f2aa85c197ed9
+up_param.bin_SM-G991N|4c3173ae1bdeb86afa5da4596abaae992cf46fc4
+vddcal_fw.bin_SM-G991N|11354fb5013ce0e64fabeb6fafe6e3864d3025b6
 
 # Files containing Samsung package version for supported models
-version_SM-G991N|156996e9ee57a6796382bcc1a622bff300c742dd
+version_SM-G991N|9513476b2fe5aecb5855ef9534e05cc9c6421e91
