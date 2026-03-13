@@ -1,15 +1,15 @@
-# Audio - Firmware - from SM-A536W - A536WVLSHGYK1
+# Audio - Firmware - from SM-A536W - A536WVLSJGZB6
 vendor/firmware/APDV_AUDIO_SLSI.bin
 vendor/firmware/AP_AUDIO_SLSI.bin
 vendor/firmware/calliope_sram.bin
 vendor/firmware/vts.bin
 
-# Firmware - from SM-A536W - A536WVLSHGYK1
+# Firmware - from SM-A536W - A536WVLSJGZB6
 vendor/firmware/NPU.bin
 vendor/firmware/mfc_fw.bin
 vendor/firmware/os.checked.bin
 
-# Security - TEEgris - Firmware - from SM-A536W - A536WVLSHGYK1
+# Security - TEEgris - Firmware - from SM-A536W - A536WVLSJGZB6
 vendor/tee/00000000-0000-0000-0000-000000010081
 vendor/tee/00000000-0000-0000-0000-000000020081
 vendor/tee/00000000-0000-0000-0000-000000534b4d
@@ -49,18 +49,18 @@ vendor/tee/tui/resolution_common/ID00000100
 
 # With sha1sum
 
-# Audio - Firmware - from SM-A536W - A536WVLSHGYK1
+# Audio - Firmware - from SM-A536W - A536WVLSJGZB6
 vendor/firmware/APDV_AUDIO_SLSI.bin|cfc737da7af0726ce1797208be3ae5b6eee67986
 vendor/firmware/AP_AUDIO_SLSI.bin|4e74a7f603e182d1362d163cd99769b99fb8f99f
 vendor/firmware/calliope_sram.bin|384834a2bd9af0e683d41f9838eddb737ec78a76
 vendor/firmware/vts.bin|be61adc46ce6473ca0848ab434a454dfee4db18b
 
-# Firmware - from SM-A536W - A536WVLSHGYK1
+# Firmware - from SM-A536W - A536WVLSJGZB6
 vendor/firmware/NPU.bin|2e1455d85a9030896b34d01a90e09333dfd7c19e
 vendor/firmware/mfc_fw.bin|54ad15d28fa41c10b9a093a128f647419fe27d4f
 vendor/firmware/os.checked.bin|dd4253056e321f9e9f8b1bd95236bde052bdbaa3
 
-# Security - TEEgris - Firmware - from SM-A536W - A536WVLSHGYK1
+# Security - TEEgris - Firmware - from SM-A536W - A536WVLSJGZB6
 vendor/tee/00000000-0000-0000-0000-000000010081|1288f19f0170f1ea2cd9d21a2d927ea14052ef23
 vendor/tee/00000000-0000-0000-0000-000000020081|7646143509204b13233dcbf0b2667f6ab4df8fc8
 vendor/tee/00000000-0000-0000-0000-000000534b4d|0e34f43e790066bee3f050b9f1e1525e8092b22f
@@ -100,18 +100,18 @@ vendor/tee/tui/resolution_common/ID00000100|a091703ae478a3da9b16201f559d296a665d
 
 # With sha1sum and path to model
 
-# Audio - Firmware - from SM-A536W - A536WVLSHGYK1
+# Audio - Firmware - from SM-A536W - A536WVLSJGZB6
 vendor/firmware/SM-A536W/APDV_AUDIO_SLSI.bin|cfc737da7af0726ce1797208be3ae5b6eee67986
 vendor/firmware/SM-A536W/AP_AUDIO_SLSI.bin|4e74a7f603e182d1362d163cd99769b99fb8f99f
 vendor/firmware/SM-A536W/calliope_sram.bin|384834a2bd9af0e683d41f9838eddb737ec78a76
 vendor/firmware/SM-A536W/vts.bin|be61adc46ce6473ca0848ab434a454dfee4db18b
 
-# Firmware - from SM-A536W - A536WVLSHGYK1
+# Firmware - from SM-A536W - A536WVLSJGZB6
 vendor/firmware/SM-A536W/NPU.bin|2e1455d85a9030896b34d01a90e09333dfd7c19e
 vendor/firmware/SM-A536W/mfc_fw.bin|54ad15d28fa41c10b9a093a128f647419fe27d4f
 vendor/firmware/SM-A536W/os.checked.bin|dd4253056e321f9e9f8b1bd95236bde052bdbaa3
 
-# Security - TEEgris - Firmware - from SM-A536W - A536WVLSHGYK1
+# Security - TEEgris - Firmware - from SM-A536W - A536WVLSJGZB6
 vendor/tee/SM-A536W/00000000-0000-0000-0000-000000010081|1288f19f0170f1ea2cd9d21a2d927ea14052ef23
 vendor/tee/SM-A536W/00000000-0000-0000-0000-000000020081|7646143509204b13233dcbf0b2667f6ab4df8fc8
 vendor/tee/SM-A536W/00000000-0000-0000-0000-000000534b4d|0e34f43e790066bee3f050b9f1e1525e8092b22f
@@ -151,18 +151,18 @@ vendor/tee/SM-A536W/tui/resolution_common/ID00000100|a091703ae478a3da9b16201f559
 
 # With custom path
 
-# Audio - Firmware - from SM-A536W - A536WVLSHGYK1
+# Audio - Firmware - from SM-A536W - A536WVLSJGZB6
 vendor/firmware/APDV_AUDIO_SLSI.bin:vendor/firmware/SM-A536W/APDV_AUDIO_SLSI.bin
 vendor/firmware/AP_AUDIO_SLSI.bin:vendor/firmware/SM-A536W/AP_AUDIO_SLSI.bin
 vendor/firmware/calliope_sram.bin:vendor/firmware/SM-A536W/calliope_sram.bin
 vendor/firmware/vts.bin:vendor/firmware/SM-A536W/vts.bin
 
-# Firmware - from SM-A536W - A536WVLSHGYK1
+# Firmware - from SM-A536W - A536WVLSJGZB6
 vendor/firmware/NPU.bin:vendor/firmware/SM-A536W/NPU.bin
 vendor/firmware/mfc_fw.bin:vendor/firmware/SM-A536W/mfc_fw.bin
 vendor/firmware/os.checked.bin:vendor/firmware/SM-A536W/os.checked.bin
 
-# Security - TEEgris - Firmware - from SM-A536W - A536WVLSHGYK1
+# Security - TEEgris - Firmware - from SM-A536W - A536WVLSJGZB6
 vendor/tee/00000000-0000-0000-0000-000000010081:vendor/tee/00000000-0000-0000-0000-000000010081
 vendor/tee/00000000-0000-0000-0000-000000020081:vendor/tee/00000000-0000-0000-0000-000000020081
 vendor/tee/00000000-0000-0000-0000-000000534b4d:vendor/tee/00000000-0000-0000-0000-000000534b4d
