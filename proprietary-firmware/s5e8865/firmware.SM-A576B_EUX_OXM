@@ -1,0 +1,18 @@
+# Firmware for model SM-A576B - from Samsung package version A576BXXU1AZB7
+cip.bin_SM-A576B|1dee9690120697213f3dc1035d42e3af8c784894
+dtp.bin_SM-A576B|a00ddd7994059bdb429b68d2dc9885abfed16832
+fld.bin_SM-A576B|eca1ee87f0c4988d4bf8bd598d7490985f2b7620
+harx.bin_SM-A576B|4848c067b0abe09b301bfb268cedcd673b348eb2
+keystorage.bin_SM-A576B|c47e1e358cd4b167498a6e3337d05de883966690
+ldfw.img_SM-A576B|caa96e74603f876b91b359a99f6193c682da51ac
+modem.bin_SM-A576B|6bedab2c7ef60ba3ca1deb39b8b5a4c0fb50eaa0
+sboot.bin_SM-A576B|ce0dc171cf77a74f0273c960cfa0902ade366df0
+sld.bin_SM-A576B|ac8f573103a30becafecf0632c0f86d906049390
+svm.bin_SM-A576B|11ccdfcee887d995f435f531bdf5389a8ca47778
+tzar.img_SM-A576B|ea2eb67a792fd97a0ab0fe72216ce6afe60a542b
+tzsw.img_SM-A576B|a042862d79eab88934b76200d597380a1ea2670e
+uh.bin_SM-A576B|325e6494bb46a26374f41e128ad8a28621591ed8
+up_param.bin_SM-A576B|eb8ba0d98c0bc3a0da5a5f02340610e9d19e9271
+
+# Files containing Samsung package version for supported models
+version_SM-A576B|48adefbcec39a78dd993d555847d158a7026cef2
