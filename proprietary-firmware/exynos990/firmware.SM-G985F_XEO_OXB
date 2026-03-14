@@ -1,0 +1,15 @@
+# Firmware for model SM-G985F - from Samsung package version G985FXXSNHYB1
+harx.bin_SM-G985F|02654d63a1ce2c614ed761b108fae197e519c865
+keystorage.bin_SM-G985F|abb877ee064cc6dd49b003f9d454dbee30f010e4
+ldfw.img_SM-G985F|fa78313caa87f01cb3625a9bbf4a5dbf4edcdae5
+modem.bin_SM-G985F|456006b4b340da8e72d91acbf85872afa36859d9
+modem_debug.bin_SM-G985F|6d7925e9812e422c3a3434b7b42cd3d4059a7907
+sboot.bin_SM-G985F|5a0315a5a46053f0aaeceaec152442eb18c80823
+ssp.img_SM-G985F|63e5976b898dd99d3dce4d9981c5658f5a9dde2e
+tzar.img_SM-G985F|620f7dcf75a6db39b875b2e83da9dbcdeb870ff6
+tzsw.img_SM-G985F|b3c53a43cb76456f2ff6c8d5072ee2090fe805da
+uh.bin_SM-G985F|a725857387edb5f48eecd4b10695baecddc406eb
+up_param.bin_SM-G985F|3dd585a997fcd174edc7268cc787d5c06baad0d0
+
+# Files containing Samsung package version for supported models
+version_SM-G985F|a918c1a9b23f027665d0480a6b59f9c32906d090
