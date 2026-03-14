@@ -1,31 +1,34 @@
-# Prepare samloader
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-source $HOME/.cargo/env
-git clone "https://github.com/topjohnwu/samloader-rs.git"
-(
-cd "samloader-rs"
-cargo build --release
-cp -fa "target/release/samloader" "../"
-)
+LATEST_FW="$(./tools/samloader -m "$MODEL" -r "$CSC" check | awk -F/ '{print $1"/"$2"/"$3}')"
+UPDATE=0
+LS=$(echo "$LATEST_FW" | cut -d'/' -f1)
+LC=$(echo "$LATEST_FW" | cut -d'/' -f2)
+CURRENT=""
+OMC="$(echo "$LATEST_FW" \
+| cut -d/ -f2 \
+| sed "s/^$(echo "$MODEL" | sed -E 's/^SM-//; s/-//g')//" \
+| cut -c1-3
+)"
 
-# Get firmware
-C=1
-while true; do
-    ./samloader -m "${MODEL}" -r "${CSC}" download -o "fw.zip"
-    STATUS=$?
+if [[ "$IS_WIFI" == true ]]; then
+    LATEST_FW="$(echo "$LATEST_FW" | awk -F/ '{print $1"/"$2"/"}')"
+fi
 
-    if [[ $STATUS -eq 0 ]]; then
-        break
+if [[ -f "current/current.${MODEL}_${CSC}_${OMC}" ]]; then
+    CURRENT=$(cat "current/current.${MODEL}_${CSC}_${OMC}")
+else
+    UPDATE=1
+fi
+
+if [[ -n "$CURRENT" ]]; then
+    if [[ "$LATEST_FW" != "$CURRENT" ]]; then
+        UPDATE=1
     fi
+fi
 
-    if [[ "$C" -gt 10 ]]; then
-        exit 1
-    fi
-
-    echo "[Attempt: $C] Download failed (status: $STATUS), retrying in 5 seconds..."
-    sleep 5
-    ((C++))
-done
-
-unzip "fw.zip"
-rm -rf "fw.zip"
+{
+    echo "latest_version=$LATEST_FW"
+    echo "latest_shortversion=$LS"
+    echo "latest_cscversion=$LC"
+    echo "update=$UPDATE"
+    echo "omc=$OMC"
+} >> "$GITHUB_ENV"
