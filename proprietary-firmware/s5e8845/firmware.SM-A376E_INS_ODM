@@ -1,0 +1,16 @@
+# Firmware for model SM-A376E - from Samsung package version A376EXXU1AZB7
+dtp.bin_SM-A376E|25e5182187716e565ca0d5c41d3f3df299360e01
+fld.bin_SM-A376E|7cfa80f6708982f6783c3b388f2b19552afa49b1
+harx.bin_SM-A376E|94c0cc8fc36fc881f8c882e0ec5fcd85c4089caf
+keystorage.bin_SM-A376E|ffd2664c7198aaed986267c54389a08f11677df5
+ldfw.img_SM-A376E|530d6ddf1b1bd4c2eb4935608e88b23d9dc34ef5
+modem.bin_SM-A376E|d183282e0055ff76a333906fbfe8703998fe271d
+sboot.bin_SM-A376E|15dbfec863a06124861c619bc21937f8f82d1f60
+sld.bin_SM-A376E|8fd8e565e8b48a5738087da0a5b91f327bc222a2
+tzar.img_SM-A376E|f17adcbea4210ad0188d3cfe704cd3bc277a467e
+tzsw.img_SM-A376E|1dd7dcdaa00929a71d7d1c5b85de2cc0fa04a238
+uh.bin_SM-A376E|76036c46e141d98968bce2995ddfc620ae13d390
+up_param.bin_SM-A376E|7b251d8733ba8347429aca610471b6bf3ac67d6b
+
+# Files containing Samsung package version for supported models
+version_SM-A376E|162fb9caf99f7baba1900dbd9c54dff1d2e2e9af
