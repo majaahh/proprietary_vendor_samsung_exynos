@@ -1,7 +1,7 @@
 set -e
 
 # Get OMC
-PREFIX=$(echo "$MODEL" | sed 's/^SM-//; s/-//g')
+PREFIX=$(echo "$MODEL" | sed -E 's/^SM-//; s/-//g')
 
 OMC="$(
 curl -s --retry 3 -m 3 https://fota-cloud-dn.ospserver.net/firmware/$CSC/$MODEL/version.xml \
