@@ -1,4 +1,4 @@
-# Firmware for model SM-A546W - from Samsung package version A546WVLSGEZB6
+# Firmware for model SM-A546W - from Samsung package version A546WVLSFEZA2
 dtp.bin_SM-A546W|1a5180379dbdee1c05448f52d8e3a040be108e2d
 fld.bin_SM-A546W|e4d71b57d4ed89f40d76ff7f49452ed4625a425e
 harx.bin_SM-A546W|fb893bb41f879e2a6199f5e801fa4e2b87d30d7a
@@ -14,4 +14,4 @@ uh.bin_SM-A546W|35bd69978d134724715151361a2cdb8b36faee9d
 up_param.bin_SM-A546W|45ebf617350a70778dd4a514c753c7e6d4f1ee02
 
 # Files containing Samsung package version for supported models
-version_SM-A546W|d2abc75a47a475a3602e86f21e8ad27230eb462c
+version_SM-A546W|a0a69c21021d04ee69b161902777d1f2429cfb39

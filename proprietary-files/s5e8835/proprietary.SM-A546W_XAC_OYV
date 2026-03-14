@@ -1,14 +1,14 @@
-# Audio - Firmware - from SM-A546W - A546WVLSGEZB6
+# Audio - Firmware - from SM-A546W - A546WVLSFEZA2
 vendor/firmware/calliope_sram.bin
 vendor/firmware/vts.bin
 
-# Firmware - from SM-A546W - A546WVLSGEZB6
+# Firmware - from SM-A546W - A546WVLSFEZA2
 vendor/firmware/AIE.bin
 vendor/firmware/mfc_fw.bin
 vendor/firmware/os.checked.bin
 vendor/firmware/pablo_icpufw.bin
 
-# Security - TEEgris - Firmware - from SM-A546W - A546WVLSGEZB6
+# Security - TEEgris - Firmware - from SM-A546W - A546WVLSFEZA2
 vendor/tee/00000000-0000-0000-0000-000000010081
 vendor/tee/00000000-0000-0000-0000-000000020081
 vendor/tee/00000000-0000-0000-0000-000000534b4d
@@ -48,17 +48,17 @@ vendor/tee/tui/resolution_common/ID00000100
 
 # With sha1sum
 
-# Audio - Firmware - from SM-A546W - A546WVLSGEZB6
+# Audio - Firmware - from SM-A546W - A546WVLSFEZA2
 vendor/firmware/calliope_sram.bin|0a35bb49cea3f07917ce4a1adf44365f5da891de
 vendor/firmware/vts.bin|39cfad6a1007fe635a0d144449c57c8206f9efdd
 
-# Firmware - from SM-A546W - A546WVLSGEZB6
+# Firmware - from SM-A546W - A546WVLSFEZA2
 vendor/firmware/AIE.bin|fac0d790ae128f86a66b2f562e7d471a486f1d0e
 vendor/firmware/mfc_fw.bin|d61f12674f5c8e684367a1ad357e58d7a63b08a8
 vendor/firmware/os.checked.bin|247de657c1e08c4a003880f99d234eb539f7e6f7
 vendor/firmware/pablo_icpufw.bin|36bb1087806cc117c018dcddcc241717fc33f34b
 
-# Security - TEEgris - Firmware - from SM-A546W - A546WVLSGEZB6
+# Security - TEEgris - Firmware - from SM-A546W - A546WVLSFEZA2
 vendor/tee/00000000-0000-0000-0000-000000010081|ca41fab4dc3e03ef9c2d2709e031026c779fcefd
 vendor/tee/00000000-0000-0000-0000-000000020081|454a3cfceb1806f400811ab28bc8c380826f4c99
 vendor/tee/00000000-0000-0000-0000-000000534b4d|c9dd109ee32ada1992b1320a0a2b168b7239c9a2
@@ -98,17 +98,17 @@ vendor/tee/tui/resolution_common/ID00000100|a091703ae478a3da9b16201f559d296a665d
 
 # With sha1sum and path to model
 
-# Audio - Firmware - from SM-A546W - A546WVLSGEZB6
+# Audio - Firmware - from SM-A546W - A546WVLSFEZA2
 vendor/firmware/SM-A546W/calliope_sram.bin|0a35bb49cea3f07917ce4a1adf44365f5da891de
 vendor/firmware/SM-A546W/vts.bin|39cfad6a1007fe635a0d144449c57c8206f9efdd
 
-# Firmware - from SM-A546W - A546WVLSGEZB6
+# Firmware - from SM-A546W - A546WVLSFEZA2
 vendor/firmware/SM-A546W/AIE.bin|fac0d790ae128f86a66b2f562e7d471a486f1d0e
 vendor/firmware/SM-A546W/mfc_fw.bin|d61f12674f5c8e684367a1ad357e58d7a63b08a8
 vendor/firmware/SM-A546W/os.checked.bin|247de657c1e08c4a003880f99d234eb539f7e6f7
 vendor/firmware/SM-A546W/pablo_icpufw.bin|36bb1087806cc117c018dcddcc241717fc33f34b
 
-# Security - TEEgris - Firmware - from SM-A546W - A546WVLSGEZB6
+# Security - TEEgris - Firmware - from SM-A546W - A546WVLSFEZA2
 vendor/tee/SM-A546W/00000000-0000-0000-0000-000000010081|ca41fab4dc3e03ef9c2d2709e031026c779fcefd
 vendor/tee/SM-A546W/00000000-0000-0000-0000-000000020081|454a3cfceb1806f400811ab28bc8c380826f4c99
 vendor/tee/SM-A546W/00000000-0000-0000-0000-000000534b4d|c9dd109ee32ada1992b1320a0a2b168b7239c9a2
@@ -148,17 +148,17 @@ vendor/tee/SM-A546W/tui/resolution_common/ID00000100|a091703ae478a3da9b16201f559
 
 # With custom path
 
-# Audio - Firmware - from SM-A546W - A546WVLSGEZB6
+# Audio - Firmware - from SM-A546W - A546WVLSFEZA2
 vendor/firmware/calliope_sram.bin:vendor/firmware/SM-A546W/calliope_sram.bin
 vendor/firmware/vts.bin:vendor/firmware/SM-A546W/vts.bin
 
-# Firmware - from SM-A546W - A546WVLSGEZB6
+# Firmware - from SM-A546W - A546WVLSFEZA2
 vendor/firmware/AIE.bin:vendor/firmware/SM-A546W/AIE.bin
 vendor/firmware/mfc_fw.bin:vendor/firmware/SM-A546W/mfc_fw.bin
 vendor/firmware/os.checked.bin:vendor/firmware/SM-A546W/os.checked.bin
 vendor/firmware/pablo_icpufw.bin:vendor/firmware/SM-A546W/pablo_icpufw.bin
 
-# Security - TEEgris - Firmware - from SM-A546W - A546WVLSGEZB6
+# Security - TEEgris - Firmware - from SM-A546W - A546WVLSFEZA2
 vendor/tee/00000000-0000-0000-0000-000000010081:vendor/tee/00000000-0000-0000-0000-000000010081
 vendor/tee/00000000-0000-0000-0000-000000020081:vendor/tee/00000000-0000-0000-0000-000000020081
 vendor/tee/00000000-0000-0000-0000-000000534b4d:vendor/tee/00000000-0000-0000-0000-000000534b4d
