@@ -1,17 +1,17 @@
-# Firmware for model SM-F766N - from Samsung package version F766NKSS8AZB2
-dtp.bin_SM-F766N|af92cc79c8f16b0c4fa7e9339d2fe45fbd5eac19
-fld.bin_SM-F766N|d568f3e9626f8e16eb91f733647839176443ac4b
-harx.bin_SM-F766N|fb4497aa98f75362c0c5a4900650c858e9512837
-keystorage.bin_SM-F766N|602d50d5ff1f0b6663c04d335a2fddcff35d6ece
-ldfw.img_SM-F766N|d9cd7e87bba7c49e7c597d88902fd26d178d3bc4
+# Firmware for model SM-F766N - from Samsung package version F766NKSS8AZC2
+dtp.bin_SM-F766N|7bc88783d5d62c3a78a5b204fdcb832c3666e2dd
+fld.bin_SM-F766N|6c19a334e85dcbb4a283be21f9c3e9b48a176031
+harx.bin_SM-F766N|c5f1d506146f4046db921f12e927eb96ef6fd141
+keystorage.bin_SM-F766N|859022b5b93909466b7c35d2119d4f8df793f816
+ldfw.img_SM-F766N|f39d4890f8b0b77d7c83bea21ffb44ea94089b58
 modem.bin_SM-F766N|df9654cbc6dea116dced1ad12ac41e7787799afb
-sboot.bin_SM-F766N|fe4351c32139b2818af858a0bd181106068dcded
-sld.bin_SM-F766N|b636648975ba139d3bbb247bad052484955e521b
-svm.bin_SM-F766N|3afaf39f092b7b6d9ad1e6c791110363c105ee6d
-tzar.img_SM-F766N|4df221f9904a4a7e5b5dc28b454a89e930554614
-tzsw.img_SM-F766N|adeebbf960d3f1276dfb233c9efa93bc4181395e
-uh.bin_SM-F766N|dc0e3311477f6b38ceb55572bf5d881490ec28b9
-up_param.bin_SM-F766N|c6194c88dadc9cec7d5bb4cbea986ccad9e7a87f
+sboot.bin_SM-F766N|3055c7aa8ea477519bbc45643a2a0fd91a46284d
+sld.bin_SM-F766N|ef9245da8cafd4da47beb04f943c42f7f2fb0ef4
+svm.bin_SM-F766N|aa72bd655d167723f3a26349587918fb30f43704
+tzar.img_SM-F766N|fca658a2c7fc9ce0ec07cc38d08264a7ee1078b4
+tzsw.img_SM-F766N|b739569357a3eaa2cf6c2df6cb4f385296da46b0
+uh.bin_SM-F766N|e3de06f0471a2513a566cbf0ad96c1dbaf9b5dc3
+up_param.bin_SM-F766N|6291ea95140d5f1d87e7d085d982f8b69cbec5b9
 
 # Files containing Samsung package version for supported models
-version_SM-F766N|b5fd3cb0b0d6b29b6a908c75a6f5ba00dc453450
+version_SM-F766N|7a18219b11fd1e99ea16e2dc9ca728f0d6b29ade
