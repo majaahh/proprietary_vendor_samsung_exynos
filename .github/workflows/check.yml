@@ -332,6 +332,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y rsync liblz4-tool zip android-sdk-libsparse-utils f2fs-tools linux-modules-extra-$(uname -r) python3 unzip gh
           sudo modprobe f2fs
+          pip3 install git+https://github.com/ducthoe/samfwdl.git
 
       - name: Fetch firmware
         env:
@@ -357,7 +358,7 @@ jobs:
           MODEL: ${{ matrix.model }}
           CSC: ${{ matrix.csc }}
         run: |
-          ./scripts/get_firmware.sh
+          ./scripts/get_firmware.sh || exit 1
 
       - name: Get path of files
         if: env.update == 1
