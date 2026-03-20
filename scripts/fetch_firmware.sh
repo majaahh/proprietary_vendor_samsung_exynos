@@ -1,4 +1,4 @@
-LATEST_FW="$(./tools/samloader -m "$MODEL" -r "$CSC" check | awk -F/ '{print $1"/"$2"/"$3}')"
+LATEST_FW="$(samfwdl checkupdate "$MODEL" "$CSC" | awk -F/ '{print $1"/"$2"/"$3}')"
 UPDATE=0
 LS=$(echo "$LATEST_FW" | cut -d'/' -f1)
 LC=$(echo "$LATEST_FW" | cut -d'/' -f2)

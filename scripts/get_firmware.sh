@@ -1,7 +1,7 @@
 # Get firmware
 C=1
 while true; do
-    ./tools/samloader -m "${MODEL}" -r "${CSC}" download -o "fw.zip"
+    samfwdl download "$MODEL" "$CSC" -o firmware --decrypt
     STATUS=$?
 
     if [[ $STATUS -eq 0 ]]; then
@@ -17,5 +17,6 @@ while true; do
     ((C++))
 done
 
-unzip "fw.zip"
-rm -rf "fw.zip"
+FW="$(find "firmware" -name "*.zip" | tail -n 1)"
+unzip "$FW" || exit 1
+rm -rf "firmware"
