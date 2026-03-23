@@ -1,17 +1,17 @@
-# Firmware for model SM-S721N - from Samsung package version S721NKSSACZB2
-dtp.bin_SM-S721N|d160b4cf1a27c9c280c360d84fbef997390cd4c6
-fld.bin_SM-S721N|17848246dc34a2ea90f34d4c06f5a689d9e99c89
-harx.bin_SM-S721N|9e4f4210056a55e16628de766e35461f2bce8fae
-keystorage.bin_SM-S721N|914b27e6ca4a17812b0a580d5b9562ba2a397321
-ldfw.img_SM-S721N|2ba1d1695c2437e33cedd7bf62f467f0d7b275ad
-modem.bin_SM-S721N|2e3b212e2a48a2547b30bf9802439a0b3acd7900
-sboot.bin_SM-S721N|c7db1cba2d8ef83da0897fb377a490102d59e554
+# Firmware for model SM-S721N - from Samsung package version S721NKSSACZC1
+dtp.bin_SM-S721N|722d5066c30dbcf49f85cad2ca65ef33ccc583ee
+fld.bin_SM-S721N|0459fd5a371bf81c8b49e69a8831c0b07fc59fce
+harx.bin_SM-S721N|3dbb08881491c16148cf80fe0d1fbff5b98e9274
+keystorage.bin_SM-S721N|cca830138a50b7729362f5747015f14fe3035bef
+ldfw.img_SM-S721N|22fcc5a5ab429a44274d44a6279c68ecc131134a
+modem.bin_SM-S721N|87edaa9d05bc1e1c1b608d856796df5bc5c7a7fb
+sboot.bin_SM-S721N|2e858c86ecb4aa3b48394b0ae6ce1d3648221e9f
 ssp.img_SM-S721N|03b9a804d25884af609faab4f719dd5c4ebc3aaa
-svm.bin_SM-S721N|072daf70a18aa7a50fe0d01a3201a3f1e5ecf1f0
-tzar.img_SM-S721N|7d573ddbbc079311604fb6920ca678bc5bd72834
-tzsw.img_SM-S721N|1a2d4a056084c117ddbc35ea9d8de324c319abb4
-uh.bin_SM-S721N|56ffc9956c8fc507527953ddef3bfa0fe9c535a8
-up_param.bin_SM-S721N|59ccc4949b807b4a837b30e559353f958ce710f2
+svm.bin_SM-S721N|e96148f534c1ba8c70d6b1040992a85a58b03ba0
+tzar.img_SM-S721N|403a6440d13b5f2ece5789a307eec12214ea9d4a
+tzsw.img_SM-S721N|8d5b9c96d6b1f3d12846eb413800ebeeb5f8dfde
+uh.bin_SM-S721N|f64fd09d722e5c50fb5d0a7959c6456aad2d1556
+up_param.bin_SM-S721N|1cfef919c897623b3bd31ab742358e4b1deb119a
 
 # Files containing Samsung package version for supported models
-version_SM-S721N|4b3c4f14761e93b4d15edb77080e64cfd3424dd9
+version_SM-S721N|2f2a84a9bf392c2d228c84db67bd400b20aaed6b
