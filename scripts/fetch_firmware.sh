@@ -4,10 +4,9 @@ LS=$(echo "$LATEST_FW" | cut -d'/' -f1)
 LC=$(echo "$LATEST_FW" | cut -d'/' -f2)
 CURRENT=""
 OMC="$(echo "$LATEST_FW" \
-| cut -d/ -f2 \
-| sed "s/^$(echo "$MODEL" | sed -E 's/^SM-//; s/-//g')//" \
-| cut -c1-3
-)"
+    | cut -d/ -f2 \
+    | sed "s/^$(echo "$MODEL" | sed -E 's/^SM-//; s/-//g')//" \
+    | cut -c1-3)"
 
 if [[ "$IS_WIFI" == true ]]; then
     LATEST_FW="$(echo "$LATEST_FW" | awk -F/ '{print $1"/"$2"/"}')"
