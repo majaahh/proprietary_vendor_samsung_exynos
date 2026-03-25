@@ -25,6 +25,12 @@ if [[ -n "$CURRENT" ]]; then
     fi
 fi
 
+if [[ "$LATEST_FW" == "S921BXXUDZZCB/S921BOXMDZZCB/S921BXXUDDZCB" ]] || \
+    [[ "$LATEST_FW" == "S921NKSSDCZB4/S921NOKRDCZB4/S921NKSSDCZB1" ]] || \
+    [[ "$LATEST_FW" == "S926BXXUDZZCB/S926BOXMDZZCB/S926BXXUDDZCB" ]]; then
+    UPDATE=0
+fi
+
 {
     echo "latest_version=$LATEST_FW"
     echo "latest_shortversion=$LS"
