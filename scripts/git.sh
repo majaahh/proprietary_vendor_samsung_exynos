@@ -3,7 +3,7 @@ git config --local user.email "41898282+github-actions[bot]@users.noreply.github
 git config --local user.name "github-actions[bot]"
 
 # Pull
-git pull origin ${GHR} --ff-only
+git pull origin "$GHR" --ff-only
 
 # Tag and release
 TAG="${LATEST_SHORTVERSION}_${CSC}_${OMC}"
@@ -18,11 +18,10 @@ if git rev-parse -q --verify "refs/tags/$TAG" >/dev/null; then
 fi
 
 # Commit
-echo "${LATEST_VERSION}" > "current/current.${MODEL}_${CSC}_${OMC}"
-git add current/current.${MODEL}_${CSC}_${OMC}
-git add proprietary-files/$BOARD/proprietary.${MODEL}_${CSC}_${OMC}
-git add proprietary-firmware/$BOARD/firmware.${MODEL}_${CSC}_${OMC}
-git add file_context/$BOARD/file.${MODEL}_${CSC}_${OMC}
-git add fs_config/$BOARD/fs.${MODEL}_${CSC}_${OMC}
+echo "$LATEST_VERSION" > "current/current.${MODEL}_${CSC}_${OMC}"
+git add "current/current.${MODEL}_${CSC}_${OMC}"
+git add "proprietary-files/$BOARD/proprietary.${MODEL}_${CSC}_${OMC}"
+git add "file_context/$BOARD/file.${MODEL}_${CSC}_${OMC}"
+git add "fs_config/$BOARD/fs.${MODEL}_${CSC}_${OMC}"
 git commit -m "samsung: ${MODEL}: ${LATEST_SHORTVERSION}"
 git tag "${LATEST_SHORTVERSION}_${CSC}_${OMC}"

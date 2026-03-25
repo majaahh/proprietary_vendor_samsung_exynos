@@ -1,17 +1,19 @@
 FILES=("boot.img" "dtbo.img" "init_boot.img" "vendor_boot.img" "recovery.img")
-F=""
+OUT_FILES=()
 
 for i in "${FILES[@]}"; do
-    if [[ "$1" == "init_boot.img" ]]; then
-        tar xvf ${BL_TAR} ${i}.lz4 || true
-    else
-        tar xvf ${AP_TAR} ${i}.lz4 || true
+    if tar xf "$BL_TAR" "$i.lz4" 2>/dev/null; then
+        tar xf "$BL_TAR" "$i.lz4" || exit 1
     fi
-    if [[ -f "${i}.lz4" ]]; then
-        lz4 -d ${i}.lz4 ${i}
-        rm -f ${i}.lz4
-        F+="$i "
+
+    if tar xf "$AP_TAR" "$i.lz4" 2>/dev/null; then
+        tar xf "$AP_TAR" "$i.lz4" || exit 1
+    fi
+
+    if [[ -f "$i.lz4" ]]; then
+        lz4 --rm -q -f -d "$i.lz4" "$i" || exit 1
+        OUT_FILES+=("$i")
     fi
 done
 
-tar cvf ${LATEST_SHORTVERSION}_kernel.tar ${F}
+tar cf "${LATEST_SHORTVERSION}_kernel.tar" "${OUT_FILES[@]}"

@@ -16,7 +16,7 @@ generate_file_contexts() {
         if [[ "$fullpath" == "$base" ]]; then
             continue
         fi
-        relpath="${fullpath#$base/}"
+        relpath="${fullpath#"$base"/}"
         context_path="/vendor/${base#vendor/}/$(printf "%s" "$relpath" | sed 's/\./\\./g')"
         if [[ -n "${custom_labels[$relpath]}" ]]; then
             label="${custom_labels[$relpath]}"
@@ -31,9 +31,9 @@ generate_file_contexts() {
 
 generate_file_contexts "vendor/tee" "u:object_r:tee_file:s0" > "file_context/$BOARD/file.${MODEL}_${CSC}_${OMC}"
 
-mv vendor/tee vendor/tee_old
-mkdir -p vendor/tee/${MODEL}
-cp -rfa vendor/tee_old/* vendor/tee/${MODEL}
+mv "vendor/tee" "vendor/tee_old"
+mkdir -p "vendor/tee/$MODEL"
+cp -rfa "vendor/tee_old/"* "vendor/tee/$MODEL"
 
 {
     echo ""
@@ -41,5 +41,5 @@ cp -rfa vendor/tee_old/* vendor/tee/${MODEL}
     generate_file_contexts "vendor/tee/${MODEL}" "u:object_r:tee_file:s0"
 } >> "file_context/$BOARD/file.${MODEL}_${CSC}_${OMC}"
 
-rm -rf vendor/tee/${MODEL}
-cp -rfa vendor/tee_old/* vendor/tee
+rm -rf "vendor/tee/$MODEL"
+cp -rfa "vendor/tee_old/"* "vendor/tee"
