@@ -6,7 +6,9 @@ ANDROID=$(curl -s --retry 5 --retry-delay 5 "https://fota-cloud-dn.ospserver.net
 
 {
     echo "Android Version: $ANDROID"
-    echo "Bootloader Lock: $BL_LOCK"
+    if [[ ! "$MODEL" =~ "SM-A576" ]]; then
+        echo "Bootloader Lock: $BL_LOCK"
+    fi
     echo "PDA version: $VS"
     echo "CSC version: $VC"
 } >> "versions.txt"
