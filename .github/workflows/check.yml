@@ -192,6 +192,8 @@ jobs:
             csc: "EUX"
           - model: "SM-A576W"
             csc: "BMC"
+          - model: "SM-A576U1"
+            csc: "ATT"
           - model: "SM-A576W"
             csc: "XAC"
           - model: "SM-E146B"
