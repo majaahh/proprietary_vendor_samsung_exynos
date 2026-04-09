@@ -26,9 +26,15 @@ for i in "product" "vendor"; do
     sudo umount "$i-tmp"
     rm -rf "$i-tmp"
 
-    if [[ "$MODEL" != "S94"* ]]; then
-        zip -r9 "${LATEST_SHORTVERSION}_$i.zip" "$i.img"
-        zip -r9 "${LATEST_SHORTVERSION}_$i-extracted.zip" "$i"
+    zip -r9 "${LATEST_SHORTVERSION}_$i.zip" "$i.img"
+    zip -r9 "${LATEST_SHORTVERSION}_$i-extracted.zip" "$i"
+
+    if [[ -f "$FILE" ]]; then
+        FILE_SIZE=$(stat -c%s "$FILE")
+
+        if [[ "$FILE_SIZE" -ge "2147483647" ]]; then
+            rm -f "$FILE"
+        fi
     fi
 
     rm -f "*.img"
