@@ -1,5 +1,5 @@
 #!/bin/bash
-# shellcheck disable=SC1090
+# shellcheck disable=SC1090,SC2115,SC2317
 #
 # SPDX-FileCopyrightText: Majaahh
 # SPDX-License-Identifier: Apache-2.0
@@ -10,35 +10,50 @@ _PRINT_USAGE()
 {
     echo "Usage: scripts/check <MODEL/CSC> [arguments]"
     echo "Arguments:"
-    echo "-f,--force    Forces dirs overwrite"
-    echo "--wifi-only   Marks device as WiFi only"
+    echo "--check-only    Checks if current contains latest/forced firmwares only"
+    echo "-f,--force      Forces dirs overwrite"
+    echo "--wifi-only     Marks device as WiFi only"
+    echo "-u,--upload     Commits and uploads to GitHub"
+    echo "-f,--firmware   Forces specific firmware"
 }
 
 WRITE_BLOB_ENTRIES()
 {
     local OUT="$1"
     local PREFIX="$2"
-    local SUFFIX="$3"
-    local WITH_SHA="$4"
-    local SHA=""
-    local PREFIX_BEFORE
-    local PREFIX_AFTER
-    shift 4
+    local WITH_SHA="$3"
+    shift 3
+
+    local SRC_PREFIX DST_PREFIX
+    local SHA
 
     if [[ "$PREFIX" == *:* ]]; then
-        PREFIX_BEFORE="${PREFIX%%:*}"
-        PREFIX_AFTER=":${PREFIX#*:}"
+        SRC_PREFIX="${PREFIX%%:*}"
+        DST_PREFIX="${PREFIX#*:}"
     else
-        PREFIX_BEFORE="$PREFIX"
-        PREFIX_AFTER=""
+        SRC_PREFIX="vendor/firmware"
+        DST_PREFIX="$PREFIX"
     fi
 
     for i in "$@"; do
-        if [[ "$WITH_SHA" == true ]]; then
-            SHA=":$(sha1sum "$(find "$FW_OUT_DIR" -type f -name "$i")" | awk '{print $1}')"
+        local SRC_PATH="${SRC_PREFIX}/${i}"
+        local DST_PATH="${DST_PREFIX}/${i}"
+
+        if [[ "$WITH_SHA" == "true" ]]; then
+            if [[ -f "$FW_OUT_DIR/$SRC_PATH" ]]; then
+                SHA="|$(sha1sum "$FW_OUT_DIR/$SRC_PATH" | awk '{print $1}')"
+            else
+                SHA=""
+            fi
+        else
+            SHA=""
         fi
 
-        echo "$PREFIX_BEFORE/${i}${PREFIX_AFTER}${SUFFIX}${SHA}" >> "$OUT"
+        if [[ "$PREFIX" == *:* ]]; then
+            echo "${SRC_PATH}:${DST_PATH}${SHA}" >> "$OUT"
+        else
+            echo "${DST_PATH}${SHA}" >> "$OUT"
+        fi
     done
 }
 
@@ -50,7 +65,6 @@ AP_TAR=""
 BL_TAR=""
 CSC_TAR=""
 BOARD=""
-ANDROID=""
 BL_LOCK=false
 OUT_FILES=()
 PROPRIETARY_FILES_FILE=""
@@ -61,6 +75,10 @@ TAG=""
 TEEGRIS_BLOBS=()
 SKIP_DOWNLOAD=false
 FORCE=false
+UPLOAD=false
+FIRMWARE=""
+LATEST_FW=""
+CHECK_ONLY=false
 SRC_DIR="$(pwd)"
 OUT_DIR="$SRC_DIR/out"
 # ]
@@ -70,6 +88,7 @@ if [[ -z "$STRING" ]]; then
     exit 1
 fi
 
+# https://github.com/salvogiangri/UN1CA/blob/3.0.0/scripts/utils/firmware_utils.sh#L136-L149
 MODEL="$(cut -d "/" -f 1 -s <<< "$STRING")"
 if [[ -z "$MODEL" ]]; then
     echo "No device model value found in \"$STRING\""
@@ -88,20 +107,22 @@ elif [[ "${#CSC}" != "3" ]]; then
 fi
 
 LATEST_FW="$(samfwdl checkupdate "$MODEL" "$CSC" | awk -F/ '{print $1"/"$2"/"$3}')"
-LATEST_SHORTVERSION="$(echo "$LATEST_FW" | cut -d'/' -f1)"
-LATEST_CSCVERSION="$(echo "$LATEST_FW" | cut -d'/' -f2)"
-TMP_DIR="$OUT_DIR/tmp-$LATEST_SHORTVERSION"
-FW_DIR="$OUT_DIR/fw-$LATEST_SHORTVERSION"
-FW_OUT_DIR="$OUT_DIR/fw_out-$LATEST_SHORTVERSION"
-OMC="$(echo "$LATEST_FW" \
-        | cut -d/ -f2 \
-        | sed "s/^$(echo "$MODEL" | sed -E 's/^SM-//; s/-//g')//" \
-        | cut -c1-3)"
 
 shift
 while [[ "$1" == "-"* ]]; do
-    if [[ "$1" == "-f" ]] || [[ "$2" == "--force" ]]; then
+    if [[ "$1" == "--check-only" ]]; then
+        CHECK_ONLY=true
+    elif [[ "$1" == "-f" ]] || [[ "$2" == "--force" ]]; then
         FORCE=true
+    elif [[ "$1" == "--firmware" ]]; then
+        if [[ -z "$2" ]]; then
+            echo "Missing argument for $1"
+            exit 1
+        fi
+        FIRMWARE="$2"
+        shift
+    elif [[ "$1" == "-u" ]] || [[ "$1" == "--upload" ]]; then
+        UPLOAD=true
     elif [[ "$1" == "--wifi-only" ]]; then
         WIFI_ONLY=true
     else
@@ -113,6 +134,19 @@ while [[ "$1" == "-"* ]]; do
     shift
 done
 
+if [[ -z "$FIRMWARE" ]]; then
+    FIRMWARE="$LATEST_FW"
+fi
+
+LATEST_SHORTVERSION="$(echo "$FIRMWARE" | cut -d'/' -f1)"
+LATEST_CSCVERSION="$(echo "$FIRMWARE" | cut -d'/' -f2)"
+TMP_DIR="$OUT_DIR/tmp-$LATEST_SHORTVERSION"
+FW_DIR="$OUT_DIR/fw-$LATEST_SHORTVERSION"
+FW_OUT_DIR="$OUT_DIR/fw_out-$LATEST_SHORTVERSION"
+OMC="$(echo "$FIRMWARE" \
+        | cut -d/ -f2 \
+        | sed "s/^$(echo "$MODEL" | sed -E 's/^SM-//; s/-//g')//" \
+        | cut -c1-3)"
 
 if ! $FORCE && [[ -d "$FW_OUT_DIR" ]]; then
     echo "Firmware out dir exists, use -f to overwrite"
@@ -122,26 +156,26 @@ fi
 mkdir -p "$FW_OUT_DIR" "$OUT_DIR" "$TMP_DIR"
 
 if $WIFI_ONLY; then
-    LATEST_FW="$(echo "$LATEST_FW" | awk -F/ '{print $1"/"$2"/"}')"
+    FIRMWARE="$(echo "$FIRMWARE" | awk -F/ '{print $1"/"$2"/"}')"
 fi
 
 if [[ -f "$SRC_DIR/current/${MODEL}_${CSC}_${OMC}" ]]; then
     CURRENT="$(cat "$SRC_DIR/current/${MODEL}_${CSC}_${OMC}")"
-    if [[ "$LATEST_FW" == "$CURRENT" ]]; then
+    if [[ "$FIRMWARE" == "$CURRENT" ]]; then
         UPDATE=false
     fi
 fi
 
-if [[ "$LATEST_FW" == "fe" ]] || \
-        [[ "$LATEST_FW" == "S731BXXS6AZCH/S731BOXM6AZCH/S731BXXS6AZCH" ]] || \
-        [[ "$LATEST_FW" == "S921BXXUDZZD5/S921BOXMDZZD5/S921BXXUDDZD5" ]] || \
-        [[ "$LATEST_FW" == "S921NKSSECZCH/S921NOKRECZCH/S921NKSSECZCH" ]] || \
-        [[ "$LATEST_FW" == "S926BXXUDZZD5/S926BOXMDZZD5/S926BXXUDDZD5" ]] || \
-        [[ "$LATEST_FW" == "S926NKSSECZCH/S926NOKRECZCH/S926NKSSECZCH" ]]; then
+if [[ "$FIRMWARE" == "fe" ]] || \
+        [[ "$FIRMWARE" == "S731BXXS6AZCH/S731BOXM6AZCH/S731BXXS6AZCH" ]] || \
+        [[ "$FIRMWARE" == "S921BXXUDZZD5/S921BOXMDZZD5/S921BXXUDDZD5" ]] || \
+        [[ "$FIRMWARE" == "S921NKSSECZCH/S921NOKRECZCH/S921NKSSECZCH" ]] || \
+        [[ "$FIRMWARE" == "S926BXXUDZZD5/S926BOXMDZZD5/S926BXXUDDZD5" ]] || \
+        [[ "$FIRMWARE" == "S926NKSSECZCH/S926NOKRECZCH/S926NKSSECZCH" ]]; then
     UPDATE=false
 fi
 
-if ! $UPDATE; then
+if $CHECK_ONLY || ! $UPDATE; then
     exit 0
 fi
 
@@ -158,12 +192,13 @@ fi
 
 if ! $SKIP_DOWNLOAD; then
     for i in {1..10}; do
+        continue
         if [[ -d "$FW_DIR" ]]; then
-            rm -rf "$FW_DIR"
+            rm -rf "$TMP_DIR"
         fi
-        mkdir -p "$FW_DIR"
+        mkdir -p "$TMP_DIR"
 
-        samfwdl download "$MODEL" "$CSC" -o "$TMP_DIR" --decrypt || rm -rf "$FW_DIR"
+        samfwdl download "$MODEL" "$CSC" --force-firmware --firmware "$FIRMWARE" -o "$TMP_DIR" --decrypt || rm -rf "$TMP_DIR"; exit 1
         STATUS=$?
 
         if [[ $STATUS -eq 0 ]]; then
@@ -177,6 +212,10 @@ if ! $SKIP_DOWNLOAD; then
         sleep 5
     done
 
+    if [[ -d "$FW_DIR" ]]; then
+        rm -rf "$FW_DIR"
+    fi
+        mkdir -p "$FW_DIR"
     unzip "$(find "$TMP_DIR" -name "*.zip" | tail -n 1)" -d "$FW_DIR" && rm -rf "$TMP_DIR" || exit 1
 fi
 
@@ -184,7 +223,7 @@ AP_TAR="$(find "$FW_DIR" -name "AP*")"
 BL_TAR="$(find "$FW_DIR" -name "BL*")"
 CSC_TAR="$(find "$FW_DIR" -name "CSC*")"
 
-if [[ ! -f "$FW_OUT_DIR/*.pit"  ]]; then
+if [[ ! "$(find "$FW_OUT_DIR" -maxdepth 1 -type f -name "*.pit")"  ]]; then
    echo "Extracting PIT"
    tar --wildcards --exclude="*/*" -C "$FW_OUT_DIR" -xf "$CSC_TAR" "*.pit" || exit 1 
 fi
@@ -201,7 +240,7 @@ if [[ ! -f "$FW_OUT_DIR/${LATEST_SHORTVERSION}_patched_vbmeta.tar" ]]; then
     printf '\x03' | dd of="$TMP_DIR/vbmeta.img" bs=1 seek=123 count=1 conv=notrunc &> /dev/null || exit 1
 
     echo "Packing vbmeta image"
-    ( cd "$TMP_DIR" && tar cf "$FW_OUT_DIR/${LATEST_SHORTVERSION}_patched_vbmeta.tar" "vbmeta.img" && rm -f "vbmeta.img" || exit 1 ) || exit 1
+    ( cd "$TMP_DIR" && tar -cf "$FW_OUT_DIR/${LATEST_SHORTVERSION}_patched_vbmeta.tar" "vbmeta.img" && rm -f "vbmeta.img" || exit 1 ) || exit 1
     rm -rf "$TMP_DIR" || exit 1
 fi
 
@@ -218,11 +257,15 @@ if [[ ! -f "$FW_OUT_DIR/super.img" ]]; then
 fi
 
 for i in "product" "vendor"; do
+    if [[ -d "$FW_OUT_DIR/$i" ]]; then
+        continue
+    fi
+
     mkdir -p "$FW_OUT_DIR/$i" "$TMP_DIR/mount" || exit 1
 
     if ! "$SRC_DIR/tools/lpunpack" -p "$i" "$FW_OUT_DIR/super.img" "$TMP_DIR"; then
-        "$SRC_DIR/tools/lpunpack" -p "${i}_a" "$FW_OUT_DIR/super.img" "$TMP_DIR" || exit 1
-        mv "${i}_a" "$i" || exit 1
+        "$SRC_DIR/tools/lpunpack" -p "${i}_a" "$FW_OUT_DIR/super.img" "$TMP_DIR" || rm -rf "$FW_OUT_DIR/$i"; exit 1
+        mv "${i}_a" "$i" || rm -rf "$FW_OUT_DIR/$i"; exit 1
     fi
 
     sudo mount "$TMP_DIR/$i.img" "$TMP_DIR/mount" || exit 1
@@ -245,10 +288,13 @@ for i in "product" "vendor"; do
     #echo "Compressing extracted $i"
     #( cd "$FW_OUT_DIR" && zip -r9 "$FW_OUT_DIR/${LATEST_SHORTVERSION}_$i-extracted.zip" "$i" || exit 1 ) || exit 1
 
-    #if [[ "$i" == "vendor" ]]; then
-    #    echo "Compressing firmware and TEEgris firmware"
-    #    ( cd "$FW_OUT_DIR/vendor" && zip -r9 "$FW_OUT_DIR/${LATEST_SHORTVERSION}_firmware_tee.zip" "firmware" "tee" || exit 1 ) || exit 1
-    #fi
+    if [[ "$i" == "vendor" ]]; then
+        grep -r "ro.product.board" "$FW_OUT_DIR/vendor/build.prop" | cut -d'=' -f2 > "$FW_OUT_DIR/board.txt"
+        #echo "Compressing firmware and TEEgris firmware"
+        #( cd "$FW_OUT_DIR/vendor" && zip -r9 "$FW_OUT_DIR/${LATEST_SHORTVERSION}_firmware_tee.zip" "firmware" "tee" || exit 1 ) || exit 1
+    elif [[ "$i" == "product" ]]; then
+        grep -r "ro.product.build.version.release" "$FW_OUT_DIR/product/etc/build.prop" | cut -d'=' -f2 > "$FW_OUT_DIR/android.txt"
+    fi
 
     while IFS= read -r i; do
         if [[ "$(stat -c%s "$i")" -ge "2147483647" ]]; then
@@ -259,41 +305,58 @@ for i in "product" "vendor"; do
     rm -rf "$TMP_DIR" || exit 1
 done
 
-BOARD="$(grep -r "ro.product.board" "$FW_OUT_DIR/vendor/build.prop" | cut -d'=' -f2)"
+BOARD="$(cat "$FW_OUT_DIR/board.txt")"
 
 if [[ ! -f "$FW_OUT_DIR/${LATEST_SHORTVERSION}_kernel.tar" ]]; then
     FILES=("boot.img" "dtbo.img" "init_boot.img" "vendor_boot.img" "recovery.img")
-    OUT_FILES=()
+    BL_LIST="$(tar -tf "$BL_TAR")"
+    AP_LIST="$(tar -tf "$AP_TAR")"
+
+    if [[ ! -d "$TMP_DIR" ]]; then
+        mkdir -p "$TMP_DIR" || exit 1
+    fi
 
     for i in "${FILES[@]}"; do
-        if tar xf "$BL_TAR" "$i.lz4" 2>/dev/null; then
-            echo "Extracting $i"
-            tar xf "$BL_TAR" "$TMP_DIR/$i.lz4" || exit 1
+        LZ4="$i.lz4"
+        SRC=""
+
+        if grep -qx "$LZ4" <<< "$BL_LIST"; then
+            SRC="$BL_TAR"
+        elif grep -qx "$LZ4" <<< "$AP_LIST"; then
+            SRC="$AP_TAR"
+        else
+            continue
         fi
-        if tar xf "$AP_TAR" "$i.lz4" 2>/dev/null; then
-            echo "Extracting $i"
-            tar xf "$AP_TAR" "$TMP_DIR/$i.lz4" || exit 1
-        fi
-        if [[ -f "$i.lz4" ]]; then
-            echo "Decompressing $i"
-            lz4 --rm -q -f -d "$TMP_DIR/$i.lz4" "$TMP_DIR/$i" || exit 1
-            OUT_FILES+=("$i")
-        fi
+
+        echo "Extracting $i from $(basename "$SRC")"
+        tar -C "$TMP_DIR" -xf "$SRC" "$LZ4" || exit 1
+
+        echo "Decompressing $i"
+        lz4 --rm -q -f -d "$TMP_DIR/$LZ4" "$TMP_DIR/$i" || exit 1
+        OUT_FILES+=("$i")
     done
 
     echo "Compressing kernel images"
     ( cd "$TMP_DIR" && tar cf "$FW_OUT_DIR/${LATEST_SHORTVERSION}_kernel.tar" "${OUT_FILES[@]}" && rm -f "${OUT_FILES[@]}" || exit 1 ) || exit 1
+
+    rm -rf "$TMP_DIR" || exit 1
+fi
+
+if [[ ! -d "$TMP_DIR" ]]; then
+    mkdir -p "$TMP_DIR" || exit 1
 fi
 
 echo "Checking bootloader lock status"
 BL_LOCK=false
 
-tar xf "$BL_TAR" "sboot.bin.lz4"
-lz4 --rm -q -f -d "sboot.bin.lz4" "sboot.bin"
+tar -C "$TMP_DIR" -xf "$BL_TAR" "sboot.bin.lz4" || exit 1
+lz4 --rm -q -f -d "$TMP_DIR/sboot.bin.lz4" "$TMP_DIR/sboot.bin" || exit 1
 
-if strings "sboot.bin" | grep -q androidboot.other; then
+if strings "$TMP_DIR/sboot.bin" | grep -q androidboot.other; then
     BL_LOCK=true
 fi
+
+rm -f "$TMP_DIR/sboot.bin"
 
 PROPRIETARY_FILES_FILE="$SRC_DIR/proprietary-files/$MODEL/$LATEST_SHORTVERSION.txt"
 FILE_CONTEXT_FILE="$SRC_DIR/file_context/$MODEL/$LATEST_SHORTVERSION.txt"
@@ -320,19 +383,27 @@ mapfile -t TEEGRIS_BLOBS < <(find "$FW_OUT_DIR/vendor/tee" -type f | sed -e "s|$
     echo "# SPDX-FileCopyrightText: Majaahh"
     echo "# SPDX-License-Identifier: Apache-2.0"
     echo "#"
-    echo ""
 } > "$PROPRIETARY_FILES_FILE"
 
 if [[ ${#AUDIO_BLOBS[@]} -gt 0 ]]; then
-    echo "# Audio - Firmware" >> "$PROPRIETARY_FILES_FILE"
+    {
+        echo ""
+        echo "# Audio - Firmware"
+    } >> "$PROPRIETARY_FILES_FILE"
     WRITE_BLOB_ENTRIES "$PROPRIETARY_FILES_FILE" "vendor/firmware" "" "${AUDIO_BLOBS[@]}"
 fi
 if [[ ${#FIRMWARE_BLOBS[@]} -gt 0 ]]; then
-    echo "# Firmware" >> "$PROPRIETARY_FILES_FILE"
+    {
+        echo ""
+        echo "# Firmware"
+    } >> "$PROPRIETARY_FILES_FILE"
     WRITE_BLOB_ENTRIES "$PROPRIETARY_FILES_FILE" "vendor/firmware" "" "${FIRMWARE_BLOBS[@]}"
 fi
 
-echo "Security - TEEgris - Firmware" >> "$PROPRIETARY_FILES_FILE"
+{
+    echo ""
+    echo "# Security - TEEgris - Firmware" >> "$PROPRIETARY_FILES_FILE"
+} >> "$PROPRIETARY_FILES_FILE"
 for i in "${TEEGRIS_BLOBS[@]}"; do
     echo "vendor/tee/$i" >> "$PROPRIETARY_FILES_FILE"
 done
@@ -342,17 +413,26 @@ done
     echo "# Pinned" >> "$PROPRIETARY_FILES_FILE"
 } >> "$PROPRIETARY_FILES_FILE"
 if [[ ${#AUDIO_BLOBS[@]} -gt 0 ]]; then
-    echo "# Audio - Firmware - from $MODEL - $LATEST_SHORTVERSION" >> "$PROPRIETARY_FILES_FILE"
-    WRITE_BLOB_ENTRIES "$PROPRIETARY_FILES_FILE" "vendor/firmware" "" "${AUDIO_BLOBS[@]}" true
+    {
+        echo ""
+        echo "# Audio - Firmware - from $MODEL - $LATEST_SHORTVERSION"
+    } >> "$PROPRIETARY_FILES_FILE"
+    WRITE_BLOB_ENTRIES "$PROPRIETARY_FILES_FILE" "vendor/firmware" true "${AUDIO_BLOBS[@]}"
 fi
 if [[ ${#FIRMWARE_BLOBS[@]} -gt 0 ]]; then
-    echo "# Firmware - from $MODEL - $LATEST_SHORTVERSION" >> "$PROPRIETARY_FILES_FILE"
-    WRITE_BLOB_ENTRIES "$PROPRIETARY_FILES_FILE" "vendor/firmware" "" "${FIRMWARE_BLOBS[@]}" true
+    {
+        echo ""
+        echo "# Firmware - from $MODEL - $LATEST_SHORTVERSION"
+    } >> "$PROPRIETARY_FILES_FILE"
+    WRITE_BLOB_ENTRIES "$PROPRIETARY_FILES_FILE" "vendor/firmware" true "${FIRMWARE_BLOBS[@]}"
 fi
 
-echo "Security - TEEgris - Firmware - from $MODEL - $LATEST_SHORTVERSION" >> "$PROPRIETARY_FILES_FILE"
+{
+    echo ""
+    echo "# Security - TEEgris - Firmware - from $MODEL - $LATEST_SHORTVERSION"
+} >> "$PROPRIETARY_FILES_FILE"
 for i in "${TEEGRIS_BLOBS[@]}"; do
-    echo "vendor/tee/$i:$(sha1sum "$FW_OUT_DIR/vendor/tee/$i" | awk '{print $1}')" >> "$PROPRIETARY_FILES_FILE"
+    echo "vendor/tee/$i|$(sha1sum "$FW_OUT_DIR/vendor/tee/$i" | awk '{print $1}')" >> "$PROPRIETARY_FILES_FILE"
 done
 
 {
@@ -360,17 +440,26 @@ done
     echo "# Pinned with path to model"
 } >> "$PROPRIETARY_FILES_FILE"
 if [[ ${#AUDIO_BLOBS[@]} -gt 0 ]]; then
-    echo "# Audio - Firmware - from $MODEL - $LATEST_SHORTVERSION" >> "$PROPRIETARY_FILES_FILE"
-    WRITE_BLOB_ENTRIES "$PROPRIETARY_FILES_FILE" "vendor/firmware/$MODEL" "" "${AUDIO_BLOBS[@]}" true
+    {
+        echo ""
+        echo "# Audio - Firmware - from $MODEL - $LATEST_SHORTVERSION"
+    } >> "$PROPRIETARY_FILES_FILE"
+    WRITE_BLOB_ENTRIES "$PROPRIETARY_FILES_FILE" "vendor/firmware/$MODEL" true "${AUDIO_BLOBS[@]}"
 fi
 if [[ ${#FIRMWARE_BLOBS[@]} -gt 0 ]]; then
-    echo "# Firmware - from $MODEL - $LATEST_SHORTVERSION" >> "$PROPRIETARY_FILES_FILE"
-    WRITE_BLOB_ENTRIES "$PROPRIETARY_FILES_FILE" "vendor/firmware/$MODEL" "" "${FIRMWARE_BLOBS[@]}" true
+    {
+        echo ""
+        echo "# Firmware - from $MODEL - $LATEST_SHORTVERSION"
+    } >> "$PROPRIETARY_FILES_FILE"
+    WRITE_BLOB_ENTRIES "$PROPRIETARY_FILES_FILE" "vendor/firmware/$MODEL" true "${FIRMWARE_BLOBS[@]}"
 fi
 
-echo "Security - TEEgris - Firmware - from $MODEL - $LATEST_SHORTVERSION" >> "$PROPRIETARY_FILES_FILE"
+{
+    echo ""
+    echo "# Security - TEEgris - Firmware - from $MODEL - $LATEST_SHORTVERSION"
+} >> "$PROPRIETARY_FILES_FILE"
 for i in "${TEEGRIS_BLOBS[@]}"; do
-    echo "vendor/tee/$MODEL/$i:$(sha1sum "$FW_OUT_DIR/vendor/tee/$i" | awk '{print $1}')" >> "$PROPRIETARY_FILES_FILE"
+    echo "vendor/tee/$MODEL/$i|$(sha1sum "$FW_OUT_DIR/vendor/tee/$i" | awk '{print $1}')" >> "$PROPRIETARY_FILES_FILE"
 done
 
 {
@@ -378,13 +467,24 @@ done
     echo "# With path to model"
 } >> "$PROPRIETARY_FILES_FILE"
 if [[ ${#AUDIO_BLOBS[@]} -gt 0 ]]; then
-    WRITE_BLOB_ENTRIES "$PROPRIETARY_FILES_FILE" "vendor/firmware:vendor/firmware/$MODEL" "${AUDIO_BLOBS[@]}"
+    {
+        echo ""
+        echo "# Audio - Firmware"
+    } >> "$PROPRIETARY_FILES_FILE"
+    WRITE_BLOB_ENTRIES "$PROPRIETARY_FILES_FILE" "vendor/firmware:vendor/firmware/$MODEL" "" "${AUDIO_BLOBS[@]}"
 fi
 if [[ ${#FIRMWARE_BLOBS[@]} -gt 0 ]]; then
-    WRITE_BLOB_ENTRIES "$PROPRIETARY_FILES_FILE" "vendor/firmware:vendor/firmware/$MODEL" "${FIRMWARE_BLOBS[@]}"
+    {
+        echo ""
+        echo "# Firmware"
+    } >> "$PROPRIETARY_FILES_FILE"
+    WRITE_BLOB_ENTRIES "$PROPRIETARY_FILES_FILE" "vendor/firmware:vendor/firmware/$MODEL" "" "${FIRMWARE_BLOBS[@]}"
 fi
 
-echo "Security - TEEgris - Firmware - from $MODEL - $LATEST_SHORTVERSION" >> "$PROPRIETARY_FILES_FILE"
+{
+    echo ""
+    echo "# Security - TEEgris - Firmware"
+} >> "$PROPRIETARY_FILES_FILE"
 for i in "${TEEGRIS_BLOBS[@]}"; do
     echo "vendor/tee/$i:vendor/tee/$MODEL/$i" >> "$PROPRIETARY_FILES_FILE"
 done
@@ -424,22 +524,21 @@ echo "Generating basic fs_config-vendor"
 } > "$FS_CONFIG_FILE"
 
 for i in "${TEEGRIS_BLOBS[@]}"; do
-    echo "vendor/tee/$i 0 0 644 capabilities=0x0" >> "$FILE_CONTEXT_FILE"
+    echo "vendor/tee/$i 0 0 644 capabilities=0x0" >> "$FS_CONFIG_FILE"
 done
 
 {
     echo ""
     echo "# Path to model"
     echo "vendor/tee_$MODEL 0 2000 755 capabilities=0x0"
-} > "$FS_CONFIG_FILE"
+} >> "$FS_CONFIG_FILE"
 
 for i in "${TEEGRIS_BLOBS[@]}"; do
-    echo "vendor/tee_$MODEL/$i 0 0 644 capabilities=0x0" >> "$FILE_CONTEXT_FILE"
+    echo "vendor/tee_$MODEL/$i 0 0 644 capabilities=0x0" >> "$FS_CONFIG_FILE"
 done
 
-ANDROID="$(grep -r "ro.product.build.version.release" "$FW_OUT_DIR/product/etc/build.prop" | cut -d'=' -f2)"
 {
-    echo "Android Version: $ANDROID"
+    echo "Android Version: $(cat "$FW_OUT_DIR/android.txt")"
     # TODO
     if [[ ! "$MODEL" =~ SM-A576 ]]; then
         echo "Bootloader Lock: $BL_LOCK"
@@ -459,7 +558,9 @@ if [[ "$BRANCH" == "HEAD" ]]; then
     exit 1
 fi
 
-exit 0
+if ! $UPLOAD; then
+    exit 0
+fi
 
 git pull origin "$BRANCH" --ff-only
 TAG="${LATEST_SHORTVERSION}_${CSC}_${OMC}"
@@ -474,7 +575,7 @@ if git rev-parse -q --verify "refs/tags/$TAG" >/dev/null; then
     git tag -d "$TAG"
 fi
 
-echo "$LATEST_FW" > "$SRC_DIR/current/${MODEL}_${CSC}_${OMC}"
+echo "$FIRMWARE" > "$SRC_DIR/current/${MODEL}_${CSC}_${OMC}"
 git add "$SRC_DIR/current/${MODEL}_${CSC}_${OMC}"
 git add "$SRC_DIR/proprietary-files/$MODEL/$LATEST_SHORTVERSION.txt"
 git add "$SRC_DIR/file_context/$MODEL/$LATEST_SHORTVERSION.txt"
@@ -493,3 +594,26 @@ if ! git push origin "$BRANCH" "$TAG"; then
     git pull origin "$BRANCH" --ff-only
     git push origin "$BRANCH" "$TAG"
 fi
+
+RELEASE_NAME="$LATEST_SHORTVERSION - $MODEL - $CSC - $OMC"
+
+gh release view "$TAG" --repo "$REPO" >/dev/null 2>&1 || {
+    echo "- Creating release"
+    gh release create "$TAG" \
+        --repo "majaahh/android_kernel_samsung_a53x" \
+        --title "$RELEASE_NAME" \
+        --notes-file versions.txt || exit 1
+}
+
+echo "- Uploading assets"
+for i in "$BL_TAR" \
+    "$(find "$FW_DIR" -name "CP*")" \
+    "$(find "$FW_DIR" -name "HOME_CSC*")" \
+    "$(find "$FW_OUT_DIR" -maxdepth 1 -type f)"; do
+    if [[ ! -f "$i" ]]; then
+        continue
+    fi
+
+    echo "- Uploading $i"
+    gh release upload "$TAG" "$i" --repo "$REPO" --clobber || exit 1
+done
