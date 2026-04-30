@@ -1,0 +1,41 @@
+#
+# SPDX-FileCopyrightText: Majaahh
+# SPDX-License-Identifier: Apache-2.0
+#
+
+name: CLI firmware update
+
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */6 * * *"
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.generate.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v6
+
+      - id: generate
+        run: |
+          MATRIX=$(jq -c '
+            to_entries
+            | map(.key as $model | .value[] | {model: $model, csc: .})
+          ' devices.json)
+
+          echo "matrix=$MATRIX" >> $GITHUB_OUTPUT
+
+  cli:
+    needs: prepare
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJson(needs.prepare.outputs.matrix) }}
+
+    uses: ./.github/workflows/update.yml
+    with:
+      model: ${{ matrix.model }}
+      csc: ${{ matrix.csc }}

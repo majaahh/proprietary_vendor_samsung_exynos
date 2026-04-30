@@ -1,0 +1,27 @@
+#
+# SPDX-FileCopyrightText: Majaahh
+# SPDX-License-Identifier: Apache-2.0
+#
+
+name: Interactive firmware update
+
+on:
+  workflow_dispatch:
+    inputs:
+      model:
+        description: "Model"
+        required: true
+      csc:
+        description: "CSC"
+        required: true
+      fw:
+        description: "Firmware string"
+        required: false
+
+jobs:
+  interactive:
+    uses: ./.github/workflows/update.yml
+    with:
+      model: ${{ github.event.inputs.model }}
+      csc: ${{ github.event.inputs.csc }}
+      fw: ${{ github.event.inputs.fw }}

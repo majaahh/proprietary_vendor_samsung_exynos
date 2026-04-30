@@ -1,0 +1,70 @@
+#
+# SPDX-FileCopyrightText: Majaahh
+# SPDX-License-Identifier: Apache-2.0
+#
+
+name: Firmware update
+
+on:
+  workflow_call:
+    inputs:
+      model:
+        required: true
+        type: string
+      csc:
+        required: true
+        type: string
+      fw:
+        required: false
+        type: string
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    concurrency:
+      group: >-
+        update-${{ inputs.model }}-${{ inputs.csc }}${{
+          inputs.fw && format('-{0}', inputs.fw) || ''
+        }}-${{ github.ref }}
+      cancel-in-progress: true
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v6
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update > /dev/null
+          sudo apt-get install -y \
+              7zip android-sdk-libsparse-utils f2fs-tools \
+              liblz4-tool linux-modules-extra-$(uname -r) python3 rsync unzip zip > /dev/null
+          sudo modprobe f2fs
+          pip3 install git+https://github.com/ducthoe/samfwdl.git > /dev/null
+
+      - name: Compare current firmware
+        run: |
+          if [[ -n "${{ inputs.fw }}" ]]; then
+            ./check.sh "${{ inputs.model }}/${{ inputs.csc }}" --check-only --firmware "${{ inputs.fw }}" || exit 1
+          else
+            ./check.sh "${{ inputs.model }}/${{ inputs.csc }}" --check-only || exit 1
+          fi
+
+      - name: Cleanup space
+        if: env.update == 1
+        run: |
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL
+          sudo docker image prune --all --force
+          sudo docker builder prune -a
+
+      - name: Update current firmware
+        if: env.update == 1
+        run: |
+          sudo apt-get install -y gh > /dev/null
+          echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
+
+          if [[ -n "${{ inputs.fw }}" ]]; then
+            ./check.sh "${{ inputs.model }}/${{ inputs.csc }}" --upload --firmware "${{ inputs.fw }}"
+          else
+            ./check.sh "${{ inputs.model }}/${{ inputs.csc }}" --upload
+          fi
