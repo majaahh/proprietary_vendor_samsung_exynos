@@ -115,6 +115,7 @@ CSC_TAR=""
 BOARD=""
 BL_LOCK=false
 OUT_FILES=()
+OUT_FILES_COMPRESSED=()
 PROPRIETARY_FILES_FILE=""
 FILE_CONTEXT_FILE=""
 FS_CONFIG_FILE=""
@@ -358,7 +359,7 @@ done
 
 BOARD="$(cat "$FW_OUT_DIR/board.txt")"
 
-if [[ ! -f "$FW_OUT_DIR/${LATEST_SHORTVERSION}_kernel.tar" ]]; then
+if [[ ! -f "$FW_OUT_DIR/${LATEST_SHORTVERSION}_kernel.tar" ]] || [[ ! -f "$FW_OUT_DIR/${LATEST_SHORTVERSION}_kernel_compressed.tar" ]]; then
     FILES=("boot.img" "dtbo.img" "init_boot.img" "vendor_boot.img" "recovery.img")
     BL_LIST="$(tar -tf "$BL_TAR")"
     AP_LIST="$(tar -tf "$AP_TAR")"
@@ -383,12 +384,24 @@ if [[ ! -f "$FW_OUT_DIR/${LATEST_SHORTVERSION}_kernel.tar" ]]; then
         tar -C "$TMP_DIR" -xf "$SRC" "$LZ4" || exit 1
 
         echo "Decompressing $i"
-        lz4 --rm -q -f -d "$TMP_DIR/$LZ4" "$TMP_DIR/$i" || exit 1
+        lz4 -q -f -d "$TMP_DIR/$LZ4" "$TMP_DIR/$i" || exit 1
         OUT_FILES+=("$i")
+        OUT_FILES_COMPRESSED+=("$LZ4")
     done
 
-    echo "Compressing kernel images"
+    if [[ -d "$FW_OUT_DIR/${LATEST_SHORTVERSION}_kernel.tar" ]]; then
+        rm -f "$FW_OUT_DIR/${LATEST_SHORTVERSION}_kernel.tar" || exit 1
+    fi
+
+    if [[ -d "$FW_OUT_DIR/${LATEST_SHORTVERSION}_kernel_compressed.tar" ]]; then
+        rm -f "$FW_OUT_DIR/${LATEST_SHORTVERSION}_kernel_compressed.tar" || exit 1
+    fi
+
+    echo "Creating kernel zip"
     ( cd "$TMP_DIR" && tar cf "$FW_OUT_DIR/${LATEST_SHORTVERSION}_kernel.tar" "${OUT_FILES[@]}" && rm -f "${OUT_FILES[@]}" || exit 1 ) || exit 1
+
+    echo "Creating kernel zip with compressed images"
+    ( cd "$TMP_DIR" && tar cf "$FW_OUT_DIR/${LATEST_SHORTVERSION}_kernel_compressed.tar" "${OUT_FILES_COMPRESSED[@]}" && rm -f "${OUT_FILES_COMPRESSED[@]}" || exit 1 ) || exit 1
 
     rm -rf "$TMP_DIR" || exit 1
 fi
