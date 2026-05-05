@@ -605,7 +605,7 @@ done
     echo "Android Version: $(cat "$FW_OUT_DIR/android.txt")"
     echo "Board: $BOARD"
     # TODO
-    if [[ ! "$MODEL" =~ SM-A576 ]]; then
+    if [[ ! "$MODEL" =~ "SM-A576|SM-S94" ]]; then
         echo "Bootloader Lock: $BL_LOCK"
     fi
     echo "AP version: $LATEST_SHORTVERSION"
