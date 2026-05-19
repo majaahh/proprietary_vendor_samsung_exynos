@@ -21,6 +21,7 @@ on:
 jobs:
   interactive:
     uses: ./.github/workflows/update.yml
+    secrets: inherit
     with:
       model: ${{ github.event.inputs.model }}
       csc: ${{ github.event.inputs.csc }}
