@@ -8,4 +8,6 @@ AUDIO_BLOBS=( "APDV_AUDIO_SLSI.bin" "AP_AUDIO_SLSI.bin" "calliope_sram.bin" "vts
 FIRMWARE_BLOBS=( "NPU.bin" "mfc_fw.bin" "os.checked.bin" )
 
 # Exceptions
-echo "346B" | grep -q "$MODEL" && AUDIO_BLOBS=( "calliope_sram.bin" "vts.bin" )
+if [[ "$MODEL" == *"346B"* ]]; then
+    AUDIO_BLOBS=( "calliope_sram.bin" "vts.bin" )
+fi
