@@ -152,7 +152,7 @@ elif [[ "${#CSC}" != "3" ]]; then
     exit 1
 fi
 
-LATEST_FW="$(samfwdl checkupdate "$MODEL" "$CSC")"
+LATEST_FW="$(asgard checkupdate "$MODEL" "$CSC")"
 
 shift
 while [[ "$1" == "-"* ]]; do
@@ -227,7 +227,7 @@ if ! $SKIP_DOWNLOAD; then
         fi
         mkdir -p "$TMP_DIR"
 
-        samfwdl download "$MODEL" "$CSC" --force-firmware --firmware "$FIRMWARE" -o "$TMP_DIR" --decrypt || {
+        asgard download "$MODEL" "$CSC" --force-firmware --firmware "$FIRMWARE" -o "$TMP_DIR" --decrypt || {
             rm -rf "$TMP_DIR"
             exit 1
         }

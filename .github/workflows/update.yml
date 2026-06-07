@@ -49,7 +49,7 @@ jobs:
               7zip android-sdk-libsparse-utils f2fs-tools \
               liblz4-tool linux-modules-extra-$(uname -r) python3 rsync unzip zip > /dev/null
           sudo modprobe f2fs
-          pip3 install git+ssh://git@github.com/ducthoe/samfwdl.git > /dev/null
+          pip3 install git+ssh://git@github.com/ducthoe/asgard.git > /dev/null
 
       - name: Compare current firmware
         run: |
