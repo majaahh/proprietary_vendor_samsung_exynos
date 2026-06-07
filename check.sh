@@ -269,19 +269,22 @@ if [[ ! "$(find "$FW_OUT_DIR" -maxdepth 1 -type f -name "*.pit")"  ]]; then
 fi
 
 if [[ ! -f "$FW_OUT_DIR/${LATEST_SHORTVERSION}_patched_vbmeta.tar" ]]; then
-    echo "Extracting vbmeta image"
-    mkdir -p "$TMP_DIR"
-    tar -C "$TMP_DIR" -xf "$AP_TAR" "vbmeta.img.lz4" || exit 1
+    if tar -tf "$AP_TAR" | grep -qx "vbmeta.img.lz4"; then
+        echo "Extracting vbmeta image"
+        mkdir -p "$TMP_DIR"
+        tar -C "$TMP_DIR" -xf "$AP_TAR" "vbmeta.img.lz4" || exit 1
 
-    echo "Decompressing vbmeta image"
-    lz4 -q -f -d "$TMP_DIR/vbmeta.img.lz4" "$TMP_DIR/vbmeta.img" && rm -f "$TMP_DIR/vbmeta.img.lz4" || exit 1
+        echo "Decompressing vbmeta image"
+        lz4 -q -f -d "$TMP_DIR/vbmeta.img.lz4" "$TMP_DIR/vbmeta.img" && rm -f "$TMP_DIR/vbmeta.img.lz4" || exit 1
 
-    echo "Patching vbmeta image"
-    printf '\x03' | dd of="$TMP_DIR/vbmeta.img" bs=1 seek=123 count=1 conv=notrunc &> /dev/null || exit 1
+        echo "Patching vbmeta image"
+        printf '\x03' | dd of="$TMP_DIR/vbmeta.img" bs=1 seek=123 count=1 conv=notrunc &> /dev/null || exit 1
 
-    echo "Packing vbmeta image"
-    ( cd "$TMP_DIR" && tar -cf "$FW_OUT_DIR/${LATEST_SHORTVERSION}_patched_vbmeta.tar" "vbmeta.img" && rm -f "vbmeta.img" || exit 1 ) || exit 1
-    rm -rf "$TMP_DIR" || exit 1
+        echo "Packing vbmeta image"
+        ( cd "$TMP_DIR" && tar -cf "$FW_OUT_DIR/${LATEST_SHORTVERSION}_patched_vbmeta.tar" "vbmeta.img" && rm -f "vbmeta.img" ) || exit 1
+
+        rm -rf "$TMP_DIR" || exit 1
+    fi
 fi
 
 if [[ ! -f "$FW_OUT_DIR/super.img" ]]; then
