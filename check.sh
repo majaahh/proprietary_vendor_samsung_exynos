@@ -644,9 +644,9 @@ git add \
 
 if ! git diff --cached --quiet; then
     if [[ "$(whoami)" == "Maja" ]]; then
-        git commit -s -S -m "samsung: $MODEL: $LATEST_SHORTVERSION ($CSC)" || exit 1
+        git commit -s -S -m "exynos: $MODEL: $LATEST_SHORTVERSION ($CSC)" || exit 1
     else
-        git commit -m "samsung: $MODEL: $LATEST_SHORTVERSION ($CSC)" || exit 1
+        git commit -m "exynos: $MODEL: $LATEST_SHORTVERSION ($CSC)" || exit 1
     fi
 fi
 
