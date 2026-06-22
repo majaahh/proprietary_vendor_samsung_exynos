@@ -1,0 +1,25 @@
+#
+# SPDX-FileCopyrightText: Majaahh
+# SPDX-License-Identifier: Apache-2.0
+#
+
+/vendor/tee u:object_r:tee_file:s0
+/vendor/tee/00000000-0000-0000-0000-000000534b4d u:object_r:tee_file:s0
+/vendor/tee/00000000-0000-0000-0000-0053545354ab u:object_r:tee_file:s0
+/vendor/tee/00000000-0000-0000-0000-474154454b45 u:object_r:tee_file:s0
+/vendor/tee/00000000-0000-0000-0000-4b45594d5354 u:object_r:tee_file:s0
+/vendor/tee/00000000-0000-0000-0000-505256544545 u:object_r:tee_file:s0
+/vendor/tee/00000000-0000-0000-0000-53454d655345 u:object_r:tee_file:s0
+/vendor/tee/driver/00000000-0000-0000-0000-494363447256 u:object_r:tee_file:s0
+/vendor/tee/ffffffff-0000-0000-0000-000000000030 u:object_r:tee_file:s0
+
+# Path to model
+/vendor/tee_SM-R865F u:object_r:tee_file:s0
+/vendor/tee_SM-R865F/00000000-0000-0000-0000-000000534b4d u:object_r:tee_file:s0
+/vendor/tee_SM-R865F/00000000-0000-0000-0000-0053545354ab u:object_r:tee_file:s0
+/vendor/tee_SM-R865F/00000000-0000-0000-0000-474154454b45 u:object_r:tee_file:s0
+/vendor/tee_SM-R865F/00000000-0000-0000-0000-4b45594d5354 u:object_r:tee_file:s0
+/vendor/tee_SM-R865F/00000000-0000-0000-0000-505256544545 u:object_r:tee_file:s0
+/vendor/tee_SM-R865F/00000000-0000-0000-0000-53454d655345 u:object_r:tee_file:s0
+/vendor/tee_SM-R865F/driver/00000000-0000-0000-0000-494363447256 u:object_r:tee_file:s0
+/vendor/tee_SM-R865F/ffffffff-0000-0000-0000-000000000030 u:object_r:tee_file:s0
