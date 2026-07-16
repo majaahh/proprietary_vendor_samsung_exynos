@@ -12,7 +12,7 @@ _PRINT_USAGE()
     echo "Arguments:"
     echo "--check-only    Checks if current contains latest/forced firmwares only"
     echo "-f,--force      Forces dirs overwrite"
-    echo "--wifi-only     Marks device as WiFi only"
+    echo "--wifi-only     Marks device as Wi-Fi only"
     echo "-u,--upload     Commits and uploads to GitHub"
     echo "-f,--firmware   Forces specific firmware"
 }
