@@ -227,7 +227,7 @@ if ! $SKIP_DOWNLOAD; then
         fi
         mkdir -p "$TMP_DIR"
 
-        asgard download "$MODEL" "$CSC" --force-firmware --firmware "$FIRMWARE" -o "$TMP_DIR" --decrypt || {
+        asgard download "$MODEL" "$CSC" --firmware "$FIRMWARE" -o "$TMP_DIR" --decrypt || {
             rm -rf "$TMP_DIR"
             exit 1
         }
