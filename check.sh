@@ -280,8 +280,11 @@ if [[ ! -f "$FW_OUT_DIR/${LATEST_SHORTVERSION}_patched_vbmeta.tar" ]]; then
         echo "Patching vbmeta image"
         printf '\x03' | dd of="$TMP_DIR/vbmeta.img" bs=1 seek=123 count=1 conv=notrunc &> /dev/null || exit 1
 
+        echo "Compressing vbmeta image"
+        lz4 -B6 --content-size -q --rm "$TMP_DIR/vbmeta.img" "$TMP_DIR/vbmeta.img.lz4"  &> /dev/null || exit 1
+
         echo "Packing vbmeta image"
-        ( cd "$TMP_DIR" && tar -cf "$FW_OUT_DIR/${LATEST_SHORTVERSION}_patched_vbmeta.tar" "vbmeta.img" && rm -f "vbmeta.img" ) || exit 1
+        ( cd "$TMP_DIR" && tar -cf "$FW_OUT_DIR/${LATEST_SHORTVERSION}_patched_vbmeta.tar" "vbmeta.img.lz4" && rm -f "vbmeta.img.lz4" ) || exit 1
 
         rm -rf "$TMP_DIR" || exit 1
     fi
