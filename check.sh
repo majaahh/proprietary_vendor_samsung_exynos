@@ -348,6 +348,7 @@ for i in "product" "vendor"; do
 
     if [[ "$i" == "vendor" ]]; then
         grep -r "ro.product.board" "$FW_OUT_DIR/vendor/build.prop" | cut -d'=' -f2 > "$FW_OUT_DIR/board.txt"
+        grep -r "ro.vendor.build.security_patch" "$FW_OUT_DIR/vendor/build.prop" | cut -d'=' -f2 > "$FW_OUT_DIR/spl.txt"
         echo "Compressing firmware and TEEgris firmware"
         ( cd "$FW_OUT_DIR/vendor" && 7z a -tzip -mx=0 -mmt="$(nproc --all)" -snl "$FW_OUT_DIR/${LATEST_SHORTVERSION}_firmware_tee.zip" "firmware" "tee" ) || exit 1
     elif [[ "$i" == "product" ]]; then
@@ -614,6 +615,7 @@ done
     if [[ "$BOARD" != "s5e8865" ]] && [[ "$BOARD" != "s5e9965" ]]; then
         echo "Bootloader Lock: $BL_LOCK"
     fi
+    echo "Security Patch Level: $(cat "$FW_OUT_DIR/spl.txt")"
     echo "AP version: $LATEST_SHORTVERSION"
     echo "CSC version: $LATEST_CSCVERSION"
 } > "$FW_OUT_DIR/versions.txt"
