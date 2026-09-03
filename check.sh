@@ -529,7 +529,7 @@ fi
     echo "# Security - TEEgris - Firmware - from $MODEL - $LATEST_SHORTVERSION"
 } >> "$PROPRIETARY_FILES_FILE"
 for i in "${TEEGRIS_BLOBS[@]}"; do
-    echo "vendor/tee/$MODEL/$i|$(sha1sum "$FW_OUT_DIR/vendor/tee/$i" | awk '{print $1}')" >> "$PROPRIETARY_FILES_FILE"
+    echo "vendor/firmware/tee/$MODEL/$i|$(sha1sum "$FW_OUT_DIR/vendor/tee/$i" | awk '{print $1}')" >> "$PROPRIETARY_FILES_FILE"
 done
 
 {
@@ -556,7 +556,7 @@ fi
     echo "# Security - TEEgris - Firmware"
 } >> "$PROPRIETARY_FILES_FILE"
 for i in "${TEEGRIS_BLOBS[@]}"; do
-    echo "vendor/tee/$i:vendor/tee/$MODEL/$i" >> "$PROPRIETARY_FILES_FILE"
+    echo "vendor/tee/$i:vendor/firmware/tee/$MODEL/$i" >> "$PROPRIETARY_FILES_FILE"
 done
 
 echo "Generating basic file_context-vendor"
@@ -576,11 +576,11 @@ done
 {
     echo ""
     echo "# Path to model"
-    echo "/vendor/tee_$MODEL u:object_r:tee_file:s0"
+    echo "/vendor/firmware/tee/$MODEL u:object_r:tee_file:s0"
 } >> "$FILE_CONTEXT_FILE"
 
 for i in "${TEEGRIS_BLOBS[@]}"; do
-    echo "/vendor/tee_$MODEL/$i u:object_r:tee_file:s0" >> "$FILE_CONTEXT_FILE"
+    echo "/vendor/firmware/tee/$MODEL/$i u:object_r:tee_file:s0" >> "$FILE_CONTEXT_FILE"
 done
 
 echo "Generating basic fs_config-vendor"
@@ -600,11 +600,11 @@ done
 {
     echo ""
     echo "# Path to model"
-    echo "vendor/tee_$MODEL 0 2000 755 capabilities=0x0"
+    echo "vendor/firmware/tee/$MODEL 0 2000 755 capabilities=0x0"
 } >> "$FS_CONFIG_FILE"
 
 for i in "${TEEGRIS_BLOBS[@]}"; do
-    echo "vendor/tee_$MODEL/$i 0 0 644 capabilities=0x0" >> "$FS_CONFIG_FILE"
+    echo "vendor/firmware/tee/$MODEL/$i 0 0 644 capabilities=0x0" >> "$FS_CONFIG_FILE"
 done
 
 {
