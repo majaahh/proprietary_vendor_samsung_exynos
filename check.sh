@@ -252,7 +252,7 @@ if [[ -d "$TMP_DIR" ]]; then
         fi
         mkdir -p "$FW_DIR"
         unzip "$(find "$TMP_DIR" -name "*.zip" | tail -n 1)" -d "$FW_DIR" && rm -rf "$TMP_DIR" || exit 1
-fi
+    fi
 fi
 
 AP_TAR="$(find "$FW_DIR" -name "AP*")"
@@ -640,10 +640,10 @@ TAG="${LATEST_SHORTVERSION}_${CSC}_${OMC}"
 APPEND_CURRENT_FIRMWARE "$SRC_DIR/current/${MODEL}_${CSC}_${OMC}" "$FIRMWARE"
 
 git add \
-  "$SRC_DIR/current/${MODEL}_${CSC}_${OMC}" \
-  "$PROPRIETARY_FILES_FILE" \
-  "$FILE_CONTEXT_FILE" \
-  "$FS_CONFIG_FILE" || exit 1
+    "$SRC_DIR/current/${MODEL}_${CSC}_${OMC}" \
+    "$PROPRIETARY_FILES_FILE" \
+    "$FILE_CONTEXT_FILE" \
+    "$FS_CONFIG_FILE" || exit 1
 
 if ! git diff --cached --quiet; then
     if [[ "$(whoami)" == "Maja" ]]; then
