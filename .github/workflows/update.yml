@@ -38,7 +38,13 @@ jobs:
           sudo apt-get update > /dev/null
           sudo apt-get install -y \
               7zip android-sdk-libsparse-utils f2fs-tools \
-              liblz4-tool linux-modules-extra-$(uname -r) python3 rsync unzip zip > /dev/null
+              liblz4-tool python3 rsync unzip zip > /dev/null
+          kernel="$(uname -r)"
+          if (( ${kernel%%.*} < 7 )); then
+            sudo apt-get install -y "linux-modules-extra-${kernel}" > /dev/null
+          else
+            sudo apt-get install -y "linux-modules-${kernel}" > /dev/null
+          fi
           sudo modprobe f2fs
           pip3 install asgard-fus > /dev/null
 
